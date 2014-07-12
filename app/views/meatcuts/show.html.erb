@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @meatcut.name %>
+</p>
+
+<p>
+  <strong>Animal:</strong>
+  <%= @meatcut.animal %>
+</p>
+
+<p>
+  <strong>Primal:</strong>
+  <%= @meatcut.primal %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @meatcut.description %>
+</p>
+
+<p>
+  <strong>Alt names:</strong>
+  <%= @meatcut.alt_names %>
+</p>
+
+<%= link_to 'Edit', edit_meatcut_path(@meatcut) %> |
+<%= link_to 'Back', meatcuts_path %>

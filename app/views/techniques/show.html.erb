@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @technique.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @technique.description %>
+</p>
+
+<p>
+  <strong>Dry:</strong>
+  <%= @technique.dry %>
+</p>
+
+<p>
+  <strong>Equipment:</strong>
+  <%= @technique.equipment %>
+</p>
+
+<%= link_to 'Edit', edit_technique_path(@technique) %> |
+<%= link_to 'Back', techniques_path %>
