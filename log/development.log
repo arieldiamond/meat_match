@@ -2837,3 +2837,373 @@ Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-07-13 20:22:48 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-13 20:22:48 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-14 00:12:39 -0500
+Processing by HomeController#index as HTML
+  [1m[35mMeatcut Load (33.2ms)[0m  SELECT "meatcuts".* FROM "meatcuts"
+  [1m[36mTechnique Load (0.5ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  Rendered home/index.html.erb within layouts/application (44.7ms)
+Completed 200 OK in 59ms (Views: 21.2ms | ActiveRecord: 33.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-14 00:12:39 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-14 00:12:39 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-14 00:12:39 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-07-14 00:12:39 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-07-14 00:12:39 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-14 00:12:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-14 00:12:39 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-07-14 00:12:39 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-07-14 00:12:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-14 00:12:39 -0500
+
+
+Started POST "/" for 127.0.0.1 at 2014-07-14 00:12:45 -0500
+
+ActionController::RoutingError (No route matches [POST] "/"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/arieldiamond/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/arieldiamond/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/arieldiamond/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (48.2ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (74.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-18 17:42:22 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (12.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mMeatcut Load (7.2ms)[0m  SELECT "meatcuts".* FROM "meatcuts"
+  [1m[36mTechnique Load (0.5ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  Rendered home/index.html.erb within layouts/application (40.8ms)
+Completed 200 OK in 178ms (Views: 140.3ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-18 17:42:23 -0500
+Processing by HomeController#index as HTML
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"
+  [1m[36mTechnique Load (0.2ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  Rendered home/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-07-18 17:42:23 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-18 17:42:23 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-07-18 17:42:23 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-18 17:42:23 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-18 17:42:23 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-18 17:42:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-18 17:42:23 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-07-18 17:42:23 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-07-18 17:42:23 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-18 17:42:23 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-18 17:42:34 -0500
+Processing by HomeController#index as HTML
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"
+  [1m[36mTechnique Load (0.3ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  Rendered home/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-07-18 17:42:34 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-07-18 17:42:34 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-18 17:42:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-18 17:42:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-18 17:42:34 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-18 17:42:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-18 17:42:34 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-07-18 17:42:34 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-07-18 17:42:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-18 17:42:34 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-18 17:52:22 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"home"} missing required keys: [:id]):
+    1: <div id="homepage">
+    2: 	<h1>Meat Match</h1>
+    3: 
+    4: 	<%= form_tag(home_path, method: 'post', multipart: true) do %>
+    5: 	<h3>I have a <%= select("meatcut", "name", Meatcut.all.collect {|m| [ m.name.capitalize, m.id ] }, {include_blank: 'Select a cut of meat'}) %><br>
+    6: 	and I want to <%= select("technique", "name", Technique.all.collect {|m| [ m.name.capitalize, m.id ] }, {include_blank: 'Select a cooking technique'}) %> <br>
+    7: 	<%= submit_tag "Meat Match me!" %></h3>
+  app/views/home/index.html.erb:4:in `_app_views_home_index_html_erb__4393493081154057804_2175992440'
+
+
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-18 18:04:49 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"meatcuts"} missing required keys: [:id]):
+    1: <div id="homepage">
+    2: 	<h1>Meat Match</h1>
+    3: 
+    4: 	<%= form_tag(meatcut_path) do %>
+    5: 	<h3>I have a <%= select("meatcut", "name", Meatcut.all.collect {|m| [ m.name.capitalize, m.id ] }, {include_blank: 'Select a cut of meat'}) %><br>
+    6: 	and I want to <%= select("technique", "name", Technique.all.collect {|m| [ m.name.capitalize, m.id ] }, {include_blank: 'Select a cooking technique'}) %> <br>
+    7: 	<%= options_from_collection_for_select(Meatcut.all, :id, :name) %>
+  app/views/home/index.html.erb:4:in `_app_views_home_index_html_erb__4393493081154057804_2176797180'
+
+
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-18 18:05:09 -0500
+Processing by HomeController#index as HTML
+  [1m[35mMeatcut Load (0.5ms)[0m  SELECT "meatcuts".* FROM "meatcuts"
+  [1m[36mTechnique Load (0.4ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "meatcuts".* FROM "meatcuts"
+  Rendered home/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-07-18 18:05:09 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-18 18:05:09 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-07-18 18:05:09 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-18 18:05:09 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-18 18:05:09 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-18 18:05:09 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-18 18:05:09 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-07-18 18:05:09 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-07-18 18:05:09 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-18 18:05:09 -0500
+
+
+Started POST "/meatcuts/1" for 127.0.0.1 at 2014-07-18 18:05:16 -0500
+
+ActionController::RoutingError (No route matches [POST] "/meatcuts/1"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/arieldiamond/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/arieldiamond/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/arieldiamond/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.7ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.8ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (39.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-18 18:06:57 -0500
+Processing by HomeController#index as HTML
+  [1m[36mMeatcut Load (0.3ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"[0m
+  [1m[35mTechnique Load (0.2ms)[0m  SELECT "techniques".* FROM "techniques"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"[0m
+  Rendered home/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-07-18 18:06:58 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-18 18:06:58 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-18 18:06:58 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-18 18:06:58 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-07-18 18:06:58 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-18 18:06:58 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-18 18:06:58 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-07-18 18:06:58 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-07-18 18:06:58 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-18 18:06:58 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-18 18:08:33 -0500
+Processing by HomeController#index as HTML
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-07-18 18:08:33 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-18 18:08:33 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-18 18:08:33 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-07-18 18:08:33 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-18 18:08:33 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-18 18:08:33 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-18 18:08:33 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-07-18 18:08:33 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-07-18 18:08:33 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-18 18:08:33 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-18 18:09:18 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (wrong number of arguments (3 for 1..2)):
+    4: 	<%= form_tag(meatcut_path(:id => 1)) do %>
+    5: 	<h3>I have a <%#= select("meatcut", "name", Meatcut.all.collect {|m| [ m.name.capitalize, m.id ] }, {include_blank: 'Select a cut of meat'}) %><br>
+    6: 	and I want to <%#= select("technique", "name", Technique.all.collect {|m| [ m.name.capitalize, m.id ] }, {include_blank: 'Select a cooking technique'}) %> <br>
+    7: 	<%= options_for_select(Meatcut.all, :id, :name) %>
+    8: 	<%= submit_tag "Meat Match me!" %></h3>
+    9: 	<% end %>
+   10: 
+  app/views/home/index.html.erb:7:in `block in _app_views_home_index_html_erb__4393493081154057804_2194276820'
+  app/views/home/index.html.erb:4:in `_app_views_home_index_html_erb__4393493081154057804_2194276820'
+
+
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.9ms)

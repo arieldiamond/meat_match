@@ -1,4 +1,4 @@
-class HomeController < ApplicationController
+class MatchController < ApplicationController
 	def index
 		@meatcuts = Meatcut.all
 	end
