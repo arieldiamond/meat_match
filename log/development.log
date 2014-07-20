@@ -3207,3 +3207,622 @@ ActionView::Template::Error (wrong number of arguments (3 for 1..2)):
   Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
   Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
   Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.9ms)
+  [1m[36mMeal Load (14.2ms)[0m  [1mSELECT  "meals".* FROM "meals"   ORDER BY "meals"."id" ASC LIMIT 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (4.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMeatcuts (20140710142355)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (5.3ms)[0m  [1mCREATE TABLE "meatcuts" ("id" serial primary key, "name" character varying(255), "animal" character varying(255), "meat_name" character varying(255), "primal" character varying(255), "description" text, "alt_names" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (6.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140710142355"]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTechniques (20140710142516)
+  [1m[35m (5.7ms)[0m  BEGIN
+  [1m[36m (4.9ms)[0m  [1mCREATE TABLE "techniques" ("id" serial primary key, "name" character varying(255), "description" text, "dry" boolean, "equipment" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140710142516"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateMatches (20140710142649)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "matches" ("id" serial primary key, "meatcut_id" integer, "technique_id" integer, "good_idea" character varying(255), "notes" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140710142649"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (6.8ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "top blade"], ["animal", "cow"], ["created_at", "2014-07-20 11:41:24.157966"], ["description", "A tasty tender cut from the middle of the shoulder, great for grilling and searing."], ["meat_name", "beef"], ["name", "flatiron"], ["primal", "chuck"], ["updated_at", "2014-07-20 11:41:24.157966"]]
+  [1m[35m (6.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "chuck roast"], ["animal", "cow"], ["created_at", "2014-07-20 11:41:24.177701"], ["description", "A large, flavorful, fatty, inexpensive roast for roasting or braising. Also great de-boned and ground for burgers."], ["meat_name", "beef"], ["name", "bone-in chuck"], ["primal", "chuck"], ["updated_at", "2014-07-20 11:41:24.177701"]]
+  [1m[36m (6.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "blade roast, blade steak, seven-bone steak, seven-bone roast"], ["animal", "cow"], ["created_at", "2014-07-20 11:41:24.187384"], ["description", "Good for slow roasting. Also great de-boned and ground for burgers."], ["meat_name", "beef"], ["name", "chuck steak"], ["primal", "chuck"], ["updated_at", "2014-07-20 11:41:24.187384"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "boneless chuck, chuck eye, chuck eye steak, chuck short ribs, pot roast, potroast"], ["animal", "cow"], ["created_at", "2014-07-20 11:41:24.190345"], ["description", "Good for slow roasting, braising, or grinding."], ["meat_name", "beef"], ["name", "chuck roll"], ["primal", "chuck"], ["updated_at", "2014-07-20 11:41:24.190345"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "meatcuts" ("animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["animal", "cow"], ["created_at", "2014-07-20 11:41:24.192420"], ["description", "Any tougher or cheaper cut, cut into cubes for braising and stewing."], ["meat_name", "beef"], ["name", "stew meat"], ["primal", "chuck"], ["updated_at", "2014-07-20 11:41:24.192420"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "meatcuts" ("animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["animal", "cow"], ["created_at", "2014-07-20 11:41:24.194551"], ["description", "Tough-ish but affordable cut for grilling to rare or roasting."], ["meat_name", "beef"], ["name", "ranch steak"], ["primal", "chuck"], ["updated_at", "2014-07-20 11:41:24.194551"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "entrecote, sweetheart steak (butterflied ribeye), ribeye roast"], ["animal", "cow"], ["created_at", "2014-07-20 11:41:24.196607"], ["description", "A super popular super delicious steak."], ["meat_name", "beef"], ["name", "ribeye"], ["primal", "rib"], ["updated_at", "2014-07-20 11:41:24.196607"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "cowboy steak, bone-in ribeye, rib cowboy steak"], ["animal", "cow"], ["created_at", "2014-07-20 11:41:24.198408"], ["description", "A super popular super delicious steak, a ribeye with the bone."], ["meat_name", "beef"], ["name", "rib steak"], ["primal", "rib"], ["updated_at", "2014-07-20 11:41:24.198408"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "costilla para asar"], ["animal", "cow"], ["created_at", "2014-07-20 11:41:24.200412"], ["description", "Back ribs taste like a ribeye, but you can cook them like pork ribs, on the grill or in the oven."], ["meat_name", "beef"], ["name", "back ribs"], ["primal", "rib"], ["updated_at", "2014-07-20 11:41:24.200412"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "porterhouse"], ["animal", "cow"], ["created_at", "2014-07-20 11:41:24.202431"], ["description", ""], ["meat_name", "beef"], ["name", "t-bone"], ["primal", "loin"], ["updated_at", "2014-07-20 11:41:24.202431"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "meatcuts" ("animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["animal", "cow"], ["created_at", "2014-07-20 11:41:24.204586"], ["description", "A delicious easy-to-cook steak that is also the larger side of a t-bone steak."], ["meat_name", "beef"], ["name", "NY strip"], ["primal", "loin"], ["updated_at", "2014-07-20 11:41:24.204586"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "chateaubriand (center-cut)"], ["animal", "cow"], ["created_at", "2014-07-20 11:41:24.206624"], ["description", "The most tender and also most expensive cut of beef that also the smaller side of a t-bone steak."], ["meat_name", "beef"], ["name", "tenderloin"], ["primal", "loin"], ["updated_at", "2014-07-20 11:41:24.206624"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (6.6ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-07-20 11:41:24.218730"], ["description", "Slow roasting is best for tougher cuts of meat that need some time for the sinew to break down. Most cuts that can be braised can also be slow roasted."], ["dry", "t"], ["equipment", "oven, pan"], ["name", "slow roast"], ["updated_at", "2014-07-20 11:41:24.218730"]]
+  [1m[35m (6.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-07-20 11:41:24.234710"], ["description", "Hot roasting is best for more tender cuts of meat, like ribeye roasts. It involves cooking in an oven without liquid."], ["dry", "t"], ["equipment", "oven, pan"], ["name", "hot roast"], ["updated_at", "2014-07-20 11:41:24.234710"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-07-20 11:41:24.237794"], ["description", "Searing, also called pan-frying, sauteing, shallow-frying, or stir-frying when pieces are small, is when meat is cooked in a pan with oil above a heat source. It is used to get color on the outside of meat before roasting or braising, or to cook the meat to desired doneness."], ["dry", "t"], ["equipment", "pan, stovetop or campfire, tongs or spatula"], ["name", "sear"], ["updated_at", "2014-07-20 11:41:24.237794"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-07-20 11:41:24.281631"], ["description", "Grilling involves very high heat from underneath the grate or grill where the meat cooks, usually from wood, charcoal, or gas, providing the delightful charred grill marks."], ["dry", "t"], ["equipment", "grill, tongs"], ["name", "grill"], ["updated_at", "2014-07-20 11:41:24.281631"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-07-20 11:41:24.284677"], ["description", "Broiling is when the heat only comes from above the meat."], ["dry", "t"], ["equipment", "broiler, pan"], ["name", "broil"], ["updated_at", "2014-07-20 11:41:24.284677"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-07-20 11:41:24.286668"], ["description", "Deep Frying is a high-fat method in which meat is cooked in oil at 300-375 degrees. It is often breaded or dredged in flour before frying, resulting in the hallmark crunchy crust."], ["dry", "t"], ["equipment", "deep fryer or deep pot, tongs, thermometer"], ["name", "deep fry"], ["updated_at", "2014-07-20 11:41:24.286668"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-07-20 11:41:24.288388"], ["description", "Smoking involves low and slow roasting with hot smoke from aromatic wood, often from apple, cedar, or cherry wood."], ["dry", "t"], ["equipment", "smoker, earthen pit, or grill, wood chips"], ["name", "smoke"], ["updated_at", "2014-07-20 11:41:24.288388"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-07-20 11:41:24.290167"], ["description", "Confit is when you submerge meat (usually duck, chicken, pork) in fat and cook it low and slow. It is also a great way to preserve meat."], ["dry", "t"], ["equipment", "deep pan with lid or foil, fat (usually duck)"], ["name", "confit"], ["updated_at", "2014-07-20 11:41:24.290167"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-07-20 11:41:24.291944"], ["description", "Some meat is tender enough to not be cooked at all. Tartare is when the meat is cut into very small cubes and served with a cold sauce, garnishes, and often with a raw egg yolk."], ["equipment", "knife"], ["name", "raw/tartare"], ["updated_at", "2014-07-20 11:41:24.291944"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-07-20 11:41:24.294014"], ["description", "Braising is the most versatile way to cook meat, especially tough or sinewy meat. When in doubt, braise! Braising involves cooking the meat slowly in a hot flavorful liquid."], ["dry", "f"], ["equipment", "deep pan with lid or foil, oven"], ["name", "braise"], ["updated_at", "2014-07-20 11:41:24.294014"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-07-20 11:41:24.296230"], ["description", "Stewing is similar to braising, though it usually involves smaller pieces of meat and vegetables cooked together to form a soup or stew. (This is what your crockpot and your grandmother does.)"], ["dry", "f"], ["equipment", "crockpot or soup pot and stovetop"], ["name", "stew"], ["updated_at", "2014-07-20 11:41:24.296230"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-07-20 11:41:24.298850"], ["description", "Sous-vide, French for “under vacuum,” is the method by which seasoned meat and a bit of flavorful liquid is vacuum-sealed in plastic and cooked slowly at a constant temperature for anywhere from 1 to 72 hours. You probably won’t be doing this at home, but kudos to you if you do!"], ["dry", "f"], ["equipment", "sous-vider"], ["name", "sous-vide"], ["updated_at", "2014-07-20 11:41:24.298850"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-07-20 11:41:24.301409"], ["description", "Poaching, or quickly cooking in flavorful simmering liquid, is usually used for leaner meats than braising. Fish and chicken are the most commonly poached meats, but this method can be used for lean cuts of other meats."], ["dry", "f"], ["equipment", "shallow pan with lid"], ["name", "poach"], ["updated_at", "2014-07-20 11:41:24.301409"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+PG::UndefinedTable: ERROR:  relation "meals" does not exist
+LINE 5:                WHERE a.attrelid = '"meals"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"meals"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "top blade"], ["animal", "cow"], ["created_at", "2014-07-20 11:42:46.013742"], ["description", "A tasty tender cut from the middle of the shoulder, great for grilling and searing."], ["meat_name", "beef"], ["name", "flatiron"], ["primal", "chuck"], ["updated_at", "2014-07-20 11:42:46.013742"]]
+  [1m[35m (8.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "chuck roast"], ["animal", "cow"], ["created_at", "2014-07-20 11:42:46.027425"], ["description", "A large, flavorful, fatty, inexpensive roast for roasting or braising. Also great de-boned and ground for burgers."], ["meat_name", "beef"], ["name", "bone-in chuck"], ["primal", "chuck"], ["updated_at", "2014-07-20 11:42:46.027425"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "blade roast, blade steak, seven-bone steak, seven-bone roast"], ["animal", "cow"], ["created_at", "2014-07-20 11:42:46.030772"], ["description", "Good for slow roasting. Also great de-boned and ground for burgers."], ["meat_name", "beef"], ["name", "chuck steak"], ["primal", "chuck"], ["updated_at", "2014-07-20 11:42:46.030772"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "boneless chuck, chuck eye, chuck eye steak, chuck short ribs, pot roast, potroast"], ["animal", "cow"], ["created_at", "2014-07-20 11:42:46.033566"], ["description", "Good for slow roasting, braising, or grinding."], ["meat_name", "beef"], ["name", "chuck roll"], ["primal", "chuck"], ["updated_at", "2014-07-20 11:42:46.033566"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "meatcuts" ("animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["animal", "cow"], ["created_at", "2014-07-20 11:42:46.036238"], ["description", "Any tougher or cheaper cut, cut into cubes for braising and stewing."], ["meat_name", "beef"], ["name", "stew meat"], ["primal", "chuck"], ["updated_at", "2014-07-20 11:42:46.036238"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "meatcuts" ("animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["animal", "cow"], ["created_at", "2014-07-20 11:42:46.038698"], ["description", "Tough-ish but affordable cut for grilling to rare or roasting."], ["meat_name", "beef"], ["name", "ranch steak"], ["primal", "chuck"], ["updated_at", "2014-07-20 11:42:46.038698"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "entrecote, sweetheart steak (butterflied ribeye), ribeye roast"], ["animal", "cow"], ["created_at", "2014-07-20 11:42:46.040611"], ["description", "A super popular super delicious steak."], ["meat_name", "beef"], ["name", "ribeye"], ["primal", "rib"], ["updated_at", "2014-07-20 11:42:46.040611"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "cowboy steak, bone-in ribeye, rib cowboy steak"], ["animal", "cow"], ["created_at", "2014-07-20 11:42:46.042621"], ["description", "A super popular super delicious steak, a ribeye with the bone."], ["meat_name", "beef"], ["name", "rib steak"], ["primal", "rib"], ["updated_at", "2014-07-20 11:42:46.042621"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "costilla para asar"], ["animal", "cow"], ["created_at", "2014-07-20 11:42:46.044690"], ["description", "Back ribs taste like a ribeye, but you can cook them like pork ribs, on the grill or in the oven."], ["meat_name", "beef"], ["name", "back ribs"], ["primal", "rib"], ["updated_at", "2014-07-20 11:42:46.044690"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "porterhouse"], ["animal", "cow"], ["created_at", "2014-07-20 11:42:46.046729"], ["description", ""], ["meat_name", "beef"], ["name", "t-bone"], ["primal", "loin"], ["updated_at", "2014-07-20 11:42:46.046729"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "meatcuts" ("animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["animal", "cow"], ["created_at", "2014-07-20 11:42:46.048453"], ["description", "A delicious easy-to-cook steak that is also the larger side of a t-bone steak."], ["meat_name", "beef"], ["name", "NY strip"], ["primal", "loin"], ["updated_at", "2014-07-20 11:42:46.048453"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "chateaubriand (center-cut)"], ["animal", "cow"], ["created_at", "2014-07-20 11:42:46.050270"], ["description", "The most tender and also most expensive cut of beef that also the smaller side of a t-bone steak."], ["meat_name", "beef"], ["name", "tenderloin"], ["primal", "loin"], ["updated_at", "2014-07-20 11:42:46.050270"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-07-20 11:42:46.061409"], ["description", "Slow roasting is best for tougher cuts of meat that need some time for the sinew to break down. Most cuts that can be braised can also be slow roasted."], ["dry", "t"], ["equipment", "oven, pan"], ["name", "slow roast"], ["updated_at", "2014-07-20 11:42:46.061409"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-07-20 11:42:46.064035"], ["description", "Hot roasting is best for more tender cuts of meat, like ribeye roasts. It involves cooking in an oven without liquid."], ["dry", "t"], ["equipment", "oven, pan"], ["name", "hot roast"], ["updated_at", "2014-07-20 11:42:46.064035"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-07-20 11:42:46.065991"], ["description", "Searing, also called pan-frying, sauteing, shallow-frying, or stir-frying when pieces are small, is when meat is cooked in a pan with oil above a heat source. It is used to get color on the outside of meat before roasting or braising, or to cook the meat to desired doneness."], ["dry", "t"], ["equipment", "pan, stovetop or campfire, tongs or spatula"], ["name", "sear"], ["updated_at", "2014-07-20 11:42:46.065991"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-07-20 11:42:46.108197"], ["description", "Grilling involves very high heat from underneath the grate or grill where the meat cooks, usually from wood, charcoal, or gas, providing the delightful charred grill marks."], ["dry", "t"], ["equipment", "grill, tongs"], ["name", "grill"], ["updated_at", "2014-07-20 11:42:46.108197"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-07-20 11:42:46.110372"], ["description", "Broiling is when the heat only comes from above the meat."], ["dry", "t"], ["equipment", "broiler, pan"], ["name", "broil"], ["updated_at", "2014-07-20 11:42:46.110372"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-07-20 11:42:46.112837"], ["description", "Deep Frying is a high-fat method in which meat is cooked in oil at 300-375 degrees. It is often breaded or dredged in flour before frying, resulting in the hallmark crunchy crust."], ["dry", "t"], ["equipment", "deep fryer or deep pot, tongs, thermometer"], ["name", "deep fry"], ["updated_at", "2014-07-20 11:42:46.112837"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-07-20 11:42:46.115387"], ["description", "Smoking involves low and slow roasting with hot smoke from aromatic wood, often from apple, cedar, or cherry wood."], ["dry", "t"], ["equipment", "smoker, earthen pit, or grill, wood chips"], ["name", "smoke"], ["updated_at", "2014-07-20 11:42:46.115387"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-07-20 11:42:46.118118"], ["description", "Confit is when you submerge meat (usually duck, chicken, pork) in fat and cook it low and slow. It is also a great way to preserve meat."], ["dry", "t"], ["equipment", "deep pan with lid or foil, fat (usually duck)"], ["name", "confit"], ["updated_at", "2014-07-20 11:42:46.118118"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-07-20 11:42:46.120133"], ["description", "Some meat is tender enough to not be cooked at all. Tartare is when the meat is cut into very small cubes and served with a cold sauce, garnishes, and often with a raw egg yolk."], ["equipment", "knife"], ["name", "raw/tartare"], ["updated_at", "2014-07-20 11:42:46.120133"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-07-20 11:42:46.122334"], ["description", "Braising is the most versatile way to cook meat, especially tough or sinewy meat. When in doubt, braise! Braising involves cooking the meat slowly in a hot flavorful liquid."], ["dry", "f"], ["equipment", "deep pan with lid or foil, oven"], ["name", "braise"], ["updated_at", "2014-07-20 11:42:46.122334"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-07-20 11:42:46.124336"], ["description", "Stewing is similar to braising, though it usually involves smaller pieces of meat and vegetables cooked together to form a soup or stew. (This is what your crockpot and your grandmother does.)"], ["dry", "f"], ["equipment", "crockpot or soup pot and stovetop"], ["name", "stew"], ["updated_at", "2014-07-20 11:42:46.124336"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-07-20 11:42:46.126055"], ["description", "Sous-vide, French for “under vacuum,” is the method by which seasoned meat and a bit of flavorful liquid is vacuum-sealed in plastic and cooked slowly at a constant temperature for anywhere from 1 to 72 hours. You probably won’t be doing this at home, but kudos to you if you do!"], ["dry", "f"], ["equipment", "sous-vider"], ["name", "sous-vide"], ["updated_at", "2014-07-20 11:42:46.126055"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-07-20 11:42:46.127870"], ["description", "Poaching, or quickly cooking in flavorful simmering liquid, is usually used for leaner meats than braising. Fish and chicken are the most commonly poached meats, but this method can be used for lean cuts of other meats."], ["dry", "f"], ["equipment", "shallow pan with lid"], ["name", "poach"], ["updated_at", "2014-07-20 11:42:46.127870"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "top blade"], ["animal", "cow"], ["created_at", "2014-07-20 11:45:04.717748"], ["description", "A tasty tender cut from the middle of the shoulder, great for grilling and searing."], ["meat_name", "beef"], ["name", "flatiron"], ["primal", "chuck"], ["updated_at", "2014-07-20 11:45:04.717748"]]
+  [1m[35m (8.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "chuck roast"], ["animal", "cow"], ["created_at", "2014-07-20 11:45:04.731419"], ["description", "A large, flavorful, fatty, inexpensive roast for roasting or braising. Also great de-boned and ground for burgers."], ["meat_name", "beef"], ["name", "bone-in chuck"], ["primal", "chuck"], ["updated_at", "2014-07-20 11:45:04.731419"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "blade roast, blade steak, seven-bone steak, seven-bone roast"], ["animal", "cow"], ["created_at", "2014-07-20 11:45:04.734722"], ["description", "Good for slow roasting. Also great de-boned and ground for burgers."], ["meat_name", "beef"], ["name", "chuck steak"], ["primal", "chuck"], ["updated_at", "2014-07-20 11:45:04.734722"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "boneless chuck, chuck eye, chuck eye steak, chuck short ribs, pot roast, potroast"], ["animal", "cow"], ["created_at", "2014-07-20 11:45:04.737699"], ["description", "Good for slow roasting, braising, or grinding."], ["meat_name", "beef"], ["name", "chuck roll"], ["primal", "chuck"], ["updated_at", "2014-07-20 11:45:04.737699"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "meatcuts" ("animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["animal", "cow"], ["created_at", "2014-07-20 11:45:04.740336"], ["description", "Any tougher or cheaper cut, cut into cubes for braising and stewing."], ["meat_name", "beef"], ["name", "stew meat"], ["primal", "chuck"], ["updated_at", "2014-07-20 11:45:04.740336"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "meatcuts" ("animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["animal", "cow"], ["created_at", "2014-07-20 11:45:04.743579"], ["description", "Tough-ish but affordable cut for grilling to rare or roasting."], ["meat_name", "beef"], ["name", "ranch steak"], ["primal", "chuck"], ["updated_at", "2014-07-20 11:45:04.743579"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "entrecote, sweetheart steak (butterflied ribeye), ribeye roast"], ["animal", "cow"], ["created_at", "2014-07-20 11:45:04.746539"], ["description", "A super popular super delicious steak."], ["meat_name", "beef"], ["name", "ribeye"], ["primal", "rib"], ["updated_at", "2014-07-20 11:45:04.746539"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "cowboy steak, bone-in ribeye, rib cowboy steak"], ["animal", "cow"], ["created_at", "2014-07-20 11:45:04.749319"], ["description", "A super popular super delicious steak, a ribeye with the bone."], ["meat_name", "beef"], ["name", "rib steak"], ["primal", "rib"], ["updated_at", "2014-07-20 11:45:04.749319"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "costilla para asar"], ["animal", "cow"], ["created_at", "2014-07-20 11:45:04.752149"], ["description", "Back ribs taste like a ribeye, but you can cook them like pork ribs, on the grill or in the oven."], ["meat_name", "beef"], ["name", "back ribs"], ["primal", "rib"], ["updated_at", "2014-07-20 11:45:04.752149"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "porterhouse"], ["animal", "cow"], ["created_at", "2014-07-20 11:45:04.754906"], ["description", ""], ["meat_name", "beef"], ["name", "t-bone"], ["primal", "loin"], ["updated_at", "2014-07-20 11:45:04.754906"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "meatcuts" ("animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["animal", "cow"], ["created_at", "2014-07-20 11:45:04.757491"], ["description", "A delicious easy-to-cook steak that is also the larger side of a t-bone steak."], ["meat_name", "beef"], ["name", "NY strip"], ["primal", "loin"], ["updated_at", "2014-07-20 11:45:04.757491"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "chateaubriand (center-cut)"], ["animal", "cow"], ["created_at", "2014-07-20 11:45:04.759485"], ["description", "The most tender and also most expensive cut of beef that also the smaller side of a t-bone steak."], ["meat_name", "beef"], ["name", "tenderloin"], ["primal", "loin"], ["updated_at", "2014-07-20 11:45:04.759485"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-07-20 11:45:04.770588"], ["description", "Slow roasting is best for tougher cuts of meat that need some time for the sinew to break down. Most cuts that can be braised can also be slow roasted."], ["dry", "t"], ["equipment", "oven, pan"], ["name", "slow roast"], ["updated_at", "2014-07-20 11:45:04.770588"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-07-20 11:45:04.773382"], ["description", "Hot roasting is best for more tender cuts of meat, like ribeye roasts. It involves cooking in an oven without liquid."], ["dry", "t"], ["equipment", "oven, pan"], ["name", "hot roast"], ["updated_at", "2014-07-20 11:45:04.773382"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-07-20 11:45:04.816532"], ["description", "Searing, also called pan-frying, sauteing, shallow-frying, or stir-frying when pieces are small, is when meat is cooked in a pan with oil above a heat source. It is used to get color on the outside of meat before roasting or braising, or to cook the meat to desired doneness."], ["dry", "t"], ["equipment", "pan, stovetop or campfire, tongs or spatula"], ["name", "sear"], ["updated_at", "2014-07-20 11:45:04.816532"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-07-20 11:45:04.818353"], ["description", "Grilling involves very high heat from underneath the grate or grill where the meat cooks, usually from wood, charcoal, or gas, providing the delightful charred grill marks."], ["dry", "t"], ["equipment", "grill, tongs"], ["name", "grill"], ["updated_at", "2014-07-20 11:45:04.818353"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-07-20 11:45:04.820279"], ["description", "Broiling is when the heat only comes from above the meat."], ["dry", "t"], ["equipment", "broiler, pan"], ["name", "broil"], ["updated_at", "2014-07-20 11:45:04.820279"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-07-20 11:45:04.822759"], ["description", "Deep Frying is a high-fat method in which meat is cooked in oil at 300-375 degrees. It is often breaded or dredged in flour before frying, resulting in the hallmark crunchy crust."], ["dry", "t"], ["equipment", "deep fryer or deep pot, tongs, thermometer"], ["name", "deep fry"], ["updated_at", "2014-07-20 11:45:04.822759"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-07-20 11:45:04.826214"], ["description", "Smoking involves low and slow roasting with hot smoke from aromatic wood, often from apple, cedar, or cherry wood."], ["dry", "t"], ["equipment", "smoker, earthen pit, or grill, wood chips"], ["name", "smoke"], ["updated_at", "2014-07-20 11:45:04.826214"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-07-20 11:45:04.828891"], ["description", "Confit is when you submerge meat (usually duck, chicken, pork) in fat and cook it low and slow. It is also a great way to preserve meat."], ["dry", "t"], ["equipment", "deep pan with lid or foil, fat (usually duck)"], ["name", "confit"], ["updated_at", "2014-07-20 11:45:04.828891"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-07-20 11:45:04.831197"], ["description", "Some meat is tender enough to not be cooked at all. Tartare is when the meat is cut into very small cubes and served with a cold sauce, garnishes, and often with a raw egg yolk."], ["equipment", "knife"], ["name", "raw/tartare"], ["updated_at", "2014-07-20 11:45:04.831197"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-07-20 11:45:04.833233"], ["description", "Braising is the most versatile way to cook meat, especially tough or sinewy meat. When in doubt, braise! Braising involves cooking the meat slowly in a hot flavorful liquid."], ["dry", "f"], ["equipment", "deep pan with lid or foil, oven"], ["name", "braise"], ["updated_at", "2014-07-20 11:45:04.833233"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-07-20 11:45:04.835086"], ["description", "Stewing is similar to braising, though it usually involves smaller pieces of meat and vegetables cooked together to form a soup or stew. (This is what your crockpot and your grandmother does.)"], ["dry", "f"], ["equipment", "crockpot or soup pot and stovetop"], ["name", "stew"], ["updated_at", "2014-07-20 11:45:04.835086"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-07-20 11:45:04.837049"], ["description", "Sous-vide, French for “under vacuum,” is the method by which seasoned meat and a bit of flavorful liquid is vacuum-sealed in plastic and cooked slowly at a constant temperature for anywhere from 1 to 72 hours. You probably won’t be doing this at home, but kudos to you if you do!"], ["dry", "f"], ["equipment", "sous-vider"], ["name", "sous-vide"], ["updated_at", "2014-07-20 11:45:04.837049"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-07-20 11:45:04.839198"], ["description", "Poaching, or quickly cooking in flavorful simmering liquid, is usually used for leaner meats than braising. Fish and chicken are the most commonly poached meats, but this method can be used for lean cuts of other meats."], ["dry", "f"], ["equipment", "shallow pan with lid"], ["name", "poach"], ["updated_at", "2014-07-20 11:45:04.839198"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (2.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (1.9ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMeatcuts (20140710142355)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (3.7ms)[0m  [1mCREATE TABLE "meatcuts" ("id" serial primary key, "name" character varying(255), "animal" character varying(255), "meat_name" character varying(255), "primal" character varying(255), "description" text, "alt_names" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140710142355"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTechniques (20140710142516)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (2.8ms)[0m  [1mCREATE TABLE "techniques" ("id" serial primary key, "name" character varying(255), "description" text, "dry" boolean, "equipment" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140710142516"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateMatches (20140710142649)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (3.3ms)[0m  [1mCREATE TABLE "matches" ("id" serial primary key, "meatcut_id" integer, "technique_id" integer, "good_idea" character varying(255), "notes" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140710142649"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMeatcuts (20140710142355)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (4.4ms)[0m  [1mCREATE TABLE "meatcuts" ("id" serial primary key, "name" character varying(255), "animal" character varying(255), "meat_name" character varying(255), "primal" character varying(255), "description" text, "alt_names" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140710142355"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTechniques (20140710142516)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (3.1ms)[0m  [1mCREATE TABLE "techniques" ("id" serial primary key, "name" character varying(255), "description" text, "dry" boolean, "equipment" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140710142516"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateMatches (20140710142649)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (4.4ms)[0m  [1mCREATE TABLE "matches" ("id" serial primary key, "meatcut_id" integer, "technique_id" integer, "good_idea" character varying(255), "notes" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140710142649"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "top blade"], ["animal", "cow"], ["created_at", "2014-07-20 11:46:03.744308"], ["description", "A tasty tender cut from the middle of the shoulder, great for grilling and searing."], ["meat_name", "beef"], ["name", "flatiron"], ["primal", "chuck"], ["updated_at", "2014-07-20 11:46:03.744308"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "chuck roast"], ["animal", "cow"], ["created_at", "2014-07-20 11:46:03.749835"], ["description", "A large, flavorful, fatty, inexpensive roast for roasting or braising. Also great de-boned and ground for burgers."], ["meat_name", "beef"], ["name", "bone-in chuck"], ["primal", "chuck"], ["updated_at", "2014-07-20 11:46:03.749835"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "blade roast, blade steak, seven-bone steak, seven-bone roast"], ["animal", "cow"], ["created_at", "2014-07-20 11:46:03.752209"], ["description", "Good for slow roasting. Also great de-boned and ground for burgers."], ["meat_name", "beef"], ["name", "chuck steak"], ["primal", "chuck"], ["updated_at", "2014-07-20 11:46:03.752209"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "boneless chuck, chuck eye, chuck eye steak, chuck short ribs, pot roast, potroast"], ["animal", "cow"], ["created_at", "2014-07-20 11:46:03.754216"], ["description", "Good for slow roasting, braising, or grinding."], ["meat_name", "beef"], ["name", "chuck roll"], ["primal", "chuck"], ["updated_at", "2014-07-20 11:46:03.754216"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "meatcuts" ("animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["animal", "cow"], ["created_at", "2014-07-20 11:46:03.756031"], ["description", "Any tougher or cheaper cut, cut into cubes for braising and stewing."], ["meat_name", "beef"], ["name", "stew meat"], ["primal", "chuck"], ["updated_at", "2014-07-20 11:46:03.756031"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "meatcuts" ("animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["animal", "cow"], ["created_at", "2014-07-20 11:46:03.758257"], ["description", "Tough-ish but affordable cut for grilling to rare or roasting."], ["meat_name", "beef"], ["name", "ranch steak"], ["primal", "chuck"], ["updated_at", "2014-07-20 11:46:03.758257"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "entrecote, sweetheart steak (butterflied ribeye), ribeye roast"], ["animal", "cow"], ["created_at", "2014-07-20 11:46:03.760418"], ["description", "A super popular super delicious steak."], ["meat_name", "beef"], ["name", "ribeye"], ["primal", "rib"], ["updated_at", "2014-07-20 11:46:03.760418"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "cowboy steak, bone-in ribeye, rib cowboy steak"], ["animal", "cow"], ["created_at", "2014-07-20 11:46:03.762196"], ["description", "A super popular super delicious steak, a ribeye with the bone."], ["meat_name", "beef"], ["name", "rib steak"], ["primal", "rib"], ["updated_at", "2014-07-20 11:46:03.762196"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "costilla para asar"], ["animal", "cow"], ["created_at", "2014-07-20 11:46:03.764276"], ["description", "Back ribs taste like a ribeye, but you can cook them like pork ribs, on the grill or in the oven."], ["meat_name", "beef"], ["name", "back ribs"], ["primal", "rib"], ["updated_at", "2014-07-20 11:46:03.764276"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "porterhouse"], ["animal", "cow"], ["created_at", "2014-07-20 11:46:03.766393"], ["description", ""], ["meat_name", "beef"], ["name", "t-bone"], ["primal", "loin"], ["updated_at", "2014-07-20 11:46:03.766393"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "meatcuts" ("animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["animal", "cow"], ["created_at", "2014-07-20 11:46:03.768292"], ["description", "A delicious easy-to-cook steak that is also the larger side of a t-bone steak."], ["meat_name", "beef"], ["name", "NY strip"], ["primal", "loin"], ["updated_at", "2014-07-20 11:46:03.768292"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "chateaubriand (center-cut)"], ["animal", "cow"], ["created_at", "2014-07-20 11:46:03.770359"], ["description", "The most tender and also most expensive cut of beef that also the smaller side of a t-bone steak."], ["meat_name", "beef"], ["name", "tenderloin"], ["primal", "loin"], ["updated_at", "2014-07-20 11:46:03.770359"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.782141"], ["description", "Slow roasting is best for tougher cuts of meat that need some time for the sinew to break down. Most cuts that can be braised can also be slow roasted."], ["dry", "t"], ["equipment", "oven, pan"], ["name", "slow roast"], ["updated_at", "2014-07-20 11:46:03.782141"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.785243"], ["description", "Hot roasting is best for more tender cuts of meat, like ribeye roasts. It involves cooking in an oven without liquid."], ["dry", "t"], ["equipment", "oven, pan"], ["name", "hot roast"], ["updated_at", "2014-07-20 11:46:03.785243"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.827706"], ["description", "Searing, also called pan-frying, sauteing, shallow-frying, or stir-frying when pieces are small, is when meat is cooked in a pan with oil above a heat source. It is used to get color on the outside of meat before roasting or braising, or to cook the meat to desired doneness."], ["dry", "t"], ["equipment", "pan, stovetop or campfire, tongs or spatula"], ["name", "sear"], ["updated_at", "2014-07-20 11:46:03.827706"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.829963"], ["description", "Grilling involves very high heat from underneath the grate or grill where the meat cooks, usually from wood, charcoal, or gas, providing the delightful charred grill marks."], ["dry", "t"], ["equipment", "grill, tongs"], ["name", "grill"], ["updated_at", "2014-07-20 11:46:03.829963"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.831987"], ["description", "Broiling is when the heat only comes from above the meat."], ["dry", "t"], ["equipment", "broiler, pan"], ["name", "broil"], ["updated_at", "2014-07-20 11:46:03.831987"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.834097"], ["description", "Deep Frying is a high-fat method in which meat is cooked in oil at 300-375 degrees. It is often breaded or dredged in flour before frying, resulting in the hallmark crunchy crust."], ["dry", "t"], ["equipment", "deep fryer or deep pot, tongs, thermometer"], ["name", "deep fry"], ["updated_at", "2014-07-20 11:46:03.834097"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.835934"], ["description", "Smoking involves low and slow roasting with hot smoke from aromatic wood, often from apple, cedar, or cherry wood."], ["dry", "t"], ["equipment", "smoker, earthen pit, or grill, wood chips"], ["name", "smoke"], ["updated_at", "2014-07-20 11:46:03.835934"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.837765"], ["description", "Confit is when you submerge meat (usually duck, chicken, pork) in fat and cook it low and slow. It is also a great way to preserve meat."], ["dry", "t"], ["equipment", "deep pan with lid or foil, fat (usually duck)"], ["name", "confit"], ["updated_at", "2014-07-20 11:46:03.837765"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.839843"], ["description", "Some meat is tender enough to not be cooked at all. Tartare is when the meat is cut into very small cubes and served with a cold sauce, garnishes, and often with a raw egg yolk."], ["equipment", "knife"], ["name", "raw/tartare"], ["updated_at", "2014-07-20 11:46:03.839843"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.841704"], ["description", "Braising is the most versatile way to cook meat, especially tough or sinewy meat. When in doubt, braise! Braising involves cooking the meat slowly in a hot flavorful liquid."], ["dry", "f"], ["equipment", "deep pan with lid or foil, oven"], ["name", "braise"], ["updated_at", "2014-07-20 11:46:03.841704"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.843569"], ["description", "Stewing is similar to braising, though it usually involves smaller pieces of meat and vegetables cooked together to form a soup or stew. (This is what your crockpot and your grandmother does.)"], ["dry", "f"], ["equipment", "crockpot or soup pot and stovetop"], ["name", "stew"], ["updated_at", "2014-07-20 11:46:03.843569"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.845384"], ["description", "Sous-vide, French for “under vacuum,” is the method by which seasoned meat and a bit of flavorful liquid is vacuum-sealed in plastic and cooked slowly at a constant temperature for anywhere from 1 to 72 hours. You probably won’t be doing this at home, but kudos to you if you do!"], ["dry", "f"], ["equipment", "sous-vider"], ["name", "sous-vide"], ["updated_at", "2014-07-20 11:46:03.845384"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.847265"], ["description", "Poaching, or quickly cooking in flavorful simmering liquid, is usually used for leaner meats than braising. Fish and chicken are the most commonly poached meats, but this method can be used for lean cuts of other meats."], ["dry", "f"], ["equipment", "shallow pan with lid"], ["name", "poach"], ["updated_at", "2014-07-20 11:46:03.847265"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (6.6ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.871465"], ["meatcut_id", 1], ["technique_id", 2], ["updated_at", "2014-07-20 11:46:03.871465"]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.880949"], ["meatcut_id", 1], ["technique_id", 3], ["updated_at", "2014-07-20 11:46:03.880949"]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.883181"], ["meatcut_id", 1], ["technique_id", 4], ["updated_at", "2014-07-20 11:46:03.883181"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.885339"], ["meatcut_id", 1], ["technique_id", 5], ["updated_at", "2014-07-20 11:46:03.885339"]]
+  [1m[35m (6.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.895763"], ["meatcut_id", 2], ["technique_id", 1], ["updated_at", "2014-07-20 11:46:03.895763"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.898459"], ["meatcut_id", 2], ["technique_id", 7], ["updated_at", "2014-07-20 11:46:03.898459"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.900671"], ["meatcut_id", 2], ["technique_id", 10], ["updated_at", "2014-07-20 11:46:03.900671"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.902275"], ["meatcut_id", 2], ["technique_id", 11], ["updated_at", "2014-07-20 11:46:03.902275"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.905087"], ["meatcut_id", 3], ["technique_id", 1], ["updated_at", "2014-07-20 11:46:03.905087"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.906494"], ["meatcut_id", 3], ["technique_id", 7], ["updated_at", "2014-07-20 11:46:03.906494"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.907703"], ["meatcut_id", 3], ["technique_id", 10], ["updated_at", "2014-07-20 11:46:03.907703"]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.908751"], ["meatcut_id", 3], ["technique_id", 11], ["updated_at", "2014-07-20 11:46:03.908751"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.911981"], ["meatcut_id", 4], ["technique_id", 1], ["updated_at", "2014-07-20 11:46:03.911981"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.913355"], ["meatcut_id", 4], ["technique_id", 7], ["updated_at", "2014-07-20 11:46:03.913355"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.914456"], ["meatcut_id", 4], ["technique_id", 10], ["updated_at", "2014-07-20 11:46:03.914456"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.915829"], ["meatcut_id", 4], ["technique_id", 11], ["updated_at", "2014-07-20 11:46:03.915829"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.918308"], ["meatcut_id", 5], ["technique_id", 1], ["updated_at", "2014-07-20 11:46:03.918308"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.919482"], ["meatcut_id", 5], ["technique_id", 7], ["updated_at", "2014-07-20 11:46:03.919482"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.920739"], ["meatcut_id", 5], ["technique_id", 10], ["updated_at", "2014-07-20 11:46:03.920739"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.921892"], ["meatcut_id", 5], ["technique_id", 11], ["updated_at", "2014-07-20 11:46:03.921892"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.924796"], ["meatcut_id", 6], ["technique_id", 1], ["updated_at", "2014-07-20 11:46:03.924796"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.926166"], ["meatcut_id", 6], ["technique_id", 7], ["updated_at", "2014-07-20 11:46:03.926166"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.927287"], ["meatcut_id", 6], ["technique_id", 10], ["updated_at", "2014-07-20 11:46:03.927287"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.928370"], ["meatcut_id", 6], ["technique_id", 11], ["updated_at", "2014-07-20 11:46:03.928370"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.930694"], ["meatcut_id", 7], ["technique_id", 2], ["updated_at", "2014-07-20 11:46:03.930694"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.932096"], ["meatcut_id", 7], ["technique_id", 3], ["updated_at", "2014-07-20 11:46:03.932096"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.933327"], ["meatcut_id", 7], ["technique_id", 4], ["updated_at", "2014-07-20 11:46:03.933327"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.934401"], ["meatcut_id", 7], ["technique_id", 5], ["updated_at", "2014-07-20 11:46:03.934401"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.937160"], ["meatcut_id", 8], ["technique_id", 2], ["updated_at", "2014-07-20 11:46:03.937160"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.938559"], ["meatcut_id", 8], ["technique_id", 3], ["updated_at", "2014-07-20 11:46:03.938559"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.939674"], ["meatcut_id", 8], ["technique_id", 4], ["updated_at", "2014-07-20 11:46:03.939674"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.940676"], ["meatcut_id", 8], ["technique_id", 5], ["updated_at", "2014-07-20 11:46:03.940676"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.943331"], ["meatcut_id", 9], ["technique_id", 2], ["updated_at", "2014-07-20 11:46:03.943331"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.944598"], ["meatcut_id", 9], ["technique_id", 3], ["updated_at", "2014-07-20 11:46:03.944598"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.945691"], ["meatcut_id", 9], ["technique_id", 4], ["updated_at", "2014-07-20 11:46:03.945691"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.946789"], ["meatcut_id", 9], ["technique_id", 5], ["updated_at", "2014-07-20 11:46:03.946789"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.947894"], ["meatcut_id", 9], ["technique_id", 7], ["updated_at", "2014-07-20 11:46:03.947894"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.950308"], ["meatcut_id", 10], ["technique_id", 2], ["updated_at", "2014-07-20 11:46:03.950308"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.951489"], ["meatcut_id", 10], ["technique_id", 3], ["updated_at", "2014-07-20 11:46:03.951489"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.952563"], ["meatcut_id", 10], ["technique_id", 4], ["updated_at", "2014-07-20 11:46:03.952563"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.953965"], ["meatcut_id", 10], ["technique_id", 5], ["updated_at", "2014-07-20 11:46:03.953965"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.957380"], ["meatcut_id", 11], ["technique_id", 2], ["updated_at", "2014-07-20 11:46:03.957380"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.959322"], ["meatcut_id", 11], ["technique_id", 3], ["updated_at", "2014-07-20 11:46:03.959322"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.960756"], ["meatcut_id", 11], ["technique_id", 4], ["updated_at", "2014-07-20 11:46:03.960756"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.962055"], ["meatcut_id", 11], ["technique_id", 5], ["updated_at", "2014-07-20 11:46:03.962055"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.965042"], ["meatcut_id", 12], ["technique_id", 2], ["updated_at", "2014-07-20 11:46:03.965042"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.966340"], ["meatcut_id", 12], ["technique_id", 3], ["updated_at", "2014-07-20 11:46:03.966340"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-07-20 11:46:03.967550"], ["meatcut_id", 12], ["technique_id", 4], ["updated_at", "2014-07-20 11:46:03.967550"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-20 11:46:03.968678"], ["meatcut_id", 12], ["technique_id", 5], ["updated_at", "2014-07-20 11:46:03.968678"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[36mMatch Load (0.5ms)[0m  [1mSELECT "matches".* FROM "matches"  WHERE "matches"."name" = 'flatiron'[0m
+PG::UndefinedColumn: ERROR:  column matches.name does not exist
+LINE 1: SELECT "matches".* FROM "matches"  WHERE "matches"."name" = ...
+                                                 ^
+: SELECT "matches".* FROM "matches"  WHERE "matches"."name" = 'flatiron'
+  [1m[35mMatch Load (1.2ms)[0m  SELECT  "matches".* FROM "matches"   ORDER BY "matches"."id" ASC LIMIT 1
+  [1m[36mMatch Load (0.6ms)[0m  [1mSELECT  "matches".* FROM "matches"   ORDER BY "matches"."id" ASC LIMIT 1[0m
+  [1m[35mMatch Load (0.6ms)[0m  SELECT  "matches".* FROM "matches"   ORDER BY "matches"."id" ASC LIMIT 1
+  [1m[36mMeatcut Load (0.5ms)[0m  [1mSELECT  "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mMatch Load (0.8ms)[0m  SELECT  "matches".* FROM "matches"   ORDER BY "matches"."id" ASC LIMIT 1
+  [1m[36mTechnique Load (0.5ms)[0m  [1mSELECT  "techniques".* FROM "techniques"  WHERE "techniques"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[36mMeatcut Load (0.7ms)[0m  [1mSELECT  "meatcuts".* FROM "meatcuts"   ORDER BY "meatcuts"."id" ASC LIMIT 1[0m
+  [1m[35mMeatcut Load (0.8ms)[0m  SELECT  "meatcuts".* FROM "meatcuts"   ORDER BY "meatcuts"."id" ASC LIMIT 1
+  [1m[36mMeatcut Load (0.4ms)[0m  [1mSELECT  "meatcuts".* FROM "meatcuts"   ORDER BY "meatcuts"."id" ASC LIMIT 1[0m
+  [1m[35mTechnique Load (0.7ms)[0m  SELECT "techniques".* FROM "techniques" INNER JOIN "matches" ON "techniques"."id" = "matches"."technique_id" WHERE "matches"."meatcut_id" = $1  [["meatcut_id", 1]]
+  [1m[36mMatch Load (0.4ms)[0m  [1mSELECT  "matches".* FROM "matches"   ORDER BY "matches"."id" ASC LIMIT 1[0m
+  [1m[35mMeatcut Load (0.4ms)[0m  SELECT  "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mMatch Load (0.4ms)[0m  [1mSELECT  "matches".* FROM "matches"   ORDER BY "matches"."id" ASC LIMIT 1[0m
+  [1m[35mMatch Load (0.7ms)[0m  SELECT  "matches".* FROM "matches"   ORDER BY "matches"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 1  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:43:44.303297"]]
+  [1m[36m (6.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mMatch Load (0.8ms)[0m  SELECT  "matches".* FROM "matches"   ORDER BY "matches"."id" ASC LIMIT 1
+  [1m[36mMatch Load (0.6ms)[0m  [1mSELECT "matches".* FROM "matches"[0m
+  [1m[35mMatch Load (0.7ms)[0m  SELECT "matches".* FROM "matches"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 2  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.722871"]]
+  [1m[36m (8.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 3[0m  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.734643"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 4  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.737214"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 5[0m  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.739655"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 6  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.742334"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 7[0m  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.745510"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 8  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.748181"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 9[0m  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.750455"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 10  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.753569"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 11[0m  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.756464"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 12  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.759217"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 13[0m  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.761962"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 14  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.764714"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 15[0m  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.767793"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 16  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.770260"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 17[0m  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.772485"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 18  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.774664"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 19[0m  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.777737"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 20  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.781303"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 21[0m  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.783744"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 22  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.786067"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 23[0m  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.788821"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 24  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.791677"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 25[0m  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.794052"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 26  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.796614"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 27[0m  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.799104"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 28  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.801974"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 29[0m  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.805057"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 30  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.807910"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 31[0m  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.810684"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 32  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.813396"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 33[0m  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.815763"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 34  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.818070"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 35[0m  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.820191"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 36  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.822301"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 37[0m  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.824409"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 38  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.826845"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 39[0m  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.830714"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 40  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.833393"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 41[0m  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.835945"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 42  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.838413"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 43[0m  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.840701"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 44  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.842912"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 45[0m  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.845048"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 46  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.847166"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 47[0m  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.850259"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 48  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.853323"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 49[0m  [["good_idea", "yes"], ["updated_at", "2014-07-20 12:45:27.856177"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT

@@ -31,16 +31,9 @@ sous_vide = Technique.create(name: "sous-vide", description: "Sous-vide, French 
 poach = Technique.create(name: "poach", description: "Poaching, or quickly cooking in flavorful simmering liquid, is usually used for leaner meats than braising. Fish and chicken are the most commonly poached meats, but this method can be used for lean cuts of other meats.", dry: false, equipment: "shallow pan with lid")
 
 techniques = [hot_roast, slow_roast, sear, grill, broil, deep_fry, smoke, confit, raw, braise, stew, sous_vide, poach]
-# Technique.create!(techniques)
-
-
-# p Meatcut.find_by_name("flatiron").techniques << Technique.find_by_name("sear")
-
-# beefmeals = {meatcut_id: 1, technique_id: 2}
-# Meal.create!(beefmeals)
 
 flatiron.techniques << [hot_roast, sear, grill, broil]
-bi_chuck.techniques = [slow_roast, smoke, braise, stew]
+bi_chuck.techniques << [slow_roast, smoke, braise, stew]
 chuck_steak.techniques << [slow_roast, smoke, braise, stew]
 chuck_roll.techniques << [slow_roast, smoke, braise, stew]
 stew_meat.techniques << [slow_roast, smoke, braise, stew]
@@ -51,4 +44,6 @@ back_rib.techniques << [hot_roast, sear, grill, broil, smoke]
 t_bone.techniques << [hot_roast, sear, grill, broil]
 ny_strip.techniques << [hot_roast, sear, grill, broil]
 tenderloin.techniques << [hot_roast, sear, grill, broil]
+
+Match.all.each { |m| m.update_attributes(good_idea: "yes")}
 

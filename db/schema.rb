@@ -16,9 +16,11 @@ ActiveRecord::Schema.define(version: 20140710142649) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "meals", force: true do |t|
+  create_table "matches", force: true do |t|
     t.integer  "meatcut_id"
     t.integer  "technique_id"
+    t.string   "good_idea"
+    t.string   "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
