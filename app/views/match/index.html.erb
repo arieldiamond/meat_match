@@ -1,7 +1,7 @@
 <div id="homepage">
 	<h1>Meat Match</h1>
 
-	<%= form_tag(meatcut_path(:id => 1)) do %>
+	<%= form_tag('/match/answer') do %>
 	<h3>I have a <%= select("meatcut", "name", Meatcut.all.collect {|m| [ m.name.capitalize, m.id ] }, {include_blank: 'Select a cut of meat'}) %><br>
 	and I want to <%= select("technique", "name", Technique.all.collect {|m| [ m.name.capitalize, m.id ] }, {include_blank: 'Select a cooking technique'}) %> <br>
 	<%= submit_tag "Meat Match me!" %></h3>

@@ -6,6 +6,17 @@ class MatchController < ApplicationController
 		@techniques = Technique.all
 	end
 
+  def answer
+    @meatcut_id = Meatcut.find(params[:meatcut][:name])
+    @meatcut = @meatcut_id.name
+
+    @technique_id = Technique.find(params[:technique][:name])
+    @technique = @technique_id.name
+
+    @match = Match.where(:meatcut_id => @meatcut_id, :technique_id => @technique_id)
+    puts @match
+  end
+
 	def show
 	end
 
@@ -22,6 +33,7 @@ class MatchController < ApplicationController
     respond_to do |format|
       if @match.save
         format.html { redirect_to @match, notice: 'match was successfully created.' }
+        format.js {}
         format.json { render :show, status: :created, location: @match }
       else
         format.html { render :new }
@@ -29,4 +41,15 @@ class MatchController < ApplicationController
       end
     end
   end
+
+  private
+    # Use callbacks to share common setup or constraints between actions.
+    def set_match
+      @match = Match.find(params[:id])
+    end
+
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def match_params
+      params.require(:match).permit(:meatcut_id, :technique_id, :good_idea, :notes)
+    end
 end

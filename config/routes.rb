@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   root 'match#index'
+  
+  post 'match/answer'
+  get 'match/answer' => 'match#answer'
 
   resources :match
   

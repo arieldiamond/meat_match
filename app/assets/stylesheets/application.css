@@ -12,4 +12,16 @@
  *
  *= require_tree .
  *= require_self
+ *= require foundation_and_overrides
+
  */
+body, html {
+	padding-left: 10px;
+}
+
+.container {
+	width: 50%;
+	border: 2px black solid;
+	margin: auto;
+	padding: 10px;
+}
