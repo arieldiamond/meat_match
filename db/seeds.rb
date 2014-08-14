@@ -13,8 +13,6 @@ tenderloin = Meatcut.create(name: "tenderloin", animal: "cow", meat_name: "beef"
 
 beefcuts = [flatiron, bi_chuck, chuck_steak, chuck_roll, stew_meat, ranch_steak, ribeye, rib_steak, back_rib, t_bone, ny_strip, tenderloin]
 
-# Meatcut.create!(beefcuts)
-
 slow_roast = Technique.create(name: "slow roast", description: "Slow roasting is best for tougher cuts of meat that need some time for the sinew to break down. Most cuts that can be braised can also be slow roasted.", dry: true, equipment: "oven, pan")
 hot_roast = Technique.create(name: "hot roast", description: "Hot roasting is best for more tender cuts of meat, like ribeye roasts. It involves cooking in an oven without liquid.", dry: true, equipment: "oven, pan")
 sear = Technique.create(name: "sear", description: "Searing, also called pan-frying, sauteing, shallow-frying, or stir-frying when pieces are small, is when meat is cooked in a pan with oil above a heat source. It is used to get color on the outside of meat before roasting or braising, or to cook the meat to desired doneness.", dry: true, equipment: "pan, stovetop or campfire, tongs or spatula")

@@ -7,14 +7,15 @@ class MatchController < ApplicationController
 	end
 
   def answer
-    @meatcut_id = Meatcut.find(params[:meatcut][:name])
-    @meatcut = @meatcut_id.name
+    @meatcut = Meatcut.find(params[:meatcut][:name])
 
-    @technique_id = Technique.find(params[:technique][:name])
-    @technique = @technique_id.name
+    @technique = Technique.find(params[:technique][:name])
 
-    @match = Match.where(:meatcut_id => @meatcut_id, :technique_id => @technique_id)
-    puts @match
+    @match = Match.where(:meatcut_id => @meatcut, :technique_id => @technique)
+    
+    if @match == nil
+      @match.good_idea == "no"
+    end
   end
 
 	def show
