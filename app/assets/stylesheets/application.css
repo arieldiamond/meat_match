@@ -17,12 +17,34 @@
  */
 body, html {
 	padding-left: 10px;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', sans-serif !important;
+	background-color: #F2E4E5;
 }
 
 .container {
-	width: 50%;
-	border: 2px black solid;
 	margin: auto;
 	padding: 10px;
+	text-align: center;
+}
+
+#homepage {
+	text-align: center;
+}
+
+#homepage h1 {
+	font-family: 'PT Sans', sans-serif !important;
+	font-size: 5em;
+	font-weight: 600;
+	background-color: white;
+	background-image: url('../steak_slice.jpg');
+	border-radius: .5em;
+	margin: auto;
+}
+
+#match_submit {
+	background-color: #F20C32;
+	font-size: 1.6em;
+	border: white, 5px, solid;
+	border-radius: .25em;
+	font-family: 'PT Sans', sans-serif !important;
 }
