@@ -41,10 +41,115 @@ body, html {
 	margin: auto;
 }
 
+.tab {
+    display: none;
+}
+
+.tabs {
+    float: left;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 16px;
+    list-style: none;
+}
+.tabs li {
+    float: left;
+    margin-right: 16px;
+    padding: 10px 15px;
+    height: 30px;
+    line-height: 30px;
+}
+.tabs li a {
+    color: #666;
+    font-family: Helvetica, Arial, sans-serif;
+    text-decoration: none;
+}
+
+.tabs li.active {
+    border: 1px solid #ccc;
+    border-bottom: 1px solid white;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin-bottom: -1px;
+    height: 31px;
+    padding: 9px 14px;
+}
+
+.tabs li.active a {
+    color: black;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+
 #match_submit {
 	background-color: #F20C32;
 	font-size: 1.6em;
 	border: white, 5px, solid;
 	border-radius: .25em;
 	font-family: 'PT Sans', sans-serif !important;
+}
+
+.pure-table {
+	margin: auto;
+	width:60%;
+	margin-bottom:1em;
+}
+
+#match_no h2 {
+	margin: auto;
+	background-color: white;
+	width:50%;
+	border: red solid 4px;
+  -webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */
+  -webkit-animation-iteration-count: infinite;
+  animation: myfirst 5s;
+  animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   {border:red solid 4px;}
+    25%  {border:orange solid 4px;}
+    50%  {border:yellow solid 4px;}
+    75%	 {border:orange solid 4px;}
+    100% {border:red solid 4px;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    0%   {border:red dashed 4px;}
+    25%  {border:orange dashed 4px;}
+    50%  {border:yellow dashed 4px;}
+    75%	 {border:orange dashed 4px;}
+    100% {border:red dashed 4px;}
+}
+
+#match_yes h2 {
+	margin: auto;
+	background-color: white;
+	width:50%;
+	border: green solid 4px;
+  -webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */
+  -webkit-animation-iteration-count: infinite;
+  animation: myfirst 5s;
+  animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   {border:green solid 4px;}
+    25%  {border:blue solid 4px;}
+    50%  {border:purple solid 4px;}
+    75%	 {border:blue solid 4px;}
+    100% {border:green solid 4px;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    0%   {border:green solid 4px;}
+    25%  {border:blue solid 4px;}
+    50%  {border:purple solid 4px;}
+    75%	 {border:blue solid 4px;}
+    100% {border:green solid 4px;}
 }

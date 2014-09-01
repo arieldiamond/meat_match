@@ -2,7 +2,9 @@ class MatchController < ApplicationController
 	before_action :set_match, only: [:show, :edit, :update, :destroy]
 
 	def index
-		@meatcuts = Meatcut.all
+		@beefcuts = Meatcut.where(:animal == "beef")
+    @porkcuts = Meatcut.where(:animal == "pork")
+    @chickencuts = Meatcut.where(:animal == "chicken")
 		@techniques = Technique.all
 	end
 
@@ -11,11 +13,21 @@ class MatchController < ApplicationController
 
     @technique = Technique.find(params[:technique][:name])
 
-    @match = Match.where(:meatcut_id => @meatcut, :technique_id => @technique)
+    @matches = @meatcut.matches
     
-    if @match == nil
-      @match.good_idea == "no"
+    # if @matches == nil
+    #   @meatcut.techniques << @technique
+    # end
+
+    @matches.each do |m|
+      if m.technique_id == @technique.id
+        @match = m
+      else
+        @match = m
+        m.good_idea = "no"
+      end
     end
+    
   end
 
 	def matchme

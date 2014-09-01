@@ -2,44 +2,49 @@
 
 	<h1>Can you <strong><%= @technique.name %></strong> a <strong><%= @meatcut.name %></strong>?</h1>
 
-	<% if @match.empty? %>
-		<h2>I WOULDN'T DO THAT IF I WERE YOU.</h2><br>
+	<% if @match.good_idea == "no" %>
+		<div id="match_no">
+			<h2>I WOULDN'T DO THAT IF I WERE YOU.</h2><br>
+			<p>Where there's a will, there's a way, but there may be a better way.</p>
+		</div>
 	<%= button_to 'I give up. Match me!', match_matchme_path(params[:meatcut]), :class => "button", :method => :get %>
+		<%= button_to "I've got life in me yet. Try again!", root_path, :class => "button", :method => :get %>
 	<% else %>
-		<h2>YES YOU CAN!</h2>
+		<div id="match_yes">
+			<h2>YES YOU CAN!</h2>
+		</div>
+			<br><%= button_to "Try again!", root_path, :class => "button", :method => :get %>
 	<% end %>
 
 
-	<%= button_to "I've got some energy left. I'll try again!", root_path, :class => "button", :method => :get%>
 
 	<div id="match_technique">
 		<table class="pure-table pure-table-horizontal">
 			<thead>
-				<tr><th><h3>About <% if @technique.name.split("").last == "e" %>
+				<tr>
+					<th><h3>About <% if @technique.name.split("").last == "e" %>
 						<%= @technique.name[0...-1].capitalize %>ing
-					<% else %>
-						<%= @technique.name.capitalize %>ing
-					<% end %>
-					</h3></th>
-	<th> </th></tr>
-				<tr><th>Name</th>
-					<th>Description</th>
+						<% else %>
+							<%= @technique.name.capitalize %>ing
+						<% end %>
+						</h3>
+					</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<td>Description</td>
-					<td><%= @technique.description %></td>
+					<td><strong>Description:</strong> <%= @technique.description %></td>
 				</tr>
-				<tr><td>Is it a dry or wet?
-					<% if @technique.dry == true %>
-						<td><%= p "Dry" %></td>
-					<% else %>
-						<td><%= p "Wet" %></td></tr>
-					<% end %>
 				<tr>
-					<td>Equipment</td>
-					<td><%= @technique.equipment.capitalize %></td>
+					<td><strong>Is it a dry or wet technique? </strong>
+					<% if @technique.dry == true %>
+						<%= "Dry" %></td>
+					<% else %>
+						<%= p "Wet" %></td>
+					<% end %>
+				</tr>
+				<tr>
+					<td><strong>Equipment needed: </strong><%= @technique.equipment.capitalize %></td>
 				</tr>
 			</tbody>
 		</table>
@@ -48,13 +53,29 @@
 	<div id="match_meatcut">
 		<table class="pure-table pure-table-horizontal">
 			<thead>
-				<tr><th><h3>About <%= @meatcut.name.capitalize %></h3></th></tr>
+				<tr>
+					<th>
+						<h3>About <%= @meatcut.name.capitalize %>s</h3>
+					</th>
+				</tr>
 			</thead>
 			<tbody>
-				<tr><td><%= @meatcut.description %></td></tr>
-				<tr><td><%= @meatcut.alt_names %></td></tr>
+				<tr>
+					<td>
+						<strong>What is it?</strong> <%= @meatcut.description %>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>Where is it from on the <%= @meatcut.animal %>?</strong> The <%= @meatcut.primal %>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>May also be called:</strong> <%= @meatcut.alt_names %>
+					</td>
+				</tr>
 			</tbody>
 		</table>
 	</div>
-
 </div>
