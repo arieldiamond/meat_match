@@ -1,10 +1,19 @@
 <div id="homepage">
 	<h1>Meat Match</h1>
 
-	<%= form_tag(meatcut_path(:id => 1)) do %>
-	<h3>I have a <%= select("meatcut", "name", Meatcut.all.collect {|m| [ m.name.capitalize, m.id ] }, {include_blank: 'Select a cut of meat'}) %><br>
+	<%= form_tag('/match/answer') do %>
+	<h3>I have a <%= select("meatcut", "name", Meatcut.all.collect {|m| [ m.name.capitalize, m.id ] }, {include_blank: 'Select a cut of meat'}) %>
+	<br>
 	and I want to <%= select("technique", "name", Technique.all.collect {|m| [ m.name.capitalize, m.id ] }, {include_blank: 'Select a cooking technique'}) %> <br>
-	<%= submit_tag "Meat Match me!" %></h3>
+	it!<br><br>
+	<%=  button_tag "Meat Match Me!", id: "match_submit" %>
+	<%#= submit_tag "Meat Match me!", :id =>"match_submit", %></h3>
 	<% end %>
+	<br><br>
+	<h3>Not sure what all these these techniques are?</h3>
+	<%= button_to "Show Me", techniques_path, :class => "button", :method => :get %>
+	<br>
+	<h3>Want to see what all these meatcuts are?</h3>
+	<%= button_to "Show Me", meatcuts_path, :class => "button", :method => :get %>
 
 </div>
