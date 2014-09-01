@@ -3,12 +3,14 @@
 	<h1>Can you <strong><%= @technique.name %></strong> a <strong><%= @meatcut.name %></strong>?</h1>
 
 	<% if @match.empty? %>
-		<h2>I WOULDN'T DO THAT IF I WERE YOU.</h2>
+		<h2>I WOULDN'T DO THAT IF I WERE YOU.</h2><br>
+	<%= button_to 'I give up. Match me!', match_matchme_path(params[:meatcut]), :class => "button", :method => :get %>
 	<% else %>
 		<h2>YES YOU CAN!</h2>
 	<% end %>
 
-	<%= button_to "Try again!", root_path, :class => "button", :method => :get%>
+
+	<%= button_to "I've got some energy left. I'll try again!", root_path, :class => "button", :method => :get%>
 
 	<div id="match_technique">
 		<table class="pure-table pure-table-horizontal">

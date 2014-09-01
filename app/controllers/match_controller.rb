@@ -18,7 +18,9 @@ class MatchController < ApplicationController
     end
   end
 
-	def show
+	def matchme
+    # @meatcut = Meatcut.find(params[:meatcut][:name])
+    p params
 	end
 
 	def new

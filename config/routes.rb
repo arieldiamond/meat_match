@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   
   post 'match/answer'
   get 'match/answer' => 'match#answer'
+  get 'match/matchme' => 'match#matchme'
 
   resources :match
   
