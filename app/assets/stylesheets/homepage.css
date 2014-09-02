@@ -1,0 +1,78 @@
+#homepage {
+	text-align: center;
+}
+
+#homepage h1 {
+	font: 600 5em 'PT Sans', sans-serif;
+    border: solid 2px black;
+    border-radius: 10px;
+	background-color: white;
+	/*background-image: url('../steak_slice.jpg');*/
+	margin: auto;
+    width:50%;
+}
+
+#homepage h3 {
+    /*margin-top: 1em;*/
+}
+
+.tab {
+    display: none;
+}
+
+.tabs {
+    float: left;
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    margin: 2em !important;
+    list-style: none;
+}
+.tabs dd {
+    float: left;
+    margin-left: 4em;
+    padding-right: 2em;
+    padding-top: .5em;
+    font: 600 2em 'PT Sans', sans-serif !important;
+    margin-bottom: -2px !important;
+}
+.tabs dd a {
+    color: #666;
+    font-family: 'PT Sans', sans-serif !important;
+    text-decoration: none;
+    padding-bottom: .2em;
+    background-color: #FAF9F0 !important;
+}
+
+.tabs dd a:hover {
+    color:grey !important;
+}
+
+.tabs dd.active {
+    border: 2px solid #ccc;
+    border-bottom: 2px solid #FAF9F0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: -1px;
+    padding: .5em 1em;
+}
+
+.tabs dd.active a {
+    color: black;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+@media screen and (max-width: 910px) {
+    .tabs, .tabs dd, .tabs dd.active {
+        padding: 0;
+        margin:0;
+    }
+}
+
+#match_submit {
+	background-color: #F20C32;
+	font-size: 1.6em;
+	border: white, 5px, solid;
+	border-radius: .25em;
+	font-family: 'PT Sans', sans-serif !important;
+}

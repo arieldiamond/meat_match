@@ -1,13 +1,14 @@
 <div id="homepage">
 	<h1>Meat Match</h1>
 
-	<ul class="tabs">
-    <li class="active"><a href="#tab1">Beef</a></li>
-    <li><a href="#tab2">Pork</a></li>
-    <li><a href="#tab3">Chicken</a></li>
-  </ul>
-
-  <div class="tab" id="tab1">
+	<dl class="tabs" data-tab>
+    <dd class="active"><a href="#panel1">Beef</a></dd>
+    <dd><a href="#panel2">Pork</a></dd>
+    <dd><a href="#panel3">Chicken</a></dd>
+  </dl>
+	<!-- <div class="home_break"></div> -->
+	<div class="tabs-content">
+  <div class="content active" id="panel1">
 		<%= form_tag('/match/answer') do %>
 			<h3>
 				I have a <%= select("meatcut", "name", @beefcuts.all.collect {|m| [ m.name.capitalize, m.id ] }, {include_blank: 'Select a cut of beef'}) %>
@@ -20,7 +21,7 @@
 		<% end %>
 	</div>
 
-	<div class="tab" id="tab2">
+	<div class="content" id="panel2">
 		<%= form_tag('/match/answer') do %>
 			<h3>
 				I have a <%= select("meatcut", "name", @porkcuts.all.collect {|m| [ m.name.capitalize, m.id ] }, {include_blank: 'Select a cut of pork'}) %>
@@ -33,7 +34,7 @@
 		<% end %>
 	</div>
 
-	<div class="tab" id="tab3">
+	<div class="content" id="panel3">
 		<%= form_tag('/match/answer') do %>
 			<h3>
 				I have a <%= select("meatcut", "name", @chickencuts.all.collect {|m| [ m.name.capitalize, m.id ] }, {include_blank: 'Select a cut of chicken'}) %>
@@ -44,6 +45,7 @@
 				<%=  button_tag "Meat Match Me!", id: "match_submit" %>
 			</h3>
 		<% end %>
+	</div>
 	</div>
 
 

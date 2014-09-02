@@ -2,17 +2,15 @@ class MatchController < ApplicationController
 	before_action :set_match, only: [:show, :edit, :update, :destroy]
 
 	def index
-		@beefcuts = Meatcut.where(:animal == "beef")
-    @porkcuts = Meatcut.where(:animal == "pork")
-    @chickencuts = Meatcut.where(:animal == "chicken")
+		@beefcuts = Meatcut.where(:animal => "cow")
+    @porkcuts = Meatcut.where(:animal => "pig")
+    @chickencuts = Meatcut.where(:animal => "chicken")
 		@techniques = Technique.all
 	end
 
   def answer
     @meatcut = Meatcut.find(params[:meatcut][:name])
-
     @technique = Technique.find(params[:technique][:name])
-
     @matches = @meatcut.matches
     
     # if @matches == nil
