@@ -45,59 +45,27 @@ select {
 }
 
 #match_no h2 {
-	margin: auto;
-	background-color: white;
-	width:50%;
-	border: red solid 4px;
-  -webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */
-  -webkit-animation-iteration-count: infinite;
-  animation: myfirst 5s;
-  animation-iteration-count: infinite;
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes myfirst {
-    0%   {border:red solid 4px;}
-    25%  {border:orange solid 4px;}
-    50%  {border:yellow solid 4px;}
-    75%	 {border:orange solid 4px;}
-    100% {border:red solid 4px;}
-}
-
-/* Standard syntax */
-@keyframes myfirst {
-    0%   {border:red dashed 4px;}
-    25%  {border:orange dashed 4px;}
-    50%  {border:yellow dashed 4px;}
-    75%	 {border:orange dashed 4px;}
-    100% {border:red dashed 4px;}
+	font: 600 3em 'PT Sans', sans-serif;
+  color:red;
+  border: solid 4px red;
+  border-radius: 50%;
+  padding:.7em .9em .5em .8em;
+  margin: auto;
+  margin-bottom: .5em;
+  display: inline-block;
+  width:auto;
+  transform:rotate(7deg);
 }
 
 #match_yes h2 {
-	margin: auto;
-	background-color: white;
-	width:50%;
-	border: green solid 4px;
-  -webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */
-  -webkit-animation-iteration-count: infinite;
-  animation: myfirst 5s;
-  animation-iteration-count: infinite;
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes myfirst {
-    0%   {border:green solid 4px;}
-    25%  {border:blue solid 4px;}
-    50%  {border:purple solid 4px;}
-    75%	 {border:blue solid 4px;}
-    100% {border:green solid 4px;}
-}
-
-/* Standard syntax */
-@keyframes myfirst {
-    0%   {border:green solid 4px;}
-    25%  {border:blue solid 4px;}
-    50%  {border:purple solid 4px;}
-    75%	 {border:blue solid 4px;}
-    100% {border:green solid 4px;}
+	font: 600 4em 'PT Sans', sans-serif;
+  border: solid 4px black;
+  border-radius: 50%;
+  padding:.3em;
+  margin: auto;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  display: inline-block;
+  width:auto;
+  transform:rotate(-10deg);
 }
