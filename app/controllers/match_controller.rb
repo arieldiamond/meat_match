@@ -12,17 +12,15 @@ class MatchController < ApplicationController
     @meatcut = Meatcut.find(params[:meatcut][:name])
     @technique = Technique.find(params[:technique][:name])
     @matches = @meatcut.matches
-    
-    # if @matches == nil
-    #   @meatcut.techniques << @technique
-    # end
 
     @matches.each do |m|
       if m.technique_id == @technique.id
         @match = m
-      else
-        @match = m
-        m.good_idea = "no"
+        return @match
+          # if m == nil
+          #   @meatcut.techniques << @technique
+          #   m.update_attributes(good_idea: "no")
+          # end
       end
     end
     
