@@ -3,11 +3,12 @@
 }
 
 #homepage h1 {
-	font: 600 5em 'PT Sans', sans-serif;
-    border: solid 2px black;
+	font: 600 4em 'PT Sans', sans-serif;
+    border: solid 5px black;
     border-radius: 50%;
     padding:.3em;
 	margin: auto;
+    margin-top: .3em;
     margin-bottom: .5em;
     display: inline-block;
     width:auto;
@@ -24,13 +25,14 @@
 
 .tabs {
     float: left;
-    border-bottom: 2px solid black;
+    border-bottom: 3px solid black;
     width: 100%;
     /*margin: 2em !important;*/
     list-style: none;
+
 }
 .tabs dd {
-    border: grey 2px solid;
+    border: grey 3px solid;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom: 2px solid black;
@@ -49,20 +51,19 @@
     background-color: transparent;
     font-size: 1em;
 }
-
 .tabs dd a:hover {
     color:grey !important;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
 }
-
 .tabs dd.active {
-    border: 2px solid black;
+    border: 3px solid black;
     border-bottom: 2px solid #FAF9F0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin-bottom: -1px;
     /*padding: .5em 1em;*/
 }
-
 .tabs dd.active a {
     color: black;
     text-decoration: none;
@@ -71,9 +72,8 @@
     position: relative;
     font-size: 1em;
 }
-
 dd.active:before{
-    border-radius: 10px;
+    border-radius: 8px;
     content: "";
     display: block;
     background-color:red;
@@ -84,21 +84,32 @@ dd.active:before{
     bottom:-.8em;
     z-index: 0;
 
-}
-
+} 
 dd.active:after{
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 1px 1px 1px #888888;
     content: "";
     display: block;
     background-color:red;
     position: absolute;
     top:calc(100% + 2px);
-    left:-1em;
-    right:-1em;
+    left:-.7em;
+    right:-.7em;
     bottom:-.8em;
-    z-index: 0;
+    /*z-index: -1;*/
 }
+/*dd:nth-of-type(2):before {
+    background-color: yellow;
+}*/
+/*dd.active:nth-of-type(3):before {
+    background-color: green;
+}
+ dd.active:nth-of-type(3):after{
+    background-color: green;
+    left:-.8em;
+    right:-.8em;
+}*/
 dd.active:nth-of-type(2):after, dd.active:nth-of-type(2):before{
     background-color: yellow;
 }
@@ -111,11 +122,13 @@ dd.active:nth-of-type(3):before {
     right:-.8em;
 }
 
-@media screen and (max-width: 1010px) {
-    .tabs, .tabs dd, .tabs dd.active {
-        padding: 0;
-        margin:0;
-        margin-left: 1.5em;
+@media screen and (max-width: 830px) {
+    .tabs dd, .tabs dd.active {
+        margin-left: 1em;
+    }
+    .tabs dd.active a, .tabs dd a {
+        font-size: .6em;
+        padding: .9rem 1.5rem;
     }
 }
 

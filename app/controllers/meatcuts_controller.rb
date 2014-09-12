@@ -5,6 +5,9 @@ class MeatcutsController < ApplicationController
   # GET /meatcuts.json
   def index
     @meatcuts = Meatcut.all
+    @beefcuts = Meatcut.where(:animal => "cow")
+    @porkcuts = Meatcut.where(:animal => "pig")
+    @chickencuts = Meatcut.where(:animal => "chicken")
   end
 
   # GET /meatcuts/1

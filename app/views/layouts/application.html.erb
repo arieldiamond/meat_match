@@ -17,9 +17,9 @@
 
   <body>
     <div class="pure-menu pure-menu-open pure-menu-horizontal">
-      <a href="<%= root_path %>" class="pure-menu-heading">Meat Match</a>
+      <a href="<%= root_path %>" class="pure-menu-heading">Meat-Match.Me</a>
       <ul>
-        <li><a href="<%= match_matchme_path %>">Auto-Match Me</a></li>
+        <li><a href="<%= match_matchme_path %>">Auto-Meat-Match.Me</a></li>
         <li><a href="<%= meatcuts_path %>">Meatcuts</a></li>
         <li><a href="<%= techniques_path %>">Techniques</a></li>
       </ul>
@@ -45,9 +45,7 @@
 
   </div>
 </div>
-    <div class="container">
-      <%= yield %>
-      <%= javascript_include_tag "application" %>
-    </div>
+    <%= yield %>
+    <%= javascript_include_tag "application" %>
   </body>
 </html>

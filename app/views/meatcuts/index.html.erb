@@ -1,33 +1,83 @@
-<h1>Listing meatcuts</h1>
+<div id="meatcut_index">
+  <dl class="tabs" data-tab>
+    <dd class="active"><a href="#panel1">Beef</a></dd>
+    <dd><a href="#panel2">Pork</a></dd>
+    <dd><a href="#panel3">Chicken</a></dd>
+  </dl>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Animal</th>
-      <th>Primal</th>
-      <th>Description</th>
-      <th>Alt names</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <div class="tabs-content">
+  <div class="content active" id="panel1">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Primal</th>
+          <th>Description</th>
+          <th>Alternative names</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
 
-  <tbody>
-    <% @meatcuts.each do |meatcut| %>
-      <tr>
-        <td><%= meatcut.name %></td>
-        <td><%= meatcut.animal %></td>
-        <td><%= meatcut.primal %></td>
-        <td><%= meatcut.description %></td>
-        <td><%= meatcut.alt_names %></td>
-        <td><%= link_to 'Show', meatcut %></td>
-        <td><%= link_to 'Edit', edit_meatcut_path(meatcut) %></td>
-        <td><%= link_to 'Destroy', meatcut, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      <tbody>
+        <% @beefcuts.each do |meatcut| %>
+          <tr>
+            <td><%= link_to meatcut.name.capitalize, meatcut %></td>
+            <td><%= meatcut.primal %></td>
+            <td><%= meatcut.description %></td>
+            <td><%= meatcut.alt_names %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
 
-<br>
+  <div class="content active" id="panel2">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Primal</th>
+          <th>Description</th>
+          <th>Alternative names</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
 
-<%= link_to 'New Meatcut', new_meatcut_path %>
+      <tbody>
+        <% @porkcuts.each do |meatcut| %>
+          <tr>
+            <td><%= link_to meatcut.name.capitalize, meatcut %></td>
+            <td><%= meatcut.primal %></td>
+            <td><%= meatcut.description %></td>
+            <td><%= meatcut.alt_names %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="content active" id="panel3">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Primal</th>
+          <th>Description</th>
+          <th>Alternative names</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @chickencuts.each do |meatcut| %>
+          <tr>
+            <td><%= link_to meatcut.name.capitalize, meatcut %></td>
+            <td><%= meatcut.primal %></td>
+            <td><%= meatcut.description %></td>
+            <td><%= meatcut.alt_names %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

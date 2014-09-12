@@ -1,31 +1,52 @@
-<h1>Listing techniques</h1>
+<div id="technique_index">
+  <dl class="tabs" data-tab>
+    <dd class="active"><a href="#panel1">Dry</a></dd>
+    <dd><a href="#panel2">Wet</a></dd>
+  </dl>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Dry</th>
-      <th>Equipment</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <div class="tabs-content">
+  <div class="content active" id="panel1">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Equipment</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
 
-  <tbody>
-    <% @techniques.each do |technique| %>
-      <tr>
-        <td><%= technique.name %></td>
-        <td><%= technique.description %></td>
-        <td><%= technique.dry %></td>
-        <td><%= technique.equipment %></td>
-        <td><%= link_to 'Show', technique %></td>
-        <td><%= link_to 'Edit', edit_technique_path(technique) %></td>
-        <td><%= link_to 'Destroy', technique, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      <tbody>
+        <% @dry.each do |technique| %>
+          <tr>
+            <td><%= link_to technique.name.capitalize, technique %></td>
+            <td><%= technique.description %></td>
+            <td><%= technique.equipment %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
 
-<br>
+  <div class="content active" id="panel2">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Equipment</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
 
-<%= link_to 'New Technique', new_technique_path %>
+      <tbody>
+        <% @wet.each do |technique| %>
+          <tr>
+            <td><%= link_to technique.name.capitalize, technique %></td>
+            <td><%= technique.description %></td>
+            <td><%= technique.equipment %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>

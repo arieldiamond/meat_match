@@ -5,6 +5,8 @@ class TechniquesController < ApplicationController
   # GET /techniques.json
   def index
     @techniques = Technique.all
+    @dry = Technique.where(:dry => "true")
+    @wet = Technique.where(:dry => "false")
   end
 
   # GET /techniques/1
