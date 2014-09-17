@@ -62938,3 +62938,540 @@ Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started POST "/match/answer" for 127.0.0.1 at 2014-09-16 19:36:47 -0500
+Processing by MatchController#answer as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8Iq5tuwuHMsAXBuR5cBQlVzdhaohh2SdYTgZ73WeuR0=", "meatcut"=>{"name"=>"15"}, "technique"=>{"name"=>""}, "button"=>""}
+  [1m[36mMeatcut Load (27.0ms)[0m  [1mSELECT  "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."id" = $1 LIMIT 1[0m  [["id", 15]]
+  [1m[35mTechnique Load (1.5ms)[0m  SELECT  "techniques".* FROM "techniques"  WHERE "techniques"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 36ms
+
+ActiveRecord::RecordNotFound (Couldn't find Technique with 'id'=):
+  app/controllers/match_controller.rb:13:in `answer'
+
+
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:01 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:01 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:01 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:01 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:01 -0500
+
+
+Started POST "/match/answer" for 127.0.0.1 at 2014-09-16 19:40:04 -0500
+Processing by MatchController#answer as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8Iq5tuwuHMsAXBuR5cBQlVzdhaohh2SdYTgZ73WeuR0=", "meatcut"=>{"name"=>"1"}, "technique"=>{"name"=>""}, "button"=>""}
+  [1m[36mMeatcut Load (1.7ms)[0m  [1mSELECT  "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTechnique Load (0.2ms)[0m  SELECT  "techniques".* FROM "techniques"  WHERE "techniques"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 84ms
+
+ActiveRecord::RecordNotFound (Couldn't find Technique with 'id'=):
+  app/controllers/match_controller.rb:18:in `answer'
+
+
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:33 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:33 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:33 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:33 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:33 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:33 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:33 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:33 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:33 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:33 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:33 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:33 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:33 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:33 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:33 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:33 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:33 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:33 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:33 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:33 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:33 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:33 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:33 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:33 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+Processing by MatchController#index as HTML
+  [1m[36mMeatcut Load (0.3ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'[0m
+  [1m[35mTechnique Load (0.6ms)[0m  SELECT "techniques".* FROM "techniques"
+  [1m[36mMeatcut Load (0.4ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "techniques".* FROM "techniques"
+  [1m[36mMeatcut Load (0.3ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "techniques".* FROM "techniques"
+  Rendered match/index.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 47ms (Views: 33.5ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 19:40:35 -0500
+
+
+Started POST "/match/answer" for 127.0.0.1 at 2014-09-16 19:40:37 -0500
+Processing by MatchController#answer as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8Iq5tuwuHMsAXBuR5cBQlVzdhaohh2SdYTgZ73WeuR0=", "meatcut"=>{"name"=>"1"}, "technique"=>{"name"=>""}, "button"=>""}
+  [1m[36mMeatcut Load (0.2ms)[0m  [1mSELECT  "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTechnique Load (0.2ms)[0m  SELECT  "techniques".* FROM "techniques"  WHERE "techniques"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 9ms
+
+ActiveRecord::RecordNotFound (Couldn't find Technique with 'id'=):
+  app/controllers/match_controller.rb:18:in `answer'
+
+
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.5ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.2ms)
+
+
+Started POST "/match/answer" for 127.0.0.1 at 2014-09-16 19:41:23 -0500
+Processing by MatchController#answer as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8Iq5tuwuHMsAXBuR5cBQlVzdhaohh2SdYTgZ73WeuR0=", "meatcut"=>{"name"=>"1"}, "technique"=>{"name"=>""}, "button"=>""}
+  [1m[36mMeatcut Load (0.2ms)[0m  [1mSELECT  "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTechnique Load (0.2ms)[0m  SELECT  "techniques".* FROM "techniques"  WHERE "techniques"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 19ms
+
+ActiveRecord::RecordNotFound (Couldn't find Technique with 'id'=):
+  app/controllers/match_controller.rb:18:in `answer'
+
+
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:32 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:32 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:32 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:32 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:32 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:32 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:32 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:32 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:32 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:32 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:32 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:32 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:32 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:32 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:32 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:32 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:32 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:32 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:32 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:32 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:32 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:32 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:32 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:32 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+Processing by MatchController#index as HTML
+  [1m[36mMeatcut Load (0.4ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'[0m
+  [1m[35mTechnique Load (0.4ms)[0m  SELECT "techniques".* FROM "techniques"
+  [1m[36mMeatcut Load (0.3ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "techniques".* FROM "techniques"
+  [1m[36mMeatcut Load (0.3ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "techniques".* FROM "techniques"
+  Rendered match/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 37ms (Views: 34.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 19:41:34 -0500
+
+
+Started POST "/match/answer" for 127.0.0.1 at 2014-09-16 19:41:36 -0500
+Processing by MatchController#answer as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8Iq5tuwuHMsAXBuR5cBQlVzdhaohh2SdYTgZ73WeuR0=", "meatcut"=>{"name"=>"1"}, "technique"=>{"name"=>""}, "button"=>""}
+  [1m[36mMeatcut Load (0.4ms)[0m  [1mSELECT  "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTechnique Load (0.3ms)[0m  SELECT  "techniques".* FROM "techniques"  WHERE "techniques"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 4ms
+
+ActiveRecord::RecordNotFound (Couldn't find Technique with 'id'=):
+  app/controllers/match_controller.rb:18:in `answer'
+
+
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.5ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.0ms)
+
+
+Started POST "/match/answer" for 127.0.0.1 at 2014-09-16 19:42:52 -0500
+Processing by MatchController#answer as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8Iq5tuwuHMsAXBuR5cBQlVzdhaohh2SdYTgZ73WeuR0=", "meatcut"=>{"name"=>"1"}, "technique"=>{"name"=>""}, "button"=>""}
+  [1m[36mMeatcut Load (0.2ms)[0m  [1mSELECT  "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mMatch Load (0.6ms)[0m  SELECT "matches".* FROM "matches"  WHERE "matches"."meatcut_id" = $1  [["meatcut_id", 1]]
+Completed 500 Internal Server Error in 35ms
+
+NoMethodError (undefined method `id' for #<Match::ActiveRecord_Associations_CollectionProxy:0x000001044524c8>):
+  app/controllers/match_controller.rb:22:in `block in answer'
+  app/controllers/match_controller.rb:21:in `answer'
+
+
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.6ms)
+  [1m[36mMatch Load (13.5ms)[0m  [1mSELECT  "matches".* FROM "matches"   ORDER BY "matches"."id" ASC LIMIT 1[0m
+  [1m[35mTechnique Load (0.5ms)[0m  SELECT  "techniques".* FROM "techniques"  WHERE "techniques"."id" = $1 LIMIT 1  [["id", 7]]
