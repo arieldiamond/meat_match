@@ -11,18 +11,34 @@ back_rib = Meatcut.create(name: "back ribs", animal: "cow", meat_name: "beef", p
 t_bone = Meatcut.create(name: "t-bone", animal: "cow", meat_name: "beef", primal: "loin", description: "", alt_names: "porterhouse")
 ny_strip = Meatcut.create(name: "NY strip", animal: "cow", meat_name: "beef", primal: "loin", description: "A delicious easy-to-cook steak that is also the larger side of a t-bone steak.")
 tenderloin = Meatcut.create(name: "tenderloin", animal: "cow", meat_name: "beef", primal: "loin", description: "The most tender and also most expensive cut of beef that also the smaller side of a t-bone steak.", alt_names: "chateaubriand (center-cut)")
+# top_round = Meatcut.create(name: "top round", animal: "cow", meat_name: "beef", primal: "hindquarter", description: "", alt_names: "")
+# top_sirloin = Meatcut.create(name: "", animal: "cow", meat_name: "beef", primal: "hindquarter", description: "", alt_names: "")
+# short_ribs = Meatcut.create(name: "", animal: "cow", meat_name: "beef", primal: "rib", description: "", alt_names: "")
+# skirt_steak = Meatcut.create(name: "", animal: "cow", meat_name: "beef", primal: "loin", description: "", alt_names: "")
+# hanger_steak = Meatcut.create(name: "", animal: "cow", meat_name: "beef", primal: "", description: "", alt_names: "")
 
 beefcuts = [flatiron, bi_chuck, chuck_steak, chuck_roll, stew_meat, ranch_steak, ribeye, rib_steak, back_rib, t_bone, ny_strip, tenderloin]
 
 # Pork
 pork_shoulder = Meatcut.create(name: "pork shoulder", animal: "pig", meat_name: "pork", primal: "shoulder/butt", description: "A versatile, fatty cut from the shoulder. Must be cooked low and slow", alt_names: "pork butt, shoulder roast, boston butt, bone-in shoulder, boneless shoulder")
 pork_chop = Meatcut.create(name: "pork chop", animal: "pig", meat_name: "pork", primal: "loin", description: "Lean and versatile meat with a tasty fat cap.", alt_names: "bone-in pork chop, boneless pork chop, canadian bacon,")
- # = Meatcut.create(name: "", animal: "pig", meat_name: "pork", primal: "", description: "", alt_names: "")
+pork_tenderloin = Meatcut.create(name: "pork tenderloin", animal: "pig", meat_name: "pork", primal: "loin", description: "Very tender and lean, wonderful to roast or grill, though it can easily be overcooked.", alt_names: "")
+hock = Meatcut.create(name: "pork shank", animal: "pig", meat_name: "pork", primal: "forequarter/hindquarter", description: "Fatty and flavorful, the hock is essentially the ankle of the pig. It is often smoked or braised, commonly found in soup.", alt_names: "shank (usually includes more of the lower leg)")
+ham = Meatcut.create(name: "ham", animal: "pig", meat_name: "pork", primal: "hindquarter", description: "The ham is the rear leg of the pig, usually brined and cured but also delicious fresh.")
+pork_sirloin = Meatcut.create(name: "pork sirloin", animal: "pig", meat_name: "pork", primal: "hindquarter", description: "The sirloin is found between the loin and the rear leg (ham) and is often included with a whole ham.")
+baby_back_ribs = Meatcut.create(name: "baby back ribs", animal: "pig", meat_name: "pork", primal: "loin", description: "Fatty and bony but incredibly flavorful, baby back ribs are from the upper back closest to the spine. They take strong seasoning well and respond best to long, slow cooking, though not as long as spare ribs.")
+spare_ribs = Meatcut.create(name: "spare ribs", animal: "pig", meat_name: "pork", primal: "loin", description: "Spare ribs are from the side of the pig and need longer, slower cooking than baby back ribs. They also often include the cartilaginous bones closer to the pig's belly.", alt_names: "st. louis ribs, rib tips")
+
+porkcuts = [pork_shoulder, pork_chop, pork_tenderloin, pork_sirloin, hock, ham, baby_back_ribs, spare_ribs]
 
 # Chicken
 chicken_breast = Meatcut.create(name: "chicken breast", animal: "chicken", meat_name: "chicken", primal: "breast", description: "Chicken breasts are lean and versatile, but easy to overcook.", alt_names: "bone-in breast, boneless breast, airline breast (with wing attached)")
 chicken_thigh = Meatcut.create(name: "chicken thigh", animal: "chicken", meat_name: "chicken", primal: "leg", description: "Chicken thighs are super delicious all the time.", alt_names: "bone-in thigh, boneless thigh")
+chicken_wing = Meatcut.create(name: "chicken wing", animal: "chicken", meat_name: "chicken", primal: "wing", description: "Once cheap and unwanted and now extremely popular, wings are largely bone and skin with some delicious meat that benefits from lower, slower cooking. The wing can also be broken up into three parts: the drumette looks like a small drumstick, the paddle is the flat, oblong piece, and the wing tip is the pointy piece that is usually discarded.", alt_names: "drumette, paddle")
+drumstick = Meatcut.create(name: "drumstick", animal: "chicken", meat_name: "chicken", primal: "leg", description: "Drumsticks are dark and a little fatty, and benefit from lower, slower cooking.", alt_names: "")
+chicken_leg = Meatcut.create(name: "chicken leg", animal: "chicken", meat_name: "chicken", primal: "leg", description: "The combination of the thigh and the drumstick as well as the 'oyster,' a delicious sphere of meat from the back, the whole leg is tasty and versatile and benefits from lower, slower cooking.", alt_names: "whole leg")
 
+chickencuts = [chicken_breast, chicken_leg, chicken_wing, chicken_thigh, drumstick]
 
 # Techniques
 sear = Technique.create(name: "sear", description: "Searing, also called pan-frying, sauteing, shallow-frying, or stir-frying when pieces are small, is when meat is cooked in a pan with oil above a heat source. It is used to get color on the outside of meat before roasting or braising, or to cook the meat to desired doneness.", dry: true, equipment: "pan, stovetop or campfire, tongs or spatula")
@@ -59,10 +75,19 @@ tenderloin.techniques << [hot_roast, sear, grill, broil]
 #pork
 pork_shoulder.techniques << [slow_roast, braise, smoke, stew]
 pork_chop.techniques << [hot_roast, sear, grill, broil]
+pork_tenderloin.techniques << [hot_roast, sear, grill, broil]
+pork_sirloin.techniques << [hot_roast, slow_roast, sear, grill, broil]
+hock.techniques << [slow_roast, braise, smoke, stew]
+ham.techniques << [slow_roast, braise, smoke, stew]
+baby_back_ribs.techniques << [slow_roast, braise, smoke, grill]
+spare_ribs.techniques << [slow_roast, braise, smoke, stew]
 
 #chicken
 chicken_breast.techniques << [hot_roast, sear, grill, broil, poach]
 chicken_thigh.techniques << [hot_roast, slow_roast, sear, grill, smoke, broil, braise, stew]
+chicken_wing.techniques << [hot_roast, slow_roast, sear, grill, smoke, broil, braise, stew]
+chicken_leg.techniques << [hot_roast, slow_roast, sear, grill, smoke, broil, braise, stew]
+drumstick.techniques << [hot_roast, slow_roast, sear, grill, smoke, broil, braise, stew]
 
 Match.all.each { |m| m.update_attributes(good_idea: "yes")}
 

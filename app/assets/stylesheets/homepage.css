@@ -93,7 +93,7 @@ dd.active:after{
     display: block;
     background-color:red;
     position: absolute;
-    top:calc(100% + 3px);
+    top:calc(100% + 2.5px);
     left:-.7em;
     right:-.7em;
     bottom:-.8em;
