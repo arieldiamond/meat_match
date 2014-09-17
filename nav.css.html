@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- PURE -->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <!-- FONTS -->
+    <link href="./nav.css_files/css" rel="stylesheet" type="text/css">
+
+    <title>Meat Match</title>
+
+    <link href="http://localhost:3000/assets/foundation_and_overrides.css?body=1" media="screen" rel="stylesheet">
+<link href="http://localhost:3000/assets/homepage.css?body=1" media="screen" rel="stylesheet">
+<link href="http://localhost:3000/assets/meatcuts.css?body=1" media="screen" rel="stylesheet">
+<link href="http://localhost:3000/assets/scaffolds.css?body=1" media="screen" rel="stylesheet">
+<link href="http://localhost:3000/assets/techniques.css?body=1" media="screen" rel="stylesheet">
+<link href="http://localhost:3000/assets/application.css?body=1" media="screen" rel="stylesheet">
+    <script src="./nav.css_files/modernizr.js"></script><style type="text/css"></style>
+    <meta content="authenticity_token" name="csrf-param">
+<meta content="8Iq5tuwuHMsAXBuR5cBQlVzdhaohh2SdYTgZ73WeuR0=" name="csrf-token">
+  <meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large"><meta class="foundation-mq-medium"><meta class="foundation-mq-small"><style></style><meta class="foundation-mq-topbar"></head>
+
+  <body>
+    <div class="pure-menu pure-menu-open pure-menu-horizontal">
+      <a href="./nav.css_files/nav.css.html" class="pure-menu-heading">Meat Match</a>
+      <ul>
+        <li><a href="http://localhost:3000/match/matchme">Auto-Match Me</a></li>
+        <li><a href="http://localhost:3000/meatcuts">Meatcuts</a></li>
+        <li><a href="http://localhost:3000/techniques">Techniques</a></li>
+      </ul>
+    </div>
+    <!-- <div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+
+    <a class="left-off-canvas-toggle" href="#" >Menu</a> -->
+
+    <!-- Off Canvas Menu -->
+    <!-- <aside class="left-off-canvas-menu">
+        whatever you want goes here
+        <ul>
+          <li><a href="#">Item 1</a></li>
+        </ul>
+    </aside> -->
+
+    <!-- main content goes here -->
+    <!-- <p>Set in the year 0 F.E.</p>
+ -->
+  <!-- close the off-canvas menu -->
+  <a class="exit-off-canvas"></a>
+
+  
+
+    <!-- <div class="container"> -->
+      <div id="homepage">
+	<h1> Meat Match</h1>
+
+	<dl class="tabs" data-tab="">
+    <dd class="active"><a href="http://localhost:3000/#panel1">Beef</a></dd>
+    <dd><a href="http://localhost:3000/#panel2">Pork</a></dd>
+    <dd><a href="http://localhost:3000/#panel3">Chicken</a></dd>
+  </dl>
+	<!-- <div class="home_break"></div> -->
+	<div class="tabs-content">
+  <div class="content active" id="panel1">
+		<form accept-charset="UTF-8" action="http://localhost:3000/match/answer" method="post"><div style="display:none"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="8Iq5tuwuHMsAXBuR5cBQlVzdhaohh2SdYTgZ73WeuR0="></div>
+			<h3>
+				I have a <select id="meatcut_name" name="meatcut[name]"><option value="">Select a cut of beef</option>
+<option value="1">Flatiron</option>
+<option value="2">Bone-in chuck</option>
+<option value="3">Chuck steak</option>
+<option value="4">Chuck roll</option>
+<option value="5">Stew meat</option>
+<option value="6">Ranch steak</option>
+<option value="7">Ribeye</option>
+<option value="8">Rib steak</option>
+<option value="9">Back ribs</option>
+<option value="10">T-bone</option>
+<option value="11">Ny strip</option>
+<option value="12">Tenderloin</option></select>
+			<br>
+				and I want to <select id="technique_name" name="technique[name]"><option value="">Select a cooking technique</option>
+<option value="1">Sear</option>
+<option value="2">Grill</option>
+<option value="3">Broil</option>
+<option value="4">Deep fry</option>
+<option value="5">Smoke</option>
+<option value="6">Slow roast</option>
+<option value="7">Hot roast</option>
+<option value="8">Braise</option>
+<option value="9">Stew</option>
+<option value="10">Poach</option></select> <br>
+				it!
+			<br><br>
+				<button id="match_submit" name="button" type="submit">Meat Match Me!</button>
+			</h3>
+</form>	</div>
+
+	<div class="content" id="panel2">
+		<form accept-charset="UTF-8" action="http://localhost:3000/match/answer" method="post"><div style="display:none"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="8Iq5tuwuHMsAXBuR5cBQlVzdhaohh2SdYTgZ73WeuR0="></div>
+			<h3>
+				I have a <select id="meatcut_name" name="meatcut[name]"><option value="">Select a cut of pork</option>
+<option value="13">Pork shoulder</option>
+<option value="14">Pork chop</option></select>
+			<br>
+				and I want to <select id="technique_name" name="technique[name]"><option value="">Select a cooking technique</option>
+<option value="1">Sear</option>
+<option value="2">Grill</option>
+<option value="3">Broil</option>
+<option value="4">Deep fry</option>
+<option value="5">Smoke</option>
+<option value="6">Slow roast</option>
+<option value="7">Hot roast</option>
+<option value="8">Braise</option>
+<option value="9">Stew</option>
+<option value="10">Poach</option></select> <br>
+				it!
+			<br><br>
+				<button id="match_submit" name="button" type="submit">Meat Match Me!</button>
+			</h3>
+</form>	</div>
+
+	<div class="content" id="panel3">
+		<form accept-charset="UTF-8" action="http://localhost:3000/match/answer" method="post"><div style="display:none"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="8Iq5tuwuHMsAXBuR5cBQlVzdhaohh2SdYTgZ73WeuR0="></div>
+			<h3>
+				I have a <select id="meatcut_name" name="meatcut[name]"><option value="">Select a cut of chicken</option>
+<option value="15">Chicken breast</option>
+<option value="16">Chicken thigh</option></select>
+			<br>
+				and I want to <select id="technique_name" name="technique[name]"><option value="">Select a cooking technique</option>
+<option value="1">Sear</option>
+<option value="2">Grill</option>
+<option value="3">Broil</option>
+<option value="4">Deep fry</option>
+<option value="5">Smoke</option>
+<option value="6">Slow roast</option>
+<option value="7">Hot roast</option>
+<option value="8">Braise</option>
+<option value="9">Stew</option>
+<option value="10">Poach</option></select> <br>
+				it!
+			<br><br>
+				<button id="match_submit" name="button" type="submit">Meat Match Me!</button>
+			</h3>
+</form>	</div>
+	</div>
+
+
+
+
+	<br><br>
+	<h3>Not sure what all these these techniques are?</h3>
+	<form action="http://localhost:3000/techniques" class="button_to" method="get"><div><input class="button" type="submit" value="Show Me"></div></form>
+	<br>
+	<h3>Want to see what all these meatcuts are?</h3>
+	<form action="http://localhost:3000/meatcuts" class="button_to" method="get"><div><input class="button" type="submit" value="Show Me"></div></form>
+
+</div>
+      <script src="./nav.css_files/jquery.js"></script>
+<script src="./nav.css_files/jquery_ujs.js"></script>
+<script src="./nav.css_files/foundation.js"></script>
+<script src="./nav.css_files/foundation.abide.js"></script>
+<script src="./nav.css_files/foundation.accordion.js"></script>
+<script src="./nav.css_files/foundation.alert.js"></script>
+<script src="./nav.css_files/foundation.clearing.js"></script>
+<script src="./nav.css_files/foundation.dropdown.js"></script>
+<script src="./nav.css_files/foundation.interchange.js"></script>
+<script src="./nav.css_files/foundation.joyride.js"></script>
+<script src="./nav.css_files/foundation.magellan.js"></script>
+<script src="./nav.css_files/foundation.offcanvas.js"></script>
+<script src="./nav.css_files/foundation.orbit.js"></script>
+<script src="./nav.css_files/foundation.reveal.js"></script>
+<script src="./nav.css_files/foundation.slider.js"></script>
+<script src="./nav.css_files/foundation.tab.js"></script>
+<script src="./nav.css_files/foundation.tooltip.js"></script>
+<script src="./nav.css_files/foundation.topbar.js"></script>
+<script src="./nav.css_files/foundation.equalizer.js"></script>
+<script src="./nav.css_files/foundation(1).js"></script>
+<script src="./nav.css_files/turbolinks.js"></script>
+<script src="./nav.css_files/meatcuts.js"></script>
+<script src="./nav.css_files/techniques.js"></script>
+<script src="./nav.css_files/application.js"></script>
+    <!-- </div> -->
+  
+<script id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ d.innerText=i; } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }}catch(e){}</script></body></html>

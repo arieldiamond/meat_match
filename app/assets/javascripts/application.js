@@ -17,3 +17,16 @@
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+$(document).ready(function () {
+  $(".tab:first").show()
+
+  $(".tabs li").click(function () {
+    $(this).siblings().removeClass("active");
+    $(this).addClass("active");
+
+  var Clicked = $(this).find("a").attr("href");
+    $(".tab").hide();
+    $(Clicked).show();
+  });
+});

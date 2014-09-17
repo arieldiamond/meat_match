@@ -15,10 +15,21 @@
  *= require foundation_and_overrides
 
  */
-body, html {
-	padding-left: 10px;
-	font-family: 'PT Sans', sans-serif !important;
-	background-color: #F2E4E5;
+body, html  {
+  background-image: url('../butcher_paper.jpg');
+  background-color: #FAF9F0;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: 'PT Sans', sans-serif !important;
+}
+
+select {
+  font: 200 .8em 'PT Sans', sans-serif !important;
+  height: 3em;
+  width: 90%;
+  margin: .5em 2em;
+  padding-left: 1em;
 }
 
 .container {
@@ -27,24 +38,38 @@ body, html {
 	text-align: center;
 }
 
-#homepage {
-	text-align: center;
-}
-
-#homepage h1 {
-	font-family: 'PT Sans', sans-serif !important;
-	font-size: 5em;
-	font-weight: 600;
-	background-color: white;
-	background-image: url('../steak_slice.jpg');
-	border-radius: .5em;
+.pure-table {
 	margin: auto;
+	width:60%;
+	margin-bottom:1em;
 }
 
-#match_submit {
-	background-color: #F20C32;
-	font-size: 1.6em;
-	border: white, 5px, solid;
-	border-radius: .25em;
-	font-family: 'PT Sans', sans-serif !important;
+#match_no h2 {
+	font: 600 3em 'PT Sans', sans-serif;
+  color:red;
+  border: solid 4px red;
+  border-radius: 50%;
+  padding:.7em .9em .5em .8em;
+  margin: auto;
+  margin-bottom: .5em;
+  display: inline-block;
+  width:auto;
+  transform:rotate(7deg);
+}
+
+#match_yes h2 {
+	font: 600 4em 'PT Sans', sans-serif;
+  border: solid 4px black;
+  border-radius: 50%;
+  padding:.3em;
+  margin: auto;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  display: inline-block;
+  width:auto;
+  transform:rotate(-10deg);
+}
+#meatcut_index table,
+#technique_index table {
+  margin-top: 3rem;
 }
