@@ -10,8 +10,13 @@ class MatchController < ApplicationController
 
   def answer
     @meatcut = Meatcut.find(params[:meatcut][:name])
-    @technique = Technique.find(params[:technique][:name])
     @matches = @meatcut.matches
+
+    # if params[:technique][:name] == ''
+    #   @technique = @matches.each {|m| m}
+    # else
+      @technique = Technique.find(params[:technique][:name])
+    # end
 
     @matches.each do |m|
       if m.technique_id == @technique.id
