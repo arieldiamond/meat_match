@@ -60785,3 +60785,2156 @@ Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-11 22:44:44 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 22:44:44 -0500
+
+
+Started GET "/techniques" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+Processing by TechniquesController#index as HTML
+  [1m[36mTechnique Load (0.3ms)[0m  [1mSELECT "techniques".* FROM "techniques"  WHERE "techniques"."dry" = 'true'[0m
+  [1m[35mTechnique Load (0.3ms)[0m  SELECT "techniques".* FROM "techniques"  WHERE "techniques"."dry" = 'false'
+  Rendered techniques/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 53ms (Views: 51.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:21 -0500
+
+
+Started GET "/techniques" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+Processing by TechniquesController#index as HTML
+  [1m[36mTechnique Load (0.3ms)[0m  [1mSELECT "techniques".* FROM "techniques"  WHERE "techniques"."dry" = 'true'[0m
+  [1m[35mTechnique Load (0.3ms)[0m  SELECT "techniques".* FROM "techniques"  WHERE "techniques"."dry" = 'false'
+  Rendered techniques/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 22:49:23 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-11 22:49:27 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-11 22:49:27 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-11 22:49:27 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-11 22:49:27 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-11 22:49:27 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-11 22:49:27 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 22:49:27 -0500
+
+
+Started GET "/techniques" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+Processing by TechniquesController#index as HTML
+  [1m[36mTechnique Load (0.5ms)[0m  [1mSELECT "techniques".* FROM "techniques"  WHERE "techniques"."dry" = 'true'[0m
+  [1m[35mTechnique Load (0.3ms)[0m  SELECT "techniques".* FROM "techniques"  WHERE "techniques"."dry" = 'false'
+  Rendered techniques/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 107ms (Views: 105.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 22:50:56 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-11 22:51:49 -0500
+Processing by MatchController#index as HTML
+  [1m[36mMeatcut Load (0.5ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'[0m
+  [1m[35mTechnique Load (0.3ms)[0m  SELECT "techniques".* FROM "techniques"
+  [1m[36mMeatcut Load (0.4ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "techniques".* FROM "techniques"
+  [1m[36mMeatcut Load (0.4ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "techniques".* FROM "techniques"
+  Rendered match/index.html.erb within layouts/application (69.4ms)
+Completed 200 OK in 117ms (Views: 108.6ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 22:51:49 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 22:51:49 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:51:49 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-11 22:51:49 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-11 22:51:49 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-11 22:51:49 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-11 22:51:49 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-11 22:51:49 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-11 22:51:49 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-11 22:51:49 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-11 22:51:49 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-11 22:51:49 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-11 22:51:49 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-11 22:51:49 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-11 22:51:49 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-11 22:51:49 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-11 22:51:49 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-11 22:51:49 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-11 22:51:49 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:51:49 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 22:51:49 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-11 22:51:49 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-11 22:51:49 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 22:51:49 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-11 22:52:47 -0500
+Processing by MatchController#index as HTML
+  [1m[36mMeatcut Load (0.3ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'[0m
+  [1m[35mTechnique Load (0.2ms)[0m  SELECT "techniques".* FROM "techniques"
+  [1m[36mMeatcut Load (0.3ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "techniques".* FROM "techniques"
+  [1m[36mMeatcut Load (0.3ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "techniques".* FROM "techniques"
+  Rendered match/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 106ms (Views: 102.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 22:52:48 -0500
+
+
+Started GET "/meatcuts" for 127.0.0.1 at 2014-09-11 22:53:19 -0500
+Processing by MeatcutsController#index as HTML
+  [1m[36mMeatcut Load (4.2ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'[0m
+  [1m[35mMeatcut Load (0.4ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'
+  [1m[36mMeatcut Load (3.3ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'[0m
+  Rendered meatcuts/index.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 117ms (Views: 108.1ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:19 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:19 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:19 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:19 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:19 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:19 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:19 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:19 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:19 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:19 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:19 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:19 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:19 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:19 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:19 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:19 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:19 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:19 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:19 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:19 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:19 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:19 -0500
+
+
+Started GET "/meatcuts" for 127.0.0.1 at 2014-09-11 22:53:20 -0500
+Processing by MeatcutsController#index as HTML
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'
+  [1m[36mMeatcut Load (0.3ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'[0m
+  [1m[35mMeatcut Load (0.2ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'
+  Rendered meatcuts/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:21 -0500
+
+
+Started GET "/meatcuts" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+Processing by MeatcutsController#index as HTML
+  [1m[36mMeatcut Load (0.4ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'[0m
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'
+  [1m[36mMeatcut Load (0.4ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'[0m
+  Rendered meatcuts/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 51ms (Views: 48.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 22:53:51 -0500
+
+
+Started GET "/meatcuts" for 127.0.0.1 at 2014-09-11 22:54:14 -0500
+Processing by MeatcutsController#index as HTML
+  [1m[35mMeatcut Load (0.4ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'
+  [1m[36mMeatcut Load (0.3ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'[0m
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'
+  Rendered meatcuts/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 54ms (Views: 52.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-11 22:54:14 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-11 22:54:14 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-11 22:54:14 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-11 22:54:14 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 22:54:14 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:15 -0500
+
+
+Started GET "/meatcuts" for 127.0.0.1 at 2014-09-11 22:54:16 -0500
+Processing by MeatcutsController#index as HTML
+  [1m[36mMeatcut Load (0.3ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'[0m
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'
+  [1m[36mMeatcut Load (0.4ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'[0m
+  Rendered meatcuts/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-11 22:54:16 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-11 22:54:16 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-11 22:54:16 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/meatcuts" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+Processing by MeatcutsController#index as HTML
+  [1m[35mMeatcut Load (0.8ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'
+  [1m[36mMeatcut Load (0.4ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'[0m
+  [1m[35mMeatcut Load (0.4ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'
+  Rendered meatcuts/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 26ms (Views: 22.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 22:54:17 -0500
+
+
+Started GET "/meatcuts" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+Processing by MeatcutsController#index as HTML
+  [1m[36mMeatcut Load (0.5ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'[0m
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'
+  [1m[36mMeatcut Load (0.2ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'[0m
+  Rendered meatcuts/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 105ms (Views: 102.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:10 -0500
+
+
+Started GET "/meatcuts" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+Processing by MeatcutsController#index as HTML
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'
+  [1m[36mMeatcut Load (0.3ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'[0m
+  [1m[35mMeatcut Load (0.2ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'
+  Rendered meatcuts/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:13 -0500
+
+
+Started GET "/techniques" for 127.0.0.1 at 2014-09-11 22:55:18 -0500
+Processing by TechniquesController#index as HTML
+  [1m[36mTechnique Load (0.8ms)[0m  [1mSELECT "techniques".* FROM "techniques"  WHERE "techniques"."dry" = 'true'[0m
+  [1m[35mTechnique Load (0.3ms)[0m  SELECT "techniques".* FROM "techniques"  WHERE "techniques"."dry" = 'false'
+  Rendered techniques/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:18 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:18 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:18 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:18 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:18 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:18 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:18 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:18 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:18 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:18 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:18 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:18 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:18 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:18 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:18 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:18 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:18 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:18 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:18 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:18 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:18 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:18 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:18 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 22:55:18 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-15 18:48:13 -0500
+Processing by MatchController#index as HTML
+  [1m[36mMeatcut Load (26.9ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'[0m
+  [1m[35mTechnique Load (0.7ms)[0m  SELECT "techniques".* FROM "techniques"
+  [1m[36mMeatcut Load (0.5ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "techniques".* FROM "techniques"
+  [1m[36mMeatcut Load (0.5ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "techniques".* FROM "techniques"
+  Rendered match/index.html.erb within layouts/application (55.4ms)
+Completed 200 OK in 104ms (Views: 64.7ms | ActiveRecord: 28.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-15 18:48:13 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-15 18:48:13 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-15 18:48:13 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-15 18:48:13 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-15 18:48:13 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-15 18:48:13 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-15 18:48:13 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-15 18:48:13 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-15 18:48:13 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-15 18:48:13 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-15 18:48:13 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-15 18:48:13 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-15 18:48:13 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-15 18:48:13 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-15 18:48:13 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-15 18:48:13 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-15 18:48:13 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-15 18:48:13 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-15 18:48:13 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-15 18:48:13 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-15 18:48:13 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-15 18:48:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-15 18:48:13 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-15 18:48:13 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+Processing by MatchController#index as HTML
+  [1m[36mMeatcut Load (0.4ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'[0m
+  [1m[35mTechnique Load (0.3ms)[0m  SELECT "techniques".* FROM "techniques"
+  [1m[36mMeatcut Load (0.2ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "techniques".* FROM "techniques"
+  [1m[36mMeatcut Load (0.5ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "techniques".* FROM "techniques"
+  Rendered match/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 87ms (Views: 84.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-15 18:59:13 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-15 19:08:22 -0500
+Processing by MatchController#index as HTML
+  [1m[36mMeatcut Load (0.6ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'[0m
+  [1m[35mTechnique Load (0.3ms)[0m  SELECT "techniques".* FROM "techniques"
+  [1m[36mMeatcut Load (0.3ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "techniques".* FROM "techniques"
+  [1m[36mMeatcut Load (0.5ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "techniques".* FROM "techniques"
+  Rendered match/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 57ms (Views: 53.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-15 19:08:23 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+Processing by MatchController#index as HTML
+  [1m[36mMeatcut Load (1.3ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'[0m
+  [1m[35mTechnique Load (0.5ms)[0m  SELECT "techniques".* FROM "techniques"
+  [1m[36mMeatcut Load (0.4ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "techniques".* FROM "techniques"
+  [1m[36mMeatcut Load (0.4ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "techniques".* FROM "techniques"
+  Rendered match/index.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 66ms (Views: 51.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 19:03:40 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+Processing by MatchController#index as HTML
+  [1m[36mMeatcut Load (0.4ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'[0m
+  [1m[35mTechnique Load (0.6ms)[0m  SELECT "techniques".* FROM "techniques"
+  [1m[36mMeatcut Load (0.4ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "techniques".* FROM "techniques"
+  [1m[36mMeatcut Load (0.3ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "techniques".* FROM "techniques"
+  Rendered match/index.html.erb within layouts/application (171.7ms)
+Completed 200 OK in 235ms (Views: 231.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 19:32:29 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+Processing by MatchController#index as HTML
+  [1m[36mMeatcut Load (0.6ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'[0m
+  [1m[35mTechnique Load (0.3ms)[0m  SELECT "techniques".* FROM "techniques"
+  [1m[36mMeatcut Load (0.3ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "techniques".* FROM "techniques"
+  [1m[36mMeatcut Load (0.2ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "techniques".* FROM "techniques"
+  Rendered match/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 59ms (Views: 56.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 19:33:27 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+Processing by MatchController#index as HTML
+  [1m[36mMeatcut Load (0.6ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'[0m
+  [1m[35mTechnique Load (0.4ms)[0m  SELECT "techniques".* FROM "techniques"
+  [1m[36mMeatcut Load (0.4ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "techniques".* FROM "techniques"
+  [1m[36mMeatcut Load (0.3ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "techniques".* FROM "techniques"
+  Rendered match/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 61ms (Views: 57.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 19:34:02 -0500
