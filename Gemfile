@@ -44,6 +44,6 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
 end
 
-group :production, :staging do
-  gem 'rails_12factor'
-end
+# group :production, :staging do
+#   gem 'rails_12factor'
+# end
