@@ -44,6 +44,10 @@ select {
 	margin-bottom:1em;
 }
 
+#match {
+  text-align: center;
+}
+
 #match_no h2 {
 	font: 600 3em 'PT Sans', sans-serif;
   color:red;
@@ -72,4 +76,7 @@ select {
 #meatcut_index table,
 #technique_index table {
   margin-top: 3rem;
+}
+.button {
+  border-radius: 8px !important;
 }
