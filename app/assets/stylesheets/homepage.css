@@ -38,10 +38,9 @@
     border-bottom: 2px solid black;
     float: left;
     margin-left: 4em;
-    /*padding-right: 2em;
-    padding-top: .5em;*/
     font: 600 2em 'PT Sans', sans-serif !important;
     margin-bottom: -2px !important;
+    /*z-index: -1;*/
 }
 .tabs dd a {
     color: #666;

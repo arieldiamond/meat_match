@@ -16,6 +16,7 @@
   </head>
 
   <body>
+    <div id="page">
     <div class="pure-menu pure-menu-open pure-menu-horizontal">
       <a href="<%= root_path %>" class="pure-menu-heading">Meat-Match.Me</a>
       <ul>
@@ -25,11 +26,9 @@
       </ul>
     </div>
   <a class="exit-off-canvas"></a>
-
-  </div>
-</div>
     <%= yield %>
     <%= javascript_include_tag "application" %>
-    <footer>&copy; 2014 <a href="http://www.arielkdiamond.com">Ariel K. Diamond</a>  |  <a href="mailto:meat.match.me@gmail.com">Contact Me</footer>
+    <footer>&copy; 2014 <a href="http://www.arielkdiamond.com">Ariel K. Diamond</a>  |  <a href="mailto:meat.match.me@gmail.com">Contact Me</a></footer>
+  </div>
   </body>
 </html>

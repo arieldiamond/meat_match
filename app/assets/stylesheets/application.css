@@ -16,8 +16,16 @@
 
  */
 body, html  {
-  background-image: url('../butcher_paper_sm.jpg');
   background-color: #FAF9F0;
+  margin: 0;
+  padding: 0;
+  z-index: -10;
+  background-image: url('../butcher_paper_sm.jpg');
+}
+
+#page {
+  min-height: 100%;
+  position:relative;
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
@@ -85,6 +93,10 @@ select {
   border-radius: 8px !important;
 }
 footer {
+  position: absolute;
   background-color: white;
-  padding: .1em .2em .1em .4em;
+  padding: .2em .2em .1em .4em;
+  bottom:0;
+  width:100%;
+  height: 2em;
 }
