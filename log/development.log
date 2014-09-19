@@ -66088,3 +66088,3037 @@ Migrating to CreateMatches (20140710142649)
   [1m[35m (0.1ms)[0m  BEGIN
   [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 176[0m  [["good_idea", "yes"], ["updated_at", "2014-09-17 23:36:25.696700"]]
   [1m[35m (0.4ms)[0m  COMMIT
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-17 18:39:53 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MatchController#index as HTML
+  [1m[35mMeatcut Load (13.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'
+  [1m[36mTechnique Load (0.8ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mMeatcut Load (0.4ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  Rendered match/index.html.erb within layouts/application (58.2ms)
+Completed 200 OK in 448ms (Views: 394.4ms | ActiveRecord: 18.6ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:54 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+Processing by MatchController#index as HTML
+  [1m[35mMeatcut Load (0.6ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'
+  [1m[36mTechnique Load (1.7ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mMeatcut Load (1.9ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mMeatcut Load (0.4ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  Rendered match/index.html.erb within layouts/application (68.7ms)
+Completed 200 OK in 82ms (Views: 76.3ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-17 18:39:55 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+Processing by MatchController#index as HTML
+  [1m[35mMeatcut Load (0.6ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'
+  [1m[36mTechnique Load (0.3ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  Rendered match/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 27ms (Views: 23.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-17 18:40:00 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-17 22:15:50 -0500
+Processing by MatchController#index as HTML
+  [1m[35mMeatcut Load (30.4ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'
+  [1m[36mTechnique Load (0.8ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  Rendered match/index.html.erb within layouts/application (44.1ms)
+Completed 200 OK in 64ms (Views: 30.9ms | ActiveRecord: 31.8ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-17 22:15:50 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-17 22:15:50 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-17 22:15:50 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-17 22:15:50 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-17 22:15:50 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-17 22:15:50 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-17 22:15:50 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-17 22:15:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-17 22:15:50 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-17 22:15:50 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 22:15:50 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-17 22:15:50 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-17 22:15:50 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-17 22:15:50 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-17 22:15:50 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-17 22:15:50 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-17 22:15:50 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-17 22:15:50 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-17 22:15:51 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-17 22:15:51 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-17 22:15:51 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-17 22:15:51 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-17 22:15:51 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-17 22:15:51 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-17 22:15:51 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-17 22:15:51 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-17 22:15:51 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 22:15:51 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-17 22:15:51 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-17 22:15:51 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-17 22:15:51 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-17 22:15:51 -0500
+  [1m[36m (8.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (13.4ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMeatcuts (20140710142355)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (22.3ms)[0m  [1mCREATE TABLE "meatcuts" ("id" serial primary key, "name" character varying(255), "animal" character varying(255), "meat_name" character varying(255), "primal" character varying(255), "description" text, "alt_names" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (6.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140710142355"]]
+  [1m[36m (10.8ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTechniques (20140710142516)
+  [1m[35m (6.2ms)[0m  BEGIN
+  [1m[36m (15.3ms)[0m  [1mCREATE TABLE "techniques" ("id" serial primary key, "name" character varying(255), "description" text, "dry" boolean, "equipment" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140710142516"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateMatches (20140710142649)
+  [1m[35m (6.0ms)[0m  BEGIN
+  [1m[36m (16.6ms)[0m  [1mCREATE TABLE "matches" ("id" serial primary key, "meatcut_id" integer, "technique_id" integer, "good_idea" character varying(255), "notes" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140710142649"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (19.8ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "top blade"], ["animal", "cow"], ["created_at", "2014-09-18 03:16:58.967186"], ["description", "A tasty tender cut from the middle of the shoulder, great for grilling and searing."], ["meat_name", "beef"], ["name", "flatiron"], ["primal", "chuck"], ["updated_at", "2014-09-18 03:16:58.967186"]]
+  [1m[35m (2.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "chuck roast"], ["animal", "cow"], ["created_at", "2014-09-18 03:16:58.996641"], ["description", "A large, flavorful, fatty, inexpensive roast for roasting or braising. Also great de-boned and ground for burgers."], ["meat_name", "beef"], ["name", "bone-in chuck"], ["primal", "chuck"], ["updated_at", "2014-09-18 03:16:58.996641"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "blade roast, blade steak, seven-bone steak, seven-bone roast"], ["animal", "cow"], ["created_at", "2014-09-18 03:16:59.000857"], ["description", "Good for slow roasting. Also great de-boned and ground for burgers."], ["meat_name", "beef"], ["name", "chuck steak"], ["primal", "chuck"], ["updated_at", "2014-09-18 03:16:59.000857"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "boneless chuck, chuck eye, chuck eye steak, chuck short ribs, pot roast, potroast"], ["animal", "cow"], ["created_at", "2014-09-18 03:16:59.003514"], ["description", "Good for slow roasting, braising, or grinding."], ["meat_name", "beef"], ["name", "chuck roll"], ["primal", "chuck"], ["updated_at", "2014-09-18 03:16:59.003514"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "meatcuts" ("animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["animal", "cow"], ["created_at", "2014-09-18 03:16:59.006064"], ["description", "Any tougher or cheaper cut, cut into cubes for braising and stewing."], ["meat_name", "beef"], ["name", "stew meat"], ["primal", "chuck"], ["updated_at", "2014-09-18 03:16:59.006064"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "meatcuts" ("animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["animal", "cow"], ["created_at", "2014-09-18 03:16:59.009143"], ["description", "Tough-ish but affordable cut for grilling to rare or roasting."], ["meat_name", "beef"], ["name", "ranch steak"], ["primal", "chuck"], ["updated_at", "2014-09-18 03:16:59.009143"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "entrecote, sweetheart steak (butterflied ribeye), ribeye roast"], ["animal", "cow"], ["created_at", "2014-09-18 03:16:59.011354"], ["description", "A super popular super delicious steak."], ["meat_name", "beef"], ["name", "ribeye"], ["primal", "rib"], ["updated_at", "2014-09-18 03:16:59.011354"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "cowboy steak, bone-in ribeye, rib cowboy steak"], ["animal", "cow"], ["created_at", "2014-09-18 03:16:59.013407"], ["description", "A super popular super delicious steak, a ribeye with the bone."], ["meat_name", "beef"], ["name", "rib steak"], ["primal", "rib"], ["updated_at", "2014-09-18 03:16:59.013407"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "costilla para asar"], ["animal", "cow"], ["created_at", "2014-09-18 03:16:59.015542"], ["description", "Back ribs taste like a ribeye, but you can cook them like pork ribs, on the grill or in the oven."], ["meat_name", "beef"], ["name", "back ribs"], ["primal", "rib"], ["updated_at", "2014-09-18 03:16:59.015542"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "porterhouse"], ["animal", "cow"], ["created_at", "2014-09-18 03:16:59.018400"], ["description", ""], ["meat_name", "beef"], ["name", "t-bone"], ["primal", "loin"], ["updated_at", "2014-09-18 03:16:59.018400"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "meatcuts" ("animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["animal", "cow"], ["created_at", "2014-09-18 03:16:59.020525"], ["description", "A delicious easy-to-cook steak that is also the larger side of a t-bone steak."], ["meat_name", "beef"], ["name", "NY strip"], ["primal", "loin"], ["updated_at", "2014-09-18 03:16:59.020525"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "chateaubriand (center-cut)"], ["animal", "cow"], ["created_at", "2014-09-18 03:16:59.022927"], ["description", "The most tender and also most expensive cut of beef that also the smaller side of a t-bone steak."], ["meat_name", "beef"], ["name", "tenderloin"], ["primal", "loin"], ["updated_at", "2014-09-18 03:16:59.022927"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "pork butt, shoulder roast, boston butt, bone-in shoulder, boneless shoulder"], ["animal", "pig"], ["created_at", "2014-09-18 03:16:59.025721"], ["description", "A versatile, fatty cut from the shoulder. Must be cooked low and slow"], ["meat_name", "pork"], ["name", "pork shoulder"], ["primal", "shoulder/butt"], ["updated_at", "2014-09-18 03:16:59.025721"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "bone-in pork chop, boneless pork chop, canadian bacon,"], ["animal", "pig"], ["created_at", "2014-09-18 03:16:59.028926"], ["description", "Lean and versatile meat with a tasty fat cap."], ["meat_name", "pork"], ["name", "pork chop"], ["primal", "loin"], ["updated_at", "2014-09-18 03:16:59.028926"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", ""], ["animal", "pig"], ["created_at", "2014-09-18 03:16:59.031008"], ["description", "Very tender and lean, wonderful to roast or grill, though it can easily be overcooked."], ["meat_name", "pork"], ["name", "pork tenderloin"], ["primal", "loin"], ["updated_at", "2014-09-18 03:16:59.031008"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "shank (usually includes more of the lower leg)"], ["animal", "pig"], ["created_at", "2014-09-18 03:16:59.033507"], ["description", "Fatty and flavorful, the hock is essentially the ankle of the pig. It is often smoked or braised, commonly found in soup."], ["meat_name", "pork"], ["name", "pork shank"], ["primal", "forequarter/hindquarter"], ["updated_at", "2014-09-18 03:16:59.033507"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "meatcuts" ("animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["animal", "pig"], ["created_at", "2014-09-18 03:16:59.036074"], ["description", "The ham is the rear leg of the pig, usually brined and cured but also delicious fresh."], ["meat_name", "pork"], ["name", "ham"], ["primal", "hindquarter"], ["updated_at", "2014-09-18 03:16:59.036074"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "meatcuts" ("animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["animal", "pig"], ["created_at", "2014-09-18 03:16:59.038208"], ["description", "The sirloin is found between the loin and the rear leg (ham) and is often included with a whole ham."], ["meat_name", "pork"], ["name", "pork sirloin"], ["primal", "hindquarter"], ["updated_at", "2014-09-18 03:16:59.038208"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "meatcuts" ("animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["animal", "pig"], ["created_at", "2014-09-18 03:16:59.040363"], ["description", "Fatty and bony but incredibly flavorful, baby back ribs are from the upper back closest to the spine. They take strong seasoning well and respond best to long, slow cooking, though not as long as spare ribs."], ["meat_name", "pork"], ["name", "baby back ribs"], ["primal", "loin"], ["updated_at", "2014-09-18 03:16:59.040363"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "st. louis ribs, rib tips"], ["animal", "pig"], ["created_at", "2014-09-18 03:16:59.042648"], ["description", "Spare ribs are from the side of the pig and need longer, slower cooking than baby back ribs. They also often include the cartilaginous bones closer to the pig's belly."], ["meat_name", "pork"], ["name", "spare ribs"], ["primal", "loin"], ["updated_at", "2014-09-18 03:16:59.042648"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "bone-in breast, boneless breast, airline breast (with wing attached)"], ["animal", "chicken"], ["created_at", "2014-09-18 03:16:59.044590"], ["description", "Chicken breasts are lean and versatile, but easy to overcook."], ["meat_name", "chicken"], ["name", "chicken breast"], ["primal", "breast"], ["updated_at", "2014-09-18 03:16:59.044590"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "bone-in thigh, boneless thigh"], ["animal", "chicken"], ["created_at", "2014-09-18 03:16:59.046362"], ["description", "Chicken thighs are super delicious all the time."], ["meat_name", "chicken"], ["name", "chicken thigh"], ["primal", "leg"], ["updated_at", "2014-09-18 03:16:59.046362"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "drumette, paddle"], ["animal", "chicken"], ["created_at", "2014-09-18 03:16:59.048298"], ["description", "Once cheap and unwanted and now extremely popular, wings are largely bone and skin with some delicious meat that benefits from lower, slower cooking. The wing can also be broken up into three parts: the drumette looks like a small drumstick, the paddle is the flat, oblong piece, and the wing tip is the pointy piece that is usually discarded."], ["meat_name", "chicken"], ["name", "chicken wing"], ["primal", "wing"], ["updated_at", "2014-09-18 03:16:59.048298"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", ""], ["animal", "chicken"], ["created_at", "2014-09-18 03:16:59.050981"], ["description", "Drumsticks are dark and a little fatty, and benefit from lower, slower cooking."], ["meat_name", "chicken"], ["name", "drumstick"], ["primal", "leg"], ["updated_at", "2014-09-18 03:16:59.050981"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "whole leg"], ["animal", "chicken"], ["created_at", "2014-09-18 03:16:59.053489"], ["description", "The combination of the thigh and the drumstick as well as the 'oyster,' a delicious sphere of meat from the back, the whole leg is tasty and versatile and benefits from lower, slower cooking."], ["meat_name", "chicken"], ["name", "chicken leg"], ["primal", "leg"], ["updated_at", "2014-09-18 03:16:59.053489"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (12.2ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.068548"], ["description", "Searing, also called pan-frying, sauteing, shallow-frying, or stir-frying when pieces are small, is when meat is cooked in a pan with oil above a heat source. It is used to get color on the outside of meat before roasting or braising, or to cook the meat to desired doneness."], ["dry", "t"], ["equipment", "pan, stovetop or campfire, tongs or spatula"], ["name", "sear"], ["updated_at", "2014-09-18 03:16:59.068548"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.084745"], ["description", "Grilling involves very high heat from underneath the grate or grill where the meat cooks, usually from wood, charcoal, or gas, providing the delightful charred grill marks."], ["dry", "t"], ["equipment", "grill, tongs"], ["name", "grill"], ["updated_at", "2014-09-18 03:16:59.084745"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.087441"], ["description", "Broiling is when the heat only comes from above the meat."], ["dry", "t"], ["equipment", "broiler, pan"], ["name", "broil"], ["updated_at", "2014-09-18 03:16:59.087441"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.090215"], ["description", "Deep Frying is a high-fat method in which meat is cooked in oil at 300-375 degrees. It is often breaded or dredged in flour before frying, resulting in the hallmark crunchy crust."], ["dry", "t"], ["equipment", "deep fryer or deep pot, tongs, thermometer"], ["name", "deep fry"], ["updated_at", "2014-09-18 03:16:59.090215"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.092334"], ["description", "Smoking involves low and slow roasting with hot smoke from aromatic wood, often from apple, cedar, or cherry wood."], ["dry", "t"], ["equipment", "smoker, earthen pit, or grill, wood chips"], ["name", "smoke"], ["updated_at", "2014-09-18 03:16:59.092334"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.094413"], ["description", "Slow roasting is best for tougher cuts of meat that need some time for the sinew to break down. Most cuts that can be braised can also be slow roasted."], ["dry", "t"], ["equipment", "oven, pan"], ["name", "slow roast"], ["updated_at", "2014-09-18 03:16:59.094413"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.096434"], ["description", "Hot roasting is best for more tender cuts of meat, like ribeye roasts. It involves cooking in an oven without liquid."], ["dry", "t"], ["equipment", "oven, pan"], ["name", "hot roast"], ["updated_at", "2014-09-18 03:16:59.096434"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.098624"], ["description", "Braising is the most versatile way to cook meat, especially tough or sinewy meat. When in doubt, braise! Braising involves cooking the meat slowly in a hot flavorful liquid."], ["dry", "f"], ["equipment", "deep pan with lid or foil, oven"], ["name", "braise"], ["updated_at", "2014-09-18 03:16:59.098624"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.100450"], ["description", "Stewing is similar to braising, though it usually involves smaller pieces of meat and vegetables cooked together to form a soup or stew. (This is what your crockpot and your grandmother does.)"], ["dry", "f"], ["equipment", "crockpot or soup pot and stovetop"], ["name", "stew"], ["updated_at", "2014-09-18 03:16:59.100450"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.102255"], ["description", "Poaching, or quickly cooking in flavorful simmering liquid, is usually used for leaner meats than braising. Fish and chicken are the most commonly poached meats, but this method can be used for lean cuts of other meats."], ["dry", "f"], ["equipment", "shallow pan with lid"], ["name", "poach"], ["updated_at", "2014-09-18 03:16:59.102255"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (14.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.144584"], ["meatcut_id", 1], ["technique_id", 7], ["updated_at", "2014-09-18 03:16:59.144584"]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.162217"], ["meatcut_id", 1], ["technique_id", 1], ["updated_at", "2014-09-18 03:16:59.162217"]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.165187"], ["meatcut_id", 1], ["technique_id", 2], ["updated_at", "2014-09-18 03:16:59.165187"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.167703"], ["meatcut_id", 1], ["technique_id", 3], ["updated_at", "2014-09-18 03:16:59.167703"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.171347"], ["meatcut_id", 2], ["technique_id", 6], ["updated_at", "2014-09-18 03:16:59.171347"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.173495"], ["meatcut_id", 2], ["technique_id", 5], ["updated_at", "2014-09-18 03:16:59.173495"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.175508"], ["meatcut_id", 2], ["technique_id", 8], ["updated_at", "2014-09-18 03:16:59.175508"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.177488"], ["meatcut_id", 2], ["technique_id", 9], ["updated_at", "2014-09-18 03:16:59.177488"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.181448"], ["meatcut_id", 3], ["technique_id", 6], ["updated_at", "2014-09-18 03:16:59.181448"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.183048"], ["meatcut_id", 3], ["technique_id", 5], ["updated_at", "2014-09-18 03:16:59.183048"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.184511"], ["meatcut_id", 3], ["technique_id", 8], ["updated_at", "2014-09-18 03:16:59.184511"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.186196"], ["meatcut_id", 3], ["technique_id", 9], ["updated_at", "2014-09-18 03:16:59.186196"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.189550"], ["meatcut_id", 4], ["technique_id", 6], ["updated_at", "2014-09-18 03:16:59.189550"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.191467"], ["meatcut_id", 4], ["technique_id", 5], ["updated_at", "2014-09-18 03:16:59.191467"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.193277"], ["meatcut_id", 4], ["technique_id", 8], ["updated_at", "2014-09-18 03:16:59.193277"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.195465"], ["meatcut_id", 4], ["technique_id", 9], ["updated_at", "2014-09-18 03:16:59.195465"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.198753"], ["meatcut_id", 5], ["technique_id", 6], ["updated_at", "2014-09-18 03:16:59.198753"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.200316"], ["meatcut_id", 5], ["technique_id", 5], ["updated_at", "2014-09-18 03:16:59.200316"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.201853"], ["meatcut_id", 5], ["technique_id", 8], ["updated_at", "2014-09-18 03:16:59.201853"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.203200"], ["meatcut_id", 5], ["technique_id", 9], ["updated_at", "2014-09-18 03:16:59.203200"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.206098"], ["meatcut_id", 6], ["technique_id", 6], ["updated_at", "2014-09-18 03:16:59.206098"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.207588"], ["meatcut_id", 6], ["technique_id", 5], ["updated_at", "2014-09-18 03:16:59.207588"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.208991"], ["meatcut_id", 6], ["technique_id", 8], ["updated_at", "2014-09-18 03:16:59.208991"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.210323"], ["meatcut_id", 6], ["technique_id", 9], ["updated_at", "2014-09-18 03:16:59.210323"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.213150"], ["meatcut_id", 7], ["technique_id", 7], ["updated_at", "2014-09-18 03:16:59.213150"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.214468"], ["meatcut_id", 7], ["technique_id", 1], ["updated_at", "2014-09-18 03:16:59.214468"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.215854"], ["meatcut_id", 7], ["technique_id", 2], ["updated_at", "2014-09-18 03:16:59.215854"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.217583"], ["meatcut_id", 7], ["technique_id", 3], ["updated_at", "2014-09-18 03:16:59.217583"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.220677"], ["meatcut_id", 8], ["technique_id", 7], ["updated_at", "2014-09-18 03:16:59.220677"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.222764"], ["meatcut_id", 8], ["technique_id", 1], ["updated_at", "2014-09-18 03:16:59.222764"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.223914"], ["meatcut_id", 8], ["technique_id", 2], ["updated_at", "2014-09-18 03:16:59.223914"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.224991"], ["meatcut_id", 8], ["technique_id", 3], ["updated_at", "2014-09-18 03:16:59.224991"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.227932"], ["meatcut_id", 9], ["technique_id", 7], ["updated_at", "2014-09-18 03:16:59.227932"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.229938"], ["meatcut_id", 9], ["technique_id", 1], ["updated_at", "2014-09-18 03:16:59.229938"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.231817"], ["meatcut_id", 9], ["technique_id", 2], ["updated_at", "2014-09-18 03:16:59.231817"]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.234272"], ["meatcut_id", 9], ["technique_id", 3], ["updated_at", "2014-09-18 03:16:59.234272"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.236582"], ["meatcut_id", 9], ["technique_id", 5], ["updated_at", "2014-09-18 03:16:59.236582"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.239465"], ["meatcut_id", 10], ["technique_id", 7], ["updated_at", "2014-09-18 03:16:59.239465"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.240697"], ["meatcut_id", 10], ["technique_id", 1], ["updated_at", "2014-09-18 03:16:59.240697"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.242184"], ["meatcut_id", 10], ["technique_id", 2], ["updated_at", "2014-09-18 03:16:59.242184"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.243409"], ["meatcut_id", 10], ["technique_id", 3], ["updated_at", "2014-09-18 03:16:59.243409"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.245739"], ["meatcut_id", 11], ["technique_id", 7], ["updated_at", "2014-09-18 03:16:59.245739"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.246937"], ["meatcut_id", 11], ["technique_id", 1], ["updated_at", "2014-09-18 03:16:59.246937"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.248294"], ["meatcut_id", 11], ["technique_id", 2], ["updated_at", "2014-09-18 03:16:59.248294"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.250257"], ["meatcut_id", 11], ["technique_id", 3], ["updated_at", "2014-09-18 03:16:59.250257"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.253268"], ["meatcut_id", 12], ["technique_id", 7], ["updated_at", "2014-09-18 03:16:59.253268"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.254727"], ["meatcut_id", 12], ["technique_id", 1], ["updated_at", "2014-09-18 03:16:59.254727"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.255837"], ["meatcut_id", 12], ["technique_id", 2], ["updated_at", "2014-09-18 03:16:59.255837"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.256914"], ["meatcut_id", 12], ["technique_id", 3], ["updated_at", "2014-09-18 03:16:59.256914"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.259843"], ["meatcut_id", 13], ["technique_id", 6], ["updated_at", "2014-09-18 03:16:59.259843"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.261358"], ["meatcut_id", 13], ["technique_id", 8], ["updated_at", "2014-09-18 03:16:59.261358"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.262571"], ["meatcut_id", 13], ["technique_id", 5], ["updated_at", "2014-09-18 03:16:59.262571"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.263847"], ["meatcut_id", 13], ["technique_id", 9], ["updated_at", "2014-09-18 03:16:59.263847"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.266530"], ["meatcut_id", 14], ["technique_id", 7], ["updated_at", "2014-09-18 03:16:59.266530"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.267753"], ["meatcut_id", 14], ["technique_id", 1], ["updated_at", "2014-09-18 03:16:59.267753"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.268812"], ["meatcut_id", 14], ["technique_id", 2], ["updated_at", "2014-09-18 03:16:59.268812"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.269904"], ["meatcut_id", 14], ["technique_id", 3], ["updated_at", "2014-09-18 03:16:59.269904"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.272818"], ["meatcut_id", 15], ["technique_id", 7], ["updated_at", "2014-09-18 03:16:59.272818"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.274446"], ["meatcut_id", 15], ["technique_id", 1], ["updated_at", "2014-09-18 03:16:59.274446"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.276235"], ["meatcut_id", 15], ["technique_id", 2], ["updated_at", "2014-09-18 03:16:59.276235"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.278123"], ["meatcut_id", 15], ["technique_id", 3], ["updated_at", "2014-09-18 03:16:59.278123"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.281362"], ["meatcut_id", 18], ["technique_id", 7], ["updated_at", "2014-09-18 03:16:59.281362"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.324683"], ["meatcut_id", 18], ["technique_id", 6], ["updated_at", "2014-09-18 03:16:59.324683"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.326125"], ["meatcut_id", 18], ["technique_id", 1], ["updated_at", "2014-09-18 03:16:59.326125"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.327765"], ["meatcut_id", 18], ["technique_id", 2], ["updated_at", "2014-09-18 03:16:59.327765"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.329175"], ["meatcut_id", 18], ["technique_id", 3], ["updated_at", "2014-09-18 03:16:59.329175"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.332064"], ["meatcut_id", 16], ["technique_id", 6], ["updated_at", "2014-09-18 03:16:59.332064"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.333907"], ["meatcut_id", 16], ["technique_id", 8], ["updated_at", "2014-09-18 03:16:59.333907"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.335963"], ["meatcut_id", 16], ["technique_id", 5], ["updated_at", "2014-09-18 03:16:59.335963"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.337374"], ["meatcut_id", 16], ["technique_id", 9], ["updated_at", "2014-09-18 03:16:59.337374"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.340311"], ["meatcut_id", 17], ["technique_id", 6], ["updated_at", "2014-09-18 03:16:59.340311"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.341838"], ["meatcut_id", 17], ["technique_id", 8], ["updated_at", "2014-09-18 03:16:59.341838"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.343200"], ["meatcut_id", 17], ["technique_id", 5], ["updated_at", "2014-09-18 03:16:59.343200"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.344772"], ["meatcut_id", 17], ["technique_id", 9], ["updated_at", "2014-09-18 03:16:59.344772"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.347348"], ["meatcut_id", 19], ["technique_id", 6], ["updated_at", "2014-09-18 03:16:59.347348"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.348612"], ["meatcut_id", 19], ["technique_id", 8], ["updated_at", "2014-09-18 03:16:59.348612"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.349822"], ["meatcut_id", 19], ["technique_id", 5], ["updated_at", "2014-09-18 03:16:59.349822"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.351073"], ["meatcut_id", 19], ["technique_id", 2], ["updated_at", "2014-09-18 03:16:59.351073"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.353473"], ["meatcut_id", 20], ["technique_id", 6], ["updated_at", "2014-09-18 03:16:59.353473"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.354711"], ["meatcut_id", 20], ["technique_id", 8], ["updated_at", "2014-09-18 03:16:59.354711"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.356108"], ["meatcut_id", 20], ["technique_id", 5], ["updated_at", "2014-09-18 03:16:59.356108"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.357326"], ["meatcut_id", 20], ["technique_id", 9], ["updated_at", "2014-09-18 03:16:59.357326"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.361253"], ["meatcut_id", 21], ["technique_id", 7], ["updated_at", "2014-09-18 03:16:59.361253"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.363156"], ["meatcut_id", 21], ["technique_id", 1], ["updated_at", "2014-09-18 03:16:59.363156"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.364546"], ["meatcut_id", 21], ["technique_id", 2], ["updated_at", "2014-09-18 03:16:59.364546"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.365857"], ["meatcut_id", 21], ["technique_id", 3], ["updated_at", "2014-09-18 03:16:59.365857"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.367314"], ["meatcut_id", 21], ["technique_id", 10], ["updated_at", "2014-09-18 03:16:59.367314"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.370305"], ["meatcut_id", 22], ["technique_id", 7], ["updated_at", "2014-09-18 03:16:59.370305"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.371950"], ["meatcut_id", 22], ["technique_id", 6], ["updated_at", "2014-09-18 03:16:59.371950"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.373425"], ["meatcut_id", 22], ["technique_id", 1], ["updated_at", "2014-09-18 03:16:59.373425"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.374997"], ["meatcut_id", 22], ["technique_id", 2], ["updated_at", "2014-09-18 03:16:59.374997"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.376260"], ["meatcut_id", 22], ["technique_id", 5], ["updated_at", "2014-09-18 03:16:59.376260"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.377528"], ["meatcut_id", 22], ["technique_id", 3], ["updated_at", "2014-09-18 03:16:59.377528"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.378736"], ["meatcut_id", 22], ["technique_id", 8], ["updated_at", "2014-09-18 03:16:59.378736"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.379825"], ["meatcut_id", 22], ["technique_id", 9], ["updated_at", "2014-09-18 03:16:59.379825"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.383784"], ["meatcut_id", 23], ["technique_id", 7], ["updated_at", "2014-09-18 03:16:59.383784"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.385909"], ["meatcut_id", 23], ["technique_id", 6], ["updated_at", "2014-09-18 03:16:59.385909"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.387519"], ["meatcut_id", 23], ["technique_id", 1], ["updated_at", "2014-09-18 03:16:59.387519"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.388759"], ["meatcut_id", 23], ["technique_id", 2], ["updated_at", "2014-09-18 03:16:59.388759"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.390048"], ["meatcut_id", 23], ["technique_id", 5], ["updated_at", "2014-09-18 03:16:59.390048"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.391316"], ["meatcut_id", 23], ["technique_id", 3], ["updated_at", "2014-09-18 03:16:59.391316"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.392579"], ["meatcut_id", 23], ["technique_id", 8], ["updated_at", "2014-09-18 03:16:59.392579"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.393814"], ["meatcut_id", 23], ["technique_id", 9], ["updated_at", "2014-09-18 03:16:59.393814"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.396205"], ["meatcut_id", 25], ["technique_id", 7], ["updated_at", "2014-09-18 03:16:59.396205"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.397347"], ["meatcut_id", 25], ["technique_id", 6], ["updated_at", "2014-09-18 03:16:59.397347"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.398770"], ["meatcut_id", 25], ["technique_id", 1], ["updated_at", "2014-09-18 03:16:59.398770"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.401382"], ["meatcut_id", 25], ["technique_id", 2], ["updated_at", "2014-09-18 03:16:59.401382"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.403179"], ["meatcut_id", 25], ["technique_id", 5], ["updated_at", "2014-09-18 03:16:59.403179"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.404418"], ["meatcut_id", 25], ["technique_id", 3], ["updated_at", "2014-09-18 03:16:59.404418"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.405489"], ["meatcut_id", 25], ["technique_id", 8], ["updated_at", "2014-09-18 03:16:59.405489"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.406548"], ["meatcut_id", 25], ["technique_id", 9], ["updated_at", "2014-09-18 03:16:59.406548"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.409994"], ["meatcut_id", 24], ["technique_id", 7], ["updated_at", "2014-09-18 03:16:59.409994"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.411533"], ["meatcut_id", 24], ["technique_id", 6], ["updated_at", "2014-09-18 03:16:59.411533"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.412916"], ["meatcut_id", 24], ["technique_id", 1], ["updated_at", "2014-09-18 03:16:59.412916"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.414778"], ["meatcut_id", 24], ["technique_id", 2], ["updated_at", "2014-09-18 03:16:59.414778"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.416663"], ["meatcut_id", 24], ["technique_id", 5], ["updated_at", "2014-09-18 03:16:59.416663"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.418575"], ["meatcut_id", 24], ["technique_id", 3], ["updated_at", "2014-09-18 03:16:59.418575"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-18 03:16:59.420050"], ["meatcut_id", 24], ["technique_id", 8], ["updated_at", "2014-09-18 03:16:59.420050"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-18 03:16:59.421311"], ["meatcut_id", 24], ["technique_id", 9], ["updated_at", "2014-09-18 03:16:59.421311"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mMatch Load (0.8ms)[0m  SELECT "matches".* FROM "matches"
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 1  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.427313"]]
+  [1m[36m (5.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 2[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.436898"]]
+  [1m[35m (13.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 3  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.452686"]]
+  [1m[36m (2.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 4[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.457803"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 5  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.460614"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 6[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.463454"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 7  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.466352"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 8[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.471752"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 9  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.475568"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 10[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.478340"]]
+  [1m[35m (5.2ms)[0m  COMMIT
+  [1m[36m (0.9ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 11  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.486984"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 12[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.490487"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 13  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.493149"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 14[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.495401"]]
+  [1m[35m (6.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 15  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.503615"]]
+  [1m[36m (9.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 16[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.515066"]]
+  [1m[35m (8.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 17  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.525866"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 18[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.530270"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 19  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.533621"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 20[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.536325"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 21  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.538806"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 22[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.540896"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 23  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.543132"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 24[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.545733"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 25  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.547992"]]
+  [1m[36m (10.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 26[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.561662"]]
+  [1m[35m (13.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 27  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.577769"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 28[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.580821"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 29  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.584789"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 30[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.587601"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 31  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.589916"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 32[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.592254"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 33  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.594573"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 34[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.596700"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 35  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.598806"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 36[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.601179"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 37  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.603305"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 38[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.605341"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 39  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.607640"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 40[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.610409"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 41  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.614358"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 42[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.617115"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 43  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.619607"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 44[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.622605"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 45  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.624913"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 46[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.627083"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 47  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.629130"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 48[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.630957"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 49  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.633231"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 50[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.635465"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 51  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.637530"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 52[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.639619"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 53  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.641283"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 54[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.643173"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 55  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.645674"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 56[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.648140"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 57  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.652363"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 58[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.655151"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 59  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.657370"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 60[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.659871"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 61  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.663199"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 62[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.666106"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 63  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.669697"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 64[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.672581"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 65  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.675850"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 66[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.678872"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 67  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.681327"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 68[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.683793"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 69  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.685853"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 70[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.688408"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 71  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.691108"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 72[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.693478"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 73  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.697175"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 74[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.700241"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 75  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.703684"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 76[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.705562"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 77  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.707371"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 78[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.709257"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 79  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.711335"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 80[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.713471"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 81  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.715681"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 82[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.718469"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 83  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.721489"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 84[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.724482"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 85  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.726825"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 86[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.729932"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 87  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.732849"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 88[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.736198"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 89  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.738902"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 90[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.742347"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 91  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.744735"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 92[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.747095"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 93  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.749680"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 94[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.752905"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 95  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.755298"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 96[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.757430"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 97  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.759503"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 98[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.762174"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 99  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.764645"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 100[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.767085"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 101  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.769398"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 102[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.771868"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 103  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.774544"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 104[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.777130"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 105  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.780551"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 106[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.785634"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 107  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.789018"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 108[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.791891"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 109  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.794551"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 110[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.797310"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 111  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.800792"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 112[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.803540"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 113  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.805709"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 114[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.807972"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 115  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.810953"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 116[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.813230"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 117  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.815284"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 118[0m  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.818553"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 119  [["good_idea", "yes"], ["updated_at", "2014-09-18 03:16:59.822384"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-17 22:17:21 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MatchController#index as HTML
+  [1m[35mMeatcut Load (13.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'
+  [1m[36mTechnique Load (0.5ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mMeatcut Load (0.4ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mMeatcut Load (0.4ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  Rendered match/index.html.erb within layouts/application (105.1ms)
+Completed 200 OK in 526ms (Views: 466.1ms | ActiveRecord: 18.7ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-17 22:17:22 -0500
+
+
+Started GET "/meatcuts" for 127.0.0.1 at 2014-09-17 22:18:15 -0500
+Processing by MeatcutsController#index as HTML
+  [1m[35mMeatcut Load (0.6ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'
+  [1m[36mMeatcut Load (0.5ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'[0m
+  [1m[35mMeatcut Load (0.5ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'
+  Rendered meatcuts/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 40ms (Views: 37.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:15 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:15 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:15 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:15 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:15 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:15 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:15 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:15 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:15 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:15 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:15 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:15 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:15 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:15 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:15 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:15 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:15 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:15 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:15 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:15 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:15 -0500
+
+
+Started GET "/meatcuts" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+Processing by MeatcutsController#index as HTML
+  [1m[36mMeatcut Load (0.3ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'[0m
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'
+  [1m[36mMeatcut Load (0.3ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'[0m
+  Rendered meatcuts/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-17 22:18:47 -0500
+
+
+Started GET "/meatcuts" for 127.0.0.1 at 2014-09-17 22:21:18 -0500
+Processing by MeatcutsController#index as HTML
+  [1m[35mMeatcut Load (0.4ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'
+  [1m[36mMeatcut Load (0.3ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'[0m
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'
+  Rendered meatcuts/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:19 -0500
+
+
+Started GET "/meatcuts" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+Processing by MeatcutsController#index as HTML
+  [1m[36mMeatcut Load (0.3ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'[0m
+  [1m[35mMeatcut Load (0.4ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'
+  [1m[36mMeatcut Load (0.4ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'[0m
+  Rendered meatcuts/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-17 22:21:23 -0500
+
+
+Started GET "/meatcuts" for 127.0.0.1 at 2014-09-17 22:33:02 -0500
+Processing by MeatcutsController#index as HTML
+  [1m[35mMeatcut Load (0.2ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'
+  [1m[36mMeatcut Load (0.4ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'[0m
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'
+  Rendered meatcuts/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 122ms (Views: 114.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-17 22:33:03 -0500
+
+
+Started GET "/meatcuts" for 127.0.0.1 at 2014-09-17 22:34:43 -0500
+Processing by MeatcutsController#index as HTML
+  [1m[36mMeatcut Load (0.3ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'[0m
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'
+  [1m[36mMeatcut Load (0.2ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'[0m
+  Rendered meatcuts/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 106ms (Views: 103.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-17 22:34:43 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-17 22:34:43 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-17 22:34:43 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-17 22:34:43 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-17 22:34:43 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-17 22:34:43 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-17 22:34:43 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:43 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:43 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:43 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:43 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:43 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:43 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:43 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:43 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:43 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:43 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:43 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:43 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:43 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:43 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:43 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:44 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:44 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:44 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:44 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:44 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:44 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:44 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:44 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:44 -0500
+
+
+Started GET "/techniques" for 127.0.0.1 at 2014-09-17 22:34:48 -0500
+Processing by TechniquesController#index as HTML
+  [1m[35mTechnique Load (0.5ms)[0m  SELECT "techniques".* FROM "techniques"  WHERE "techniques"."dry" = 'true'
+  [1m[36mTechnique Load (0.3ms)[0m  [1mSELECT "techniques".* FROM "techniques"  WHERE "techniques"."dry" = 'false'[0m
+  Rendered techniques/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 39ms (Views: 27.7ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:48 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:48 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:48 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:48 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:48 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:48 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:48 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:48 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:48 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:48 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:48 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:48 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:48 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:48 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:48 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:48 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:48 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:48 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:48 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:48 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:48 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:48 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:48 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-17 22:34:48 -0500
+
+
+Started GET "/techniques" for 127.0.0.1 at 2014-09-17 22:35:28 -0500
+Processing by TechniquesController#index as HTML
+  [1m[35mTechnique Load (0.4ms)[0m  SELECT "techniques".* FROM "techniques"  WHERE "techniques"."dry" = 'true'
+  [1m[36mTechnique Load (0.3ms)[0m  [1mSELECT "techniques".* FROM "techniques"  WHERE "techniques"."dry" = 'false'[0m
+  Rendered techniques/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-17 22:35:28 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-17 22:35:28 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-17 22:35:28 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-17 22:35:28 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-17 22:35:28 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-17 22:35:28 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-17 22:35:28 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-17 22:35:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-17 22:35:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-17 22:35:28 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 22:35:28 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-17 22:35:28 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-17 22:35:28 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-17 22:35:28 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-17 22:35:28 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-17 22:35:29 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-17 22:35:29 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-17 22:35:29 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-17 22:35:29 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-17 22:35:29 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-17 22:35:29 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-17 22:35:29 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-17 22:35:29 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-17 22:35:29 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-17 22:35:29 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-17 22:35:29 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-17 22:35:29 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 22:35:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-17 22:35:29 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-17 22:35:29 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-17 22:35:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-17 22:35:29 -0500
+
+
+Started GET "/techniques" for 127.0.0.1 at 2014-09-17 22:36:11 -0500
+Processing by TechniquesController#index as HTML
+  [1m[35mTechnique Load (0.3ms)[0m  SELECT "techniques".* FROM "techniques"  WHERE "techniques"."dry" = 'true'
+  [1m[36mTechnique Load (0.3ms)[0m  [1mSELECT "techniques".* FROM "techniques"  WHERE "techniques"."dry" = 'false'[0m
+  Rendered techniques/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-17 22:36:11 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-17 22:36:11 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-17 22:36:11 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:11 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-17 22:36:11 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-17 22:36:11 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-17 22:36:11 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-17 22:36:11 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:11 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:11 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:11 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:11 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:12 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:12 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:12 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:12 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:12 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:12 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:12 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:12 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:12 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:12 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:12 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:12 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:12 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:12 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:12 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:12 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:12 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:12 -0500
+
+
+Started GET "/meatcuts" for 127.0.0.1 at 2014-09-17 22:36:17 -0500
+Processing by MeatcutsController#index as HTML
+  [1m[35mMeatcut Load (0.5ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'
+  [1m[36mMeatcut Load (0.4ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'[0m
+  [1m[35mMeatcut Load (0.4ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'
+  Rendered meatcuts/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 37ms (Views: 33.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:17 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:17 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:17 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:17 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:17 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:17 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:17 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:17 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:17 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:17 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:17 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:17 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:18 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:18 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:18 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:18 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:18 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:18 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:18 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:18 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:18 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:18 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:18 -0500
+
+
+Started GET "/match/matchme" for 127.0.0.1 at 2014-09-17 22:36:54 -0500
+Processing by MatchController#matchme as HTML
+  Rendered match/matchme.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:54 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:54 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:54 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:54 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:54 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:54 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:54 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:54 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:54 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:54 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:54 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:54 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:54 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:54 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:54 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:54 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:54 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:54 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:54 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:54 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:54 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:54 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:54 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-17 22:36:54 -0500
+
+
+Started GET "/match/matchme" for 127.0.0.1 at 2014-09-17 22:48:54 -0500
+Processing by MatchController#matchme as HTML
+  Rendered match/matchme.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `all' for nil:NilClass):
+    11:   <div class="content active" id="panel1">
+    12: 		<%= form_tag('/match/answer') do %>
+    13: 			<h3>
+    14: 				I have a <%= select("meatcut", "name", @beefcuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of beef'}) %>
+    15: 			<br><br>
+    16: 				<%=  button_tag "Meat Match Me!", id: "match_submit" %>
+    17: 			</h3>
+  app/views/match/matchme.html.erb:14:in `block in _app_views_match_matchme_html_erb__1990586061573767247_2169583440'
+  app/views/match/matchme.html.erb:12:in `_app_views_match_matchme_html_erb__1990586061573767247_2169583440'
+
+
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.7ms)
+
+
+Started GET "/match/matchme" for 127.0.0.1 at 2014-09-17 23:02:50 -0500
+Processing by MatchController#matchme as HTML
+  [1m[36mMeatcut Load (0.3ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'[0m
+  [1m[35mMeatcut Load (0.6ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'
+  [1m[36mMeatcut Load (0.4ms)[0m  [1mSELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'[0m
+  Rendered match/matchme.html.erb within layouts/application (64.3ms)
+Completed 200 OK in 92ms (Views: 81.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-17 23:02:50 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-17 23:02:50 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-17 23:02:50 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-17 23:02:51 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+Processing by MatchController#index as HTML
+  [1m[35mMeatcut Load (16.5ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'
+  [1m[36mTechnique Load (7.3ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mMeatcut Load (0.4ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mMeatcut Load (1.1ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  Rendered match/index.html.erb within layouts/application (78.2ms)
+Completed 200 OK in 163ms (Views: 97.0ms | ActiveRecord: 28.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+Processing by MatchController#index as HTML
+  [1m[35mMeatcut Load (1.0ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'
+  [1m[36mTechnique Load (0.4ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mMeatcut Load (0.4ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  Rendered match/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 168ms (Views: 164.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-19 12:07:52 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+Processing by MatchController#index as HTML
+  [1m[35mMeatcut Load (0.4ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'
+  [1m[36mTechnique Load (0.2ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  Rendered match/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 126ms (Views: 123.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-19 12:08:24 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+Processing by MatchController#index as HTML
+  [1m[35mMeatcut Load (0.4ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'
+  [1m[36mTechnique Load (0.3ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  Rendered match/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-19 12:10:24 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-19 12:11:40 -0500
+Processing by MatchController#index as HTML
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'
+  [1m[36mTechnique Load (0.3ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  Rendered match/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 102ms (Views: 100.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-19 12:11:41 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-19 12:18:48 -0500
+Processing by MatchController#index as HTML
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'
+  [1m[36mTechnique Load (0.2ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mMeatcut Load (0.4ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  Rendered match/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-19 12:18:48 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-19 12:18:48 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-19 12:18:48 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-19 12:18:48 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-19 12:18:48 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-19 12:18:48 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-19 12:18:48 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-19 12:18:48 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-19 12:18:48 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-19 12:18:49 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-19 12:18:49 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-19 12:18:49 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-19 12:18:49 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-19 12:18:49 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-19 12:18:49 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-19 12:18:49 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-19 12:18:49 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-19 12:18:49 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-19 12:18:49 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-19 12:18:49 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-19 12:18:49 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-19 12:18:49 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-19 12:18:49 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-19 12:18:49 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-19 12:18:49 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-19 12:18:49 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-19 12:18:49 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-19 12:18:49 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-19 12:18:49 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-19 12:18:49 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-19 12:18:49 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-19 12:18:49 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+Processing by MatchController#index as HTML
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'
+  [1m[36mTechnique Load (0.3ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mMeatcut Load (0.4ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  Rendered match/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 25ms (Views: 21.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500

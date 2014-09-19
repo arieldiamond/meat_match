@@ -32,6 +32,9 @@ class MatchController < ApplicationController
   end
 
 	def matchme
+    @beefcuts = Meatcut.where(:animal => "cow")
+    @porkcuts = Meatcut.where(:animal => "pig")
+    @chickencuts = Meatcut.where(:animal => "chicken")
     # @meatcut = Meatcut.find(params[:meatcut][:name])
     p params
 	end
