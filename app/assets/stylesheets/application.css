@@ -73,10 +73,18 @@ select {
   width:auto;
   transform:rotate(-10deg);
 }
+#meatcut_index .tabs,
+#technique_index .tabs {
+  margin-top: 1em;
+}
 #meatcut_index table,
 #technique_index table {
-  margin-top: 3rem;
+  margin-top: 3.3rem;
 }
 .button {
   border-radius: 8px !important;
+}
+footer {
+  background-color: white;
+  padding: .1em .2em .1em .4em;
 }

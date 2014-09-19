@@ -1,2 +1,41 @@
-<h1>Don't worry, we got this.</h1>
-<%#= @meatcut %>	
+<div id="homepage">
+	<h1> Meat Match</h1>
+
+	<dl class="tabs" data-tab>
+    <dd class="active"><a href="#panel1">Beef</a></dd>
+    <dd><a href="#panel2">Pork</a></dd>
+    <dd><a href="#panel3">Chicken</a></dd>
+  </dl>
+	<!-- <div class="home_break"></div> -->
+	<div class="tabs-content">
+  <div class="content active" id="panel1">
+		<%= form_tag('/match/answer') do %>
+			<h3>
+				I have a <%= select("meatcut", "name", @beefcuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of beef'}) %>
+			<br><br>
+				<%=  button_tag "Meat Match Me!", id: "match_submit" %>
+			</h3>
+		<% end %>
+	</div>
+
+	<div class="content" id="panel2">
+		<%= form_tag('/match/answer') do %>
+			<h3>
+				I have a <%= select("meatcut", "name", @porkcuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of pork'}) %>
+			<br><br>
+				<%=  button_tag "Meat Match Me!", id: "match_submit" %>
+			</h3>
+		<% end %>
+	</div>
+
+	<div class="content" id="panel3">
+		<%= form_tag('/match/answer') do %>
+			<h3>
+				I have a <%= select("meatcut", "name", @chickencuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of chicken'}) %>
+			<br><br>
+				<%=  button_tag "Meat Match Me!", id: "match_submit" %>
+			</h3>
+		<% end %>
+	</div>
+	</div>
+</div>

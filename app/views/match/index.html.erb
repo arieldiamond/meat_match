@@ -11,9 +11,9 @@
   <div class="content active" id="panel1">
 		<%= form_tag('/match/answer') do %>
 			<h3>
-				I have a <%= select("meatcut", "name", @beefcuts.all.collect {|m| [ m.name.capitalize, m.id ] }, {include_blank: 'Select a cut of beef'}) %>
+				I have a <%= select("meatcut", "name", @beefcuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of beef'}) %>
 			<br>
-				and I want to <%= select("technique", "name", Technique.all.collect {|m| [ m.name.capitalize, m.id ] }, {include_blank: 'Select a cooking technique'}) %> <br>
+				and I want to <%= select("technique", "name", Technique.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cooking technique'}) %> <br>
 				it!
 			<br><br>
 				<%=  button_tag "Meat Match Me!", id: "match_submit" %>
@@ -24,9 +24,9 @@
 	<div class="content" id="panel2">
 		<%= form_tag('/match/answer') do %>
 			<h3>
-				I have a <%= select("meatcut", "name", @porkcuts.all.collect {|m| [ m.name.capitalize, m.id ] }, {include_blank: 'Select a cut of pork'}) %>
+				I have a <%= select("meatcut", "name", @porkcuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of pork'}) %>
 			<br>
-				and I want to <%= select("technique", "name", Technique.all.collect {|m| [ m.name.capitalize, m.id ] }, {include_blank: 'Select a cooking technique'}) %> <br>
+				and I want to <%= select("technique", "name", Technique.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cooking technique'}) %> <br>
 				it!
 			<br><br>
 				<%=  button_tag "Meat Match Me!", id: "match_submit" %>
@@ -37,9 +37,9 @@
 	<div class="content" id="panel3">
 		<%= form_tag('/match/answer') do %>
 			<h3>
-				I have a <%= select("meatcut", "name", @chickencuts.all.collect {|m| [ m.name.capitalize, m.id ] }, {include_blank: 'Select a cut of chicken'}) %>
+				I have a <%= select("meatcut", "name", @chickencuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of chicken'}) %>
 			<br>
-				and I want to <%= select("technique", "name", Technique.all.collect {|m| [ m.name.capitalize, m.id ] }, {include_blank: 'Select a cooking technique'}) %> <br>
+				and I want to <%= select("technique", "name", Technique.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cooking technique'}) %> <br>
 				it!
 			<br><br>
 				<%=  button_tag "Meat Match Me!", id: "match_submit" %>
@@ -47,9 +47,6 @@
 		<% end %>
 	</div>
 	</div>
-
-
-
 
 	<br><br>
 	<h3>Not sure what all these these techniques are?</h3>
