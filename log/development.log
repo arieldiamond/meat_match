@@ -69122,3 +69122,756 @@ Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-19 12:19:07 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-19 12:29:13 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MatchController#index as HTML
+  [1m[35mMeatcut Load (0.7ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'cow'
+  [1m[36mTechnique Load (0.5ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mMeatcut Load (0.5ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'pig'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  [1m[35mMeatcut Load (0.3ms)[0m  SELECT "meatcuts".* FROM "meatcuts"  WHERE "meatcuts"."animal" = 'chicken'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  Rendered match/index.html.erb within layouts/application (36.9ms)
+Completed 200 OK in 440ms (Views: 360.9ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-19 12:29:14 -0500
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-19 12:29:14 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-19 12:29:14 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-19 12:29:14 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-09-19 12:29:14 -0500
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-19 12:29:14 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-09-19 12:29:14 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-19 12:29:14 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-19 12:29:14 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-19 12:29:14 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-19 12:29:14 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-19 12:29:14 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-19 12:29:14 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-19 12:29:14 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-19 12:29:14 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-19 12:29:14 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-19 12:29:14 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-19 12:29:14 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-19 12:29:14 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-19 12:29:14 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-19 12:29:14 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-19 12:29:14 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-19 12:29:14 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-19 12:29:14 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-19 12:29:14 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-19 12:29:15 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-19 12:29:15 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-19 12:29:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-19 12:29:15 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-09-19 12:29:15 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-09-19 12:29:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-19 12:29:15 -0500
+  [1m[36m (20.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (41.6ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMeatcuts (20140710142355)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (24.2ms)[0m  [1mCREATE TABLE "meatcuts" ("id" serial primary key, "name" character varying(255), "animal" character varying(255), "meat_name" character varying(255), "primal" character varying(255), "description" text, "alt_names" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (13.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140710142355"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTechniques (20140710142516)
+  [1m[35m (6.3ms)[0m  BEGIN
+  [1m[36m (17.6ms)[0m  [1mCREATE TABLE "techniques" ("id" serial primary key, "name" character varying(255), "description" text, "dry" boolean, "equipment" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140710142516"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateMatches (20140710142649)
+  [1m[35m (5.7ms)[0m  BEGIN
+  [1m[36m (20.6ms)[0m  [1mCREATE TABLE "matches" ("id" serial primary key, "meatcut_id" integer, "technique_id" integer, "good_idea" character varying(255), "notes" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140710142649"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (6.7ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "top blade"], ["animal", "cow"], ["created_at", "2014-09-19 17:35:54.901720"], ["description", "A tasty tender cut from the middle of the shoulder, great for grilling and searing."], ["meat_name", "beef"], ["name", "flatiron"], ["primal", "chuck"], ["updated_at", "2014-09-19 17:35:54.901720"]]
+  [1m[35m (5.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "chuck roast"], ["animal", "cow"], ["created_at", "2014-09-19 17:35:54.920572"], ["description", "A large, flavorful, fatty, inexpensive roast for roasting or braising. Also great de-boned and ground for burgers."], ["meat_name", "beef"], ["name", "bone-in chuck"], ["primal", "chuck"], ["updated_at", "2014-09-19 17:35:54.920572"]]
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "blade roast, blade steak, seven-bone steak, seven-bone roast"], ["animal", "cow"], ["created_at", "2014-09-19 17:35:54.930810"], ["description", "Good for slow roasting. Also great de-boned and ground for burgers."], ["meat_name", "beef"], ["name", "chuck steak"], ["primal", "chuck"], ["updated_at", "2014-09-19 17:35:54.930810"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "boneless chuck, chuck eye, chuck eye steak, chuck short ribs, pot roast, potroast"], ["animal", "cow"], ["created_at", "2014-09-19 17:35:54.934310"], ["description", "Good for slow roasting, braising, or grinding."], ["meat_name", "beef"], ["name", "chuck roll"], ["primal", "chuck"], ["updated_at", "2014-09-19 17:35:54.934310"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "meatcuts" ("animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["animal", "cow"], ["created_at", "2014-09-19 17:35:54.937734"], ["description", "Any tougher or cheaper cut, cut into cubes for braising and stewing."], ["meat_name", "beef"], ["name", "stew meat"], ["primal", "chuck"], ["updated_at", "2014-09-19 17:35:54.937734"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "meatcuts" ("animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["animal", "cow"], ["created_at", "2014-09-19 17:35:54.941450"], ["description", "Tough-ish but affordable cut for grilling to rare or roasting."], ["meat_name", "beef"], ["name", "ranch steak"], ["primal", "chuck"], ["updated_at", "2014-09-19 17:35:54.941450"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "entrecote, sweetheart steak (butterflied ribeye), ribeye roast"], ["animal", "cow"], ["created_at", "2014-09-19 17:35:54.944918"], ["description", "A super popular super delicious steak."], ["meat_name", "beef"], ["name", "ribeye"], ["primal", "rib"], ["updated_at", "2014-09-19 17:35:54.944918"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "cowboy steak, bone-in ribeye, rib cowboy steak"], ["animal", "cow"], ["created_at", "2014-09-19 17:35:54.948063"], ["description", "A super popular super delicious steak, a ribeye with the bone."], ["meat_name", "beef"], ["name", "rib steak"], ["primal", "rib"], ["updated_at", "2014-09-19 17:35:54.948063"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "costilla para asar"], ["animal", "cow"], ["created_at", "2014-09-19 17:35:54.951326"], ["description", "Back ribs taste like a ribeye, but you can cook them like pork ribs, on the grill or in the oven."], ["meat_name", "beef"], ["name", "back ribs"], ["primal", "rib"], ["updated_at", "2014-09-19 17:35:54.951326"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "porterhouse"], ["animal", "cow"], ["created_at", "2014-09-19 17:35:54.954383"], ["description", ""], ["meat_name", "beef"], ["name", "t-bone"], ["primal", "loin"], ["updated_at", "2014-09-19 17:35:54.954383"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "meatcuts" ("animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["animal", "cow"], ["created_at", "2014-09-19 17:35:54.957361"], ["description", "A delicious easy-to-cook steak that is also the larger side of a t-bone steak."], ["meat_name", "beef"], ["name", "NY strip"], ["primal", "loin"], ["updated_at", "2014-09-19 17:35:54.957361"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "chateaubriand (center-cut)"], ["animal", "cow"], ["created_at", "2014-09-19 17:35:54.960873"], ["description", "The most tender and also most expensive cut of beef that also the smaller side of a t-bone steak."], ["meat_name", "beef"], ["name", "tenderloin"], ["primal", "loin"], ["updated_at", "2014-09-19 17:35:54.960873"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "pork butt, shoulder roast, boston butt, bone-in shoulder, boneless shoulder"], ["animal", "pig"], ["created_at", "2014-09-19 17:35:54.964299"], ["description", "A versatile, fatty cut from the shoulder. Must be cooked low and slow"], ["meat_name", "pork"], ["name", "pork shoulder"], ["primal", "shoulder/butt"], ["updated_at", "2014-09-19 17:35:54.964299"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "bone-in pork chop, boneless pork chop, canadian bacon,"], ["animal", "pig"], ["created_at", "2014-09-19 17:35:54.967645"], ["description", "Lean and versatile meat with a tasty fat cap."], ["meat_name", "pork"], ["name", "pork chop"], ["primal", "loin"], ["updated_at", "2014-09-19 17:35:54.967645"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", ""], ["animal", "pig"], ["created_at", "2014-09-19 17:35:54.969883"], ["description", "Very tender and lean, wonderful to roast or grill, though it can easily be overcooked."], ["meat_name", "pork"], ["name", "pork tenderloin"], ["primal", "loin"], ["updated_at", "2014-09-19 17:35:54.969883"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "shank (usually includes more of the lower leg)"], ["animal", "pig"], ["created_at", "2014-09-19 17:35:54.972390"], ["description", "Fatty and flavorful, the hock is essentially the ankle of the pig. It is often smoked or braised, commonly found in soup."], ["meat_name", "pork"], ["name", "pork shank"], ["primal", "forequarter/hindquarter"], ["updated_at", "2014-09-19 17:35:54.972390"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "meatcuts" ("animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["animal", "pig"], ["created_at", "2014-09-19 17:35:54.974972"], ["description", "The ham is the rear leg of the pig, usually brined and cured but also delicious fresh."], ["meat_name", "pork"], ["name", "ham"], ["primal", "hindquarter"], ["updated_at", "2014-09-19 17:35:54.974972"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "meatcuts" ("animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["animal", "pig"], ["created_at", "2014-09-19 17:35:54.978091"], ["description", "The sirloin is found between the loin and the rear leg (ham) and is often included with a whole ham."], ["meat_name", "pork"], ["name", "pork sirloin"], ["primal", "hindquarter"], ["updated_at", "2014-09-19 17:35:54.978091"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "meatcuts" ("animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["animal", "pig"], ["created_at", "2014-09-19 17:35:54.980832"], ["description", "Fatty and bony but incredibly flavorful, baby back ribs are from the upper back closest to the spine. They take strong seasoning well and respond best to long, slow cooking, though not as long as spare ribs."], ["meat_name", "pork"], ["name", "baby back ribs"], ["primal", "loin"], ["updated_at", "2014-09-19 17:35:54.980832"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "st. louis ribs, rib tips"], ["animal", "pig"], ["created_at", "2014-09-19 17:35:54.983204"], ["description", "Spare ribs are from the side of the pig and need longer, slower cooking than baby back ribs. They also often include the cartilaginous bones closer to the pig's belly."], ["meat_name", "pork"], ["name", "spare ribs"], ["primal", "loin"], ["updated_at", "2014-09-19 17:35:54.983204"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "bone-in breast, boneless breast, airline breast (with wing attached)"], ["animal", "chicken"], ["created_at", "2014-09-19 17:35:54.985305"], ["description", "Chicken breasts are lean and versatile, but easy to overcook."], ["meat_name", "chicken"], ["name", "chicken breast"], ["primal", "breast"], ["updated_at", "2014-09-19 17:35:54.985305"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", "bone-in thigh, boneless thigh"], ["animal", "chicken"], ["created_at", "2014-09-19 17:35:54.987224"], ["description", "Chicken thighs are super delicious all the time."], ["meat_name", "chicken"], ["name", "chicken thigh"], ["primal", "leg"], ["updated_at", "2014-09-19 17:35:54.987224"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "drumette, paddle"], ["animal", "chicken"], ["created_at", "2014-09-19 17:35:54.989111"], ["description", "Once cheap and unwanted and now extremely popular, wings are largely bone and skin with some delicious meat that benefits from lower, slower cooking. The wing can also be broken up into three parts: the drumette looks like a small drumstick, the paddle is the flat, oblong piece, and the wing tip is the pointy piece that is usually discarded."], ["meat_name", "chicken"], ["name", "chicken wing"], ["primal", "wing"], ["updated_at", "2014-09-19 17:35:54.989111"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["alt_names", ""], ["animal", "chicken"], ["created_at", "2014-09-19 17:35:54.991152"], ["description", "Drumsticks are dark and a little fatty, and benefit from lower, slower cooking."], ["meat_name", "chicken"], ["name", "drumstick"], ["primal", "leg"], ["updated_at", "2014-09-19 17:35:54.991152"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "meatcuts" ("alt_names", "animal", "created_at", "description", "meat_name", "name", "primal", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["alt_names", "whole leg"], ["animal", "chicken"], ["created_at", "2014-09-19 17:35:54.993464"], ["description", "The combination of the thigh and the drumstick as well as the 'oyster,' a delicious sphere of meat from the back, the whole leg is tasty and versatile and benefits from lower, slower cooking."], ["meat_name", "chicken"], ["name", "chicken leg"], ["primal", "leg"], ["updated_at", "2014-09-19 17:35:54.993464"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (6.8ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.011917"], ["description", "Searing, also called pan-frying, sauteing, shallow-frying, or stir-frying when pieces are small, is when meat is cooked in a pan with oil above a heat source. It is used to get color on the outside of meat before roasting or braising, or to cook the meat to desired doneness."], ["dry", "t"], ["equipment", "pan, stovetop or campfire, tongs or spatula"], ["name", "sear"], ["updated_at", "2014-09-19 17:35:55.011917"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.023235"], ["description", "Grilling involves very high heat from underneath the grate or grill where the meat cooks, usually from wood, charcoal, or gas, providing the delightful charred grill marks."], ["dry", "t"], ["equipment", "grill, tongs"], ["name", "grill"], ["updated_at", "2014-09-19 17:35:55.023235"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.027694"], ["description", "Broiling is when the heat only comes from above the meat."], ["dry", "t"], ["equipment", "broiler, pan"], ["name", "broil"], ["updated_at", "2014-09-19 17:35:55.027694"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.031807"], ["description", "Deep Frying is a high-fat method in which meat is cooked in oil at 300-375 degrees. It is often breaded or dredged in flour before frying, resulting in the hallmark crunchy crust."], ["dry", "t"], ["equipment", "deep fryer or deep pot, tongs, thermometer"], ["name", "deep fry"], ["updated_at", "2014-09-19 17:35:55.031807"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.035216"], ["description", "Smoking involves low and slow roasting with hot smoke from aromatic wood, often from apple, cedar, or cherry wood."], ["dry", "t"], ["equipment", "smoker, earthen pit, or grill, wood chips"], ["name", "smoke"], ["updated_at", "2014-09-19 17:35:55.035216"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.038461"], ["description", "Slow roasting is best for tougher cuts of meat that need some time for the sinew to break down. Most cuts that can be braised can also be slow roasted."], ["dry", "t"], ["equipment", "oven, pan"], ["name", "slow roast"], ["updated_at", "2014-09-19 17:35:55.038461"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.041743"], ["description", "Hot roasting is best for more tender cuts of meat, like ribeye roasts. It involves cooking in an oven without liquid."], ["dry", "t"], ["equipment", "oven, pan"], ["name", "hot roast"], ["updated_at", "2014-09-19 17:35:55.041743"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.044937"], ["description", "Braising is the most versatile way to cook meat, especially tough or sinewy meat. When in doubt, braise! Braising involves cooking the meat slowly in a hot flavorful liquid."], ["dry", "f"], ["equipment", "deep pan with lid or foil, oven"], ["name", "braise"], ["updated_at", "2014-09-19 17:35:55.044937"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.048012"], ["description", "Stewing is similar to braising, though it usually involves smaller pieces of meat and vegetables cooked together to form a soup or stew. (This is what your crockpot and your grandmother does.)"], ["dry", "f"], ["equipment", "crockpot or soup pot and stovetop"], ["name", "stew"], ["updated_at", "2014-09-19 17:35:55.048012"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "dry", "equipment", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.051581"], ["description", "Poaching, or quickly cooking in flavorful simmering liquid, is usually used for leaner meats than braising. Fish and chicken are the most commonly poached meats, but this method can be used for lean cuts of other meats."], ["dry", "f"], ["equipment", "shallow pan with lid"], ["name", "poach"], ["updated_at", "2014-09-19 17:35:55.051581"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (24.8ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.105922"], ["meatcut_id", 1], ["technique_id", 7], ["updated_at", "2014-09-19 17:35:55.105922"]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.134463"], ["meatcut_id", 1], ["technique_id", 1], ["updated_at", "2014-09-19 17:35:55.134463"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.137089"], ["meatcut_id", 1], ["technique_id", 2], ["updated_at", "2014-09-19 17:35:55.137089"]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.139848"], ["meatcut_id", 1], ["technique_id", 3], ["updated_at", "2014-09-19 17:35:55.139848"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.144798"], ["meatcut_id", 2], ["technique_id", 6], ["updated_at", "2014-09-19 17:35:55.144798"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.147326"], ["meatcut_id", 2], ["technique_id", 5], ["updated_at", "2014-09-19 17:35:55.147326"]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.149860"], ["meatcut_id", 2], ["technique_id", 8], ["updated_at", "2014-09-19 17:35:55.149860"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.152331"], ["meatcut_id", 2], ["technique_id", 9], ["updated_at", "2014-09-19 17:35:55.152331"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.156579"], ["meatcut_id", 3], ["technique_id", 6], ["updated_at", "2014-09-19 17:35:55.156579"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.158999"], ["meatcut_id", 3], ["technique_id", 5], ["updated_at", "2014-09-19 17:35:55.158999"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.161337"], ["meatcut_id", 3], ["technique_id", 8], ["updated_at", "2014-09-19 17:35:55.161337"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.163711"], ["meatcut_id", 3], ["technique_id", 9], ["updated_at", "2014-09-19 17:35:55.163711"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.168264"], ["meatcut_id", 4], ["technique_id", 6], ["updated_at", "2014-09-19 17:35:55.168264"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.170508"], ["meatcut_id", 4], ["technique_id", 5], ["updated_at", "2014-09-19 17:35:55.170508"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.172787"], ["meatcut_id", 4], ["technique_id", 8], ["updated_at", "2014-09-19 17:35:55.172787"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.175123"], ["meatcut_id", 4], ["technique_id", 9], ["updated_at", "2014-09-19 17:35:55.175123"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.179800"], ["meatcut_id", 5], ["technique_id", 8], ["updated_at", "2014-09-19 17:35:55.179800"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.182166"], ["meatcut_id", 5], ["technique_id", 9], ["updated_at", "2014-09-19 17:35:55.182166"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.186375"], ["meatcut_id", 6], ["technique_id", 6], ["updated_at", "2014-09-19 17:35:55.186375"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.188829"], ["meatcut_id", 6], ["technique_id", 5], ["updated_at", "2014-09-19 17:35:55.188829"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.191394"], ["meatcut_id", 6], ["technique_id", 8], ["updated_at", "2014-09-19 17:35:55.191394"]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.193713"], ["meatcut_id", 6], ["technique_id", 9], ["updated_at", "2014-09-19 17:35:55.193713"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.198182"], ["meatcut_id", 7], ["technique_id", 7], ["updated_at", "2014-09-19 17:35:55.198182"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.200608"], ["meatcut_id", 7], ["technique_id", 1], ["updated_at", "2014-09-19 17:35:55.200608"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.203320"], ["meatcut_id", 7], ["technique_id", 2], ["updated_at", "2014-09-19 17:35:55.203320"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.205718"], ["meatcut_id", 7], ["technique_id", 3], ["updated_at", "2014-09-19 17:35:55.205718"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.210074"], ["meatcut_id", 8], ["technique_id", 7], ["updated_at", "2014-09-19 17:35:55.210074"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.213068"], ["meatcut_id", 8], ["technique_id", 1], ["updated_at", "2014-09-19 17:35:55.213068"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.215935"], ["meatcut_id", 8], ["technique_id", 2], ["updated_at", "2014-09-19 17:35:55.215935"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.218753"], ["meatcut_id", 8], ["technique_id", 3], ["updated_at", "2014-09-19 17:35:55.218753"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.223702"], ["meatcut_id", 9], ["technique_id", 7], ["updated_at", "2014-09-19 17:35:55.223702"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.226100"], ["meatcut_id", 9], ["technique_id", 1], ["updated_at", "2014-09-19 17:35:55.226100"]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.228673"], ["meatcut_id", 9], ["technique_id", 2], ["updated_at", "2014-09-19 17:35:55.228673"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.231467"], ["meatcut_id", 9], ["technique_id", 3], ["updated_at", "2014-09-19 17:35:55.231467"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.234134"], ["meatcut_id", 9], ["technique_id", 5], ["updated_at", "2014-09-19 17:35:55.234134"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.238803"], ["meatcut_id", 10], ["technique_id", 7], ["updated_at", "2014-09-19 17:35:55.238803"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.241276"], ["meatcut_id", 10], ["technique_id", 1], ["updated_at", "2014-09-19 17:35:55.241276"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.243714"], ["meatcut_id", 10], ["technique_id", 2], ["updated_at", "2014-09-19 17:35:55.243714"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.246135"], ["meatcut_id", 10], ["technique_id", 3], ["updated_at", "2014-09-19 17:35:55.246135"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.250585"], ["meatcut_id", 11], ["technique_id", 7], ["updated_at", "2014-09-19 17:35:55.250585"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.253518"], ["meatcut_id", 11], ["technique_id", 1], ["updated_at", "2014-09-19 17:35:55.253518"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.256064"], ["meatcut_id", 11], ["technique_id", 2], ["updated_at", "2014-09-19 17:35:55.256064"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.258433"], ["meatcut_id", 11], ["technique_id", 3], ["updated_at", "2014-09-19 17:35:55.258433"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.262755"], ["meatcut_id", 12], ["technique_id", 7], ["updated_at", "2014-09-19 17:35:55.262755"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.265255"], ["meatcut_id", 12], ["technique_id", 1], ["updated_at", "2014-09-19 17:35:55.265255"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.267652"], ["meatcut_id", 12], ["technique_id", 2], ["updated_at", "2014-09-19 17:35:55.267652"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.270180"], ["meatcut_id", 12], ["technique_id", 3], ["updated_at", "2014-09-19 17:35:55.270180"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.274563"], ["meatcut_id", 13], ["technique_id", 6], ["updated_at", "2014-09-19 17:35:55.274563"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.276974"], ["meatcut_id", 13], ["technique_id", 8], ["updated_at", "2014-09-19 17:35:55.276974"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.279371"], ["meatcut_id", 13], ["technique_id", 5], ["updated_at", "2014-09-19 17:35:55.279371"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.281676"], ["meatcut_id", 13], ["technique_id", 9], ["updated_at", "2014-09-19 17:35:55.281676"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.286049"], ["meatcut_id", 14], ["technique_id", 7], ["updated_at", "2014-09-19 17:35:55.286049"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.288470"], ["meatcut_id", 14], ["technique_id", 1], ["updated_at", "2014-09-19 17:35:55.288470"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.290751"], ["meatcut_id", 14], ["technique_id", 2], ["updated_at", "2014-09-19 17:35:55.290751"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.293056"], ["meatcut_id", 14], ["technique_id", 3], ["updated_at", "2014-09-19 17:35:55.293056"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.297330"], ["meatcut_id", 15], ["technique_id", 7], ["updated_at", "2014-09-19 17:35:55.297330"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.299779"], ["meatcut_id", 15], ["technique_id", 1], ["updated_at", "2014-09-19 17:35:55.299779"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.302135"], ["meatcut_id", 15], ["technique_id", 2], ["updated_at", "2014-09-19 17:35:55.302135"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.304424"], ["meatcut_id", 15], ["technique_id", 3], ["updated_at", "2014-09-19 17:35:55.304424"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.308665"], ["meatcut_id", 18], ["technique_id", 7], ["updated_at", "2014-09-19 17:35:55.308665"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.311248"], ["meatcut_id", 18], ["technique_id", 6], ["updated_at", "2014-09-19 17:35:55.311248"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.313761"], ["meatcut_id", 18], ["technique_id", 1], ["updated_at", "2014-09-19 17:35:55.313761"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.362407"], ["meatcut_id", 18], ["technique_id", 2], ["updated_at", "2014-09-19 17:35:55.362407"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.363937"], ["meatcut_id", 18], ["technique_id", 3], ["updated_at", "2014-09-19 17:35:55.363937"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.366729"], ["meatcut_id", 16], ["technique_id", 6], ["updated_at", "2014-09-19 17:35:55.366729"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.368285"], ["meatcut_id", 16], ["technique_id", 8], ["updated_at", "2014-09-19 17:35:55.368285"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.369587"], ["meatcut_id", 16], ["technique_id", 5], ["updated_at", "2014-09-19 17:35:55.369587"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.370862"], ["meatcut_id", 16], ["technique_id", 9], ["updated_at", "2014-09-19 17:35:55.370862"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.373999"], ["meatcut_id", 17], ["technique_id", 6], ["updated_at", "2014-09-19 17:35:55.373999"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.375524"], ["meatcut_id", 17], ["technique_id", 8], ["updated_at", "2014-09-19 17:35:55.375524"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.376898"], ["meatcut_id", 17], ["technique_id", 5], ["updated_at", "2014-09-19 17:35:55.376898"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.378266"], ["meatcut_id", 17], ["technique_id", 9], ["updated_at", "2014-09-19 17:35:55.378266"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.380614"], ["meatcut_id", 19], ["technique_id", 6], ["updated_at", "2014-09-19 17:35:55.380614"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.381865"], ["meatcut_id", 19], ["technique_id", 8], ["updated_at", "2014-09-19 17:35:55.381865"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.383136"], ["meatcut_id", 19], ["technique_id", 5], ["updated_at", "2014-09-19 17:35:55.383136"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.384238"], ["meatcut_id", 19], ["technique_id", 2], ["updated_at", "2014-09-19 17:35:55.384238"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.386794"], ["meatcut_id", 20], ["technique_id", 6], ["updated_at", "2014-09-19 17:35:55.386794"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.388119"], ["meatcut_id", 20], ["technique_id", 8], ["updated_at", "2014-09-19 17:35:55.388119"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.389462"], ["meatcut_id", 20], ["technique_id", 5], ["updated_at", "2014-09-19 17:35:55.389462"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.390616"], ["meatcut_id", 20], ["technique_id", 9], ["updated_at", "2014-09-19 17:35:55.390616"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.393303"], ["meatcut_id", 21], ["technique_id", 7], ["updated_at", "2014-09-19 17:35:55.393303"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.394799"], ["meatcut_id", 21], ["technique_id", 1], ["updated_at", "2014-09-19 17:35:55.394799"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.396177"], ["meatcut_id", 21], ["technique_id", 2], ["updated_at", "2014-09-19 17:35:55.396177"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.397419"], ["meatcut_id", 21], ["technique_id", 3], ["updated_at", "2014-09-19 17:35:55.397419"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.398638"], ["meatcut_id", 21], ["technique_id", 10], ["updated_at", "2014-09-19 17:35:55.398638"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.401179"], ["meatcut_id", 22], ["technique_id", 7], ["updated_at", "2014-09-19 17:35:55.401179"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.402391"], ["meatcut_id", 22], ["technique_id", 6], ["updated_at", "2014-09-19 17:35:55.402391"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.403539"], ["meatcut_id", 22], ["technique_id", 1], ["updated_at", "2014-09-19 17:35:55.403539"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.404636"], ["meatcut_id", 22], ["technique_id", 2], ["updated_at", "2014-09-19 17:35:55.404636"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.405759"], ["meatcut_id", 22], ["technique_id", 5], ["updated_at", "2014-09-19 17:35:55.405759"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.406962"], ["meatcut_id", 22], ["technique_id", 3], ["updated_at", "2014-09-19 17:35:55.406962"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.408133"], ["meatcut_id", 22], ["technique_id", 8], ["updated_at", "2014-09-19 17:35:55.408133"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.409412"], ["meatcut_id", 22], ["technique_id", 9], ["updated_at", "2014-09-19 17:35:55.409412"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.412223"], ["meatcut_id", 23], ["technique_id", 7], ["updated_at", "2014-09-19 17:35:55.412223"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.413623"], ["meatcut_id", 23], ["technique_id", 6], ["updated_at", "2014-09-19 17:35:55.413623"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.414690"], ["meatcut_id", 23], ["technique_id", 1], ["updated_at", "2014-09-19 17:35:55.414690"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.415806"], ["meatcut_id", 23], ["technique_id", 2], ["updated_at", "2014-09-19 17:35:55.415806"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.416877"], ["meatcut_id", 23], ["technique_id", 5], ["updated_at", "2014-09-19 17:35:55.416877"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.417937"], ["meatcut_id", 23], ["technique_id", 3], ["updated_at", "2014-09-19 17:35:55.417937"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.419055"], ["meatcut_id", 23], ["technique_id", 8], ["updated_at", "2014-09-19 17:35:55.419055"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.420192"], ["meatcut_id", 23], ["technique_id", 9], ["updated_at", "2014-09-19 17:35:55.420192"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.422560"], ["meatcut_id", 25], ["technique_id", 7], ["updated_at", "2014-09-19 17:35:55.422560"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.423869"], ["meatcut_id", 25], ["technique_id", 6], ["updated_at", "2014-09-19 17:35:55.423869"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.424981"], ["meatcut_id", 25], ["technique_id", 1], ["updated_at", "2014-09-19 17:35:55.424981"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.426076"], ["meatcut_id", 25], ["technique_id", 2], ["updated_at", "2014-09-19 17:35:55.426076"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.427143"], ["meatcut_id", 25], ["technique_id", 5], ["updated_at", "2014-09-19 17:35:55.427143"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.428545"], ["meatcut_id", 25], ["technique_id", 3], ["updated_at", "2014-09-19 17:35:55.428545"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.429833"], ["meatcut_id", 25], ["technique_id", 8], ["updated_at", "2014-09-19 17:35:55.429833"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.431077"], ["meatcut_id", 25], ["technique_id", 9], ["updated_at", "2014-09-19 17:35:55.431077"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.434902"], ["meatcut_id", 24], ["technique_id", 7], ["updated_at", "2014-09-19 17:35:55.434902"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.437060"], ["meatcut_id", 24], ["technique_id", 6], ["updated_at", "2014-09-19 17:35:55.437060"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.438787"], ["meatcut_id", 24], ["technique_id", 1], ["updated_at", "2014-09-19 17:35:55.438787"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.440410"], ["meatcut_id", 24], ["technique_id", 2], ["updated_at", "2014-09-19 17:35:55.440410"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.442001"], ["meatcut_id", 24], ["technique_id", 5], ["updated_at", "2014-09-19 17:35:55.442001"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.443511"], ["meatcut_id", 24], ["technique_id", 3], ["updated_at", "2014-09-19 17:35:55.443511"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-19 17:35:55.445013"], ["meatcut_id", 24], ["technique_id", 8], ["updated_at", "2014-09-19 17:35:55.445013"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "matches" ("created_at", "meatcut_id", "technique_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-19 17:35:55.446428"], ["meatcut_id", 24], ["technique_id", 9], ["updated_at", "2014-09-19 17:35:55.446428"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mMatch Load (0.8ms)[0m  SELECT "matches".* FROM "matches"
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 1  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.453250"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 2[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.462838"]]
+  [1m[35m (12.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 3  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.477260"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 4[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.480436"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 5  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.482608"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 6[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.484680"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 7  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.487028"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 8[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.488850"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 9  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.490462"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 10[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.492243"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 11  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.493985"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 12[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.495512"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 13  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.497215"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 14[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.499061"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 15  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.500955"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 16[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.502969"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 17  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.504981"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 18[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.506721"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 19  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.508803"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 20[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.510867"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 21  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.512767"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 22[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.514582"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 23  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.516277"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 24[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.517969"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 25  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.520029"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 26[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.522043"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 27  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.523759"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 28[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.525357"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 29  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.527189"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 30[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.530641"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 31  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.532585"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 32[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.534151"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 33  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.535577"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 34[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.537032"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 35  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.538469"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 36[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.540063"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 37  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.541596"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 38[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.543063"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 39  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.544641"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 40[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.547234"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 41  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.550049"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 42[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.552054"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 43  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.553706"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 44[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.555274"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 45  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.556946"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 46[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.558760"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 47  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.560507"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 48[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.562532"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 49  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.564891"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 50[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.567435"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 51  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.569608"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 52[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.571658"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 53  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.573472"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 54[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.575283"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 55  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.577080"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 56[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.579096"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 57  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.581019"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 58[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.582948"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 59  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.584768"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 60[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.586952"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 61  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.589529"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 62[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.591726"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 63  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.593674"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 64[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.595450"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 65  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.597294"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 66[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.598916"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 67  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.600650"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 68[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.602486"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 69  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.604173"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 70[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.606011"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 71  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.607793"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 72[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.609694"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 73  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.611906"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 74[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.613746"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 75  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.615334"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 76[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.617104"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 77  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.618930"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 78[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.620645"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 79  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.622334"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 80[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.624144"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 81  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.626210"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 82[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.628424"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 83  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.630278"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 84[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.632253"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 85  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.634286"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 86[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.636113"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 87  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.637813"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 88[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.639625"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 89  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.641527"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 90[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.643256"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 91  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.645063"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 92[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.646891"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 93  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.648797"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 94[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.650664"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 95  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.652281"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 96[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.654013"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 97  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.655717"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 98[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.657377"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 99  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.659296"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 100[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.661441"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 101  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.663912"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 102[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.665925"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 103  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.667938"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 104[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.669877"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 105  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.671717"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 106[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.673484"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 107  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.675324"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 108[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.676983"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 109  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.678958"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 110[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.681230"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 111  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.683411"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 112[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.685167"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 113  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.686937"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 114[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.688792"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 115  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.690833"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 116[0m  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.693187"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "matches" SET "good_idea" = $1, "updated_at" = $2 WHERE "matches"."id" = 117  [["good_idea", "yes"], ["updated_at", "2014-09-19 17:35:55.695058"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
