@@ -32,12 +32,12 @@ class MatchController < ApplicationController
     end
     
 
-    # @matches.each do |m|
-    #   if m.technique_id == @technique.id
-    #     @match = m
-    #     return @match
-    #   end
-    # end
+    @matches.each do |m|
+      if m.technique_id == @technique.id
+        @match = m
+        return @match
+      end
+    end
   end
 
 	def matchme
