@@ -20,12 +20,17 @@ body, html  {
   margin: 0;
   padding: 0;
   z-index: -10;
-  background-image: url('../butcher_paper_sm.jpg');
 }
 
 #page {
+  background-image: url('../butcher_paper_sm.jpg');
   min-height: 100%;
   position:relative;
+  margin-bottom: -2em;
+}
+#page:after {
+  content: "";
+  display: block;
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
@@ -86,8 +91,18 @@ select {
   margin-top: 1em;
 }
 #meatcut_index table,
-#technique_index table {
+#technique_index table,
+.automatch table {
+  margin:auto;
   margin-top: 3.3rem;
+  width:96%;
+}
+
+#meatcut_index h3,
+#technique_index h3,
+.automatch h3,
+.automatch h2 {
+  text-align: center;
 }
 .button {
   border-radius: 8px !important;
@@ -99,4 +114,5 @@ footer {
   bottom:0;
   width:100%;
   height: 2em;
+  margin-top: 10em;
 }

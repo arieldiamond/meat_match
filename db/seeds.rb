@@ -1,23 +1,25 @@
 # Beef
-flatiron = Meatcut.create(name: "flatiron", animal: "cow", meat_name: "beef", primal: "chuck", description: "A tasty tender cut from the middle of the shoulder, great for grilling and searing.", alt_names: "top blade")
-bi_chuck = Meatcut.create(name: "bone-in chuck", animal: "cow", meat_name: "beef", primal: "chuck", description: "A large, flavorful, fatty, inexpensive roast for roasting or braising. Also great de-boned and ground for burgers.", alt_names: "chuck roast")
-chuck_steak = Meatcut.create(name: "chuck steak", animal: "cow", meat_name: "beef", primal: "chuck", description:"Good for slow roasting. Also great de-boned and ground for burgers.", alt_names: "blade roast, blade steak, seven-bone steak, seven-bone roast")
-chuck_roll = Meatcut.create(name: "chuck roll", animal: "cow", meat_name: "beef", primal: "chuck", description: "Good for slow roasting, braising, or grinding.", alt_names: "boneless chuck, chuck eye, chuck eye steak, chuck short ribs, pot roast, potroast")
-stew_meat = Meatcut.create(name: "stew meat", animal: "cow", meat_name: "beef", primal: "chuck", description: "Any tougher or cheaper cut, cut into cubes for braising and stewing.")
-ranch_steak = Meatcut.create(name: "ranch steak", animal: "cow", meat_name: "beef", primal: "chuck", description: "Tough-ish but affordable cut for grilling to rare or roasting.")
-ribeye = Meatcut.create(name: "ribeye", animal: "cow", meat_name: "beef", primal: "rib", description: "A super popular super delicious steak.", alt_names: "entrecote, sweetheart steak (butterflied ribeye), ribeye roast")
-rib_steak = Meatcut.create(name: "rib steak", animal: "cow", meat_name: "beef", primal: "rib", description: "A super popular super delicious steak, a ribeye with the bone.", alt_names:"cowboy steak, bone-in ribeye, rib cowboy steak")
-back_rib = Meatcut.create(name: "back ribs", animal: "cow", meat_name: "beef", primal: "rib", description: "Back ribs taste like a ribeye, but you can cook them like pork ribs, on the grill or in the oven.", alt_names:"costilla para asar")
-t_bone = Meatcut.create(name: "t-bone", animal: "cow", meat_name: "beef", primal: "loin", description: "", alt_names: "porterhouse")
-ny_strip = Meatcut.create(name: "NY strip", animal: "cow", meat_name: "beef", primal: "loin", description: "A delicious easy-to-cook steak that is also the larger side of a t-bone steak.")
-tenderloin = Meatcut.create(name: "tenderloin", animal: "cow", meat_name: "beef", primal: "loin", description: "The most tender and also most expensive cut of beef that also the smaller side of a t-bone steak.", alt_names: "chateaubriand (center-cut)")
-# top_round = Meatcut.create(name: "top round", animal: "cow", meat_name: "beef", primal: "hindquarter", description: "", alt_names: "")
-# top_sirloin = Meatcut.create(name: "", animal: "cow", meat_name: "beef", primal: "hindquarter", description: "", alt_names: "")
-# short_ribs = Meatcut.create(name: "", animal: "cow", meat_name: "beef", primal: "rib", description: "", alt_names: "")
-# skirt_steak = Meatcut.create(name: "", animal: "cow", meat_name: "beef", primal: "loin", description: "", alt_names: "")
-# hanger_steak = Meatcut.create(name: "", animal: "cow", meat_name: "beef", primal: "", description: "", alt_names: "")
+flatiron = Meatcut.create(name: "beef flatiron steak", animal: "cow", meat_name: "beef", primal: "chuck (shoulder)", description: "Though this cut comes from a tougher part of the cow, the chuck (shoulder), its location at the center of the shoulder means it is little-used and therefore quite tender.", alt_names: "top blade")
+bi_chuck = Meatcut.create(name: "beef chuck roast", animal: "cow", meat_name: "beef", primal: "chuck (shoulder)", description: "A flavorful, fatty, affordable roast from the shoulder. Since the chuck is not particularly tender, care needs to be taken when cooking. Chuck's fat content makes it great for ground beef, particularly for burgers.", alt_names: "chuck roast, bone-in chuck")
+chuck_steak = Meatcut.create(name: "beef chuck steak", animal: "cow", meat_name: "beef", primal: "chuck (shoulder)", description:"Chuck steak is a slice of the fatty, flavorful chuck, or shoulder. Since the chuck is not particularly tender, care needs to be taken when cooking. It can also be ground for ground beef or burgers.", alt_names: "blade roast, blade steak, seven-bone steak, seven-bone roast")
+chuck_roll = Meatcut.create(name: "beef chuck roll", animal: "cow", meat_name: "beef", primal: "chuck (shoulder)", description: "The chuck roll is a boneless section of the chuck that is good for slow roasting, braising, or grinding.", alt_names: "boneless chuck, chuck eye, chuck eye steak, chuck short ribs, pot roast, potroast")
+stew_meat = Meatcut.create(name: "beef stew meat", animal: "cow", meat_name: "beef", primal: "round/chuck", description: "Any tougher or cheaper cut, cut into cubes for braising and stewing. It is often from the round, or rear leg, and is meant to be stewed or braised.", alt_names: "")
+ranch_steak = Meatcut.create(name: "beef ranch steak", animal: "cow", meat_name: "beef", primal: "chuck (shoulder)", description: "Ranch steak is a semi-tough and affordable cut from the center of the chuck. Since the chuck is not particularly tender, care needs to be taken when cooking.", alt_names: "center-cut chuck steak")
+ribeye = Meatcut.create(name: "beef ribeye steak", animal: "cow", meat_name: "beef", primal: "rib", description: "The ribeye comes from the back of the cow, from the end of the chuck to the end of the ribs, where the NY strip starts. It is tender and flavorful, extremely popular but also quite expensive. Best cooked to medium or below using a dry heat method.", alt_names: "bone-in ribeye, entrec&ocirc;te, sweetheart steak (butterflied ribeye), ribeye roast, cowboy steak (bone-in, often with long rib bone), tomahawk steak (bone-in, with whole rib bone)")
+back_rib = Meatcut.create(name: "beef back ribs", animal: "cow", meat_name: "beef", primal: "rib", description: "Back ribs are the bones that are cut off of boneless ribeyes. They taste like a ribeye, but have more connective tissue so they must be cooked like pork ribs, low and slow.", alt_names:"costilla para asar")
+t_bone = Meatcut.create(name: "beef t-bone", animal: "cow", meat_name: "beef", primal: "loin", description: "The T-bone is made of two delicious cuts: the smaller side is the tenderloin, the larger side the strip. It is so named because the bone between the two cuts, a piee of the spine, is shaped like a T. It is tender and flavorful, extremely popular but also quite expensive. It is best cooked to medium or below using a dry heat method.", alt_names: "porterhouse steak")
+ny_strip = Meatcut.create(name: "beef strip steak", animal: "cow", meat_name: "beef", primal: "loin", description: "The strip is from the back of the cow, between the rib and the sirloin. It is also the larger side of a t-bone steak. It is tender and flavorful, extremely popular but also quite expensive. Best cooked to medium or below using a dry heat method.", alt_names: "New York strip, club steak, strip loin, shell steak, Kansas City strip, Delmonico steak")
+tenderloin = Meatcut.create(name: "beef tenderloin", animal: "cow", meat_name: "beef", primal: "loin", description: "The most tender and also most expensive cut of beef that also the smaller side of a t-bone steak. Best cooked to medium or below using a dry heat method.", alt_names: "filet, filet mignon, chateaubriand (center-cut), eye fillet")
+top_sirloin = Meatcut.create(name: "beef top sirloin", animal: "cow", meat_name: "beef", primal: "sirloin (hindquarter)", description: "The top sirloin starts where the strip end, and is nearly as tender though quite a bit cheaper. Sirloin one of the most versatile cuts of beef, able to be cooked quickly like a steak, but can also be braised or cut into stew meat. It is fairly lean, and is often ground for lean ground beef.", alt_names: "")
+top_round = Meatcut.create(name: "beef top round", animal: "cow", meat_name: "beef", primal: "round (hindquarter)", description: "Top round is from the rear leg of the cow, and it is fairly tough and lean, best braised, slow roasted, or ground. Many preparations involve slicing it very thin, either before or after cooking -- notably by drying and smoking to make jerky.", alt_names: "")
+bottom_round = Meatcut.create(name: "beef bottom round", animal: "cow", meat_name: "beef", primal: "round (hindquarter)", description: "Bottom round is from the rear leg of the cow, and it is fairly tough and lean, often braised, slow roasted, or ground. Unlike other parts of the round, bottom round can be quite well marbled, making it good for a roast. Many preparations involve slicing it very thin, either before or after cooking.", alt_names: "")
+eye_round = Meatcut.create(name: "beef eye of round", animal: "cow", meat_name: "beef", primal: "round (hindquarter)", description: "Eye of round is from the rear leg of the cow, and it is fairly tough and lean, best braised, slow roasted, or ground. Many preparations involve slicing it very thin, either before or after cooking.", alt_names: "")
+short_ribs = Meatcut.create(name: "beef short ribs", animal: "cow", meat_name: "beef", primal: "rib", description: "Short ribs are a flavorful and fatty cut from the side of the cow, where spareribs are on a pig. 'English cut' is parallel to the bone' and is usually 3-6 inches long, though it sometimes includes the full rib. These are usually braised until tender.  'Flanken style' is cut across the bones, including three or four bones per slice. If cut extremely thin, they can be grilled to make Korean short ribs or Kalbi.", alt_names: "Kalbi/Galbi, flanken style short ribs, english cut short ribs, Asian-style short ribs")
+skirt_steak = Meatcut.create(name: "beef skirt steak", animal: "cow", meat_name: "beef", primal: "loin", description: "Skirt steak is a popular and affordable steak from the plate, or lower rib, of the cow. It is coarsely textured and flavorful, and stands up well to strong seasoning. Skirt steak should be cooked to medium or below with a dry heat method and cut against the grain. It is also sometimes braised.", alt_names: "arrachera")
+hanger_steak = Meatcut.create(name: "hanger steak", animal: "cow", meat_name: "beef", primal: "plate", description: "Hanger steak is a popular and affordable steak from the plate, or lower rib, of the cow. It is coarsely textured and flavorful, slightly leaner than skirt steak, and stands up well to strong seasoning. Skirt steak should be cooked to medium or below with a dry heat method and cut against the grain.", alt_names: "butcher's steak")
+flank_steak = hanger_steak = Meatcut.create(name: "beef flank steak", animal: "cow", meat_name: "beef", primal: "loin", description: "Flank steak is a popular cut from the belly of the cow. It is coarsely textured and very lean, and stands up well to strong seasoning. Skirt steak should be cooked to medium or below with a dry heat method and cut against the grain. It is also sometimes braised.", alt_names: "butcher's steak")
 
-beefcuts = [flatiron, bi_chuck, chuck_steak, chuck_roll, stew_meat, ranch_steak, ribeye, rib_steak, back_rib, t_bone, ny_strip, tenderloin]
+beefcuts = [flatiron, bi_chuck, chuck_steak, chuck_roll, stew_meat, ranch_steak, ribeye, back_rib, t_bone, ny_strip, tenderloin, eye_round, bottom_round, top_round, top_sirloin, hanger_steak, skirt_steak, flank_steak, short_ribs]
 
 # Pork
 pork_shoulder = Meatcut.create(name: "pork shoulder", animal: "pig", meat_name: "pork", primal: "shoulder/butt", description: "A versatile, fatty cut from the shoulder. Must be cooked low and slow", alt_names: "pork butt, shoulder roast, boston butt, bone-in shoulder, boneless shoulder")
@@ -64,14 +66,20 @@ bi_chuck.techniques << [slow_roast, smoke, braise, stew]
 chuck_steak.techniques << [slow_roast, smoke, braise, stew]
 chuck_roll.techniques << [slow_roast, smoke, braise, stew]
 stew_meat.techniques << [braise, stew]
-ranch_steak.techniques << [slow_roast, smoke, braise, stew]	
+ranch_steak.techniques << [slow_roast, smoke, braise, stew, grill]	
 ribeye.techniques << [hot_roast, sear, grill, broil]
-rib_steak.techniques << [hot_roast, sear, grill, broil]
-back_rib.techniques << [hot_roast, sear, grill, broil, smoke]
+back_rib.techniques << [hot_roast, sear, grill, broil, smoke, braise, stew, slow_roast]
 t_bone.techniques << [hot_roast, sear, grill, broil]
 ny_strip.techniques << [hot_roast, sear, grill, broil]
 tenderloin.techniques << [hot_roast, sear, grill, broil]
-
+eye_round.techniques << [slow_roast, smoke, braise, stew]
+bottom_round.techniques << [slow_roast, smoke, braise, stew]
+top_round.techniques << [slow_roast, smoke, braise, stew]
+top_sirloin.techniques << [hot_roast, sear, grill, broil, slow_roast, smoke, braise, stew]
+hanger_steak.techniques << [hot_roast, sear, grill, broil]
+skirt_steak.techniques << [hot_roast, sear, grill, broil, braise]
+flank_steak.techniques << [hot_roast, sear, grill, broil, braise]
+short_ribs.techniques << [slow_roast, smoke, braise, stew, grill, sear]
 #pork
 pork_shoulder.techniques << [slow_roast, braise, smoke, stew]
 pork_chop.techniques << [hot_roast, sear, grill, broil]

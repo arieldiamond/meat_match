@@ -11,7 +11,7 @@
   <div class="content active" id="panel1">
 		<%= form_tag('/match/automatch') do %>
 			<h3>
-				I have a <%= select("meatcut", "name", @beefcuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of beef'}) %>
+				<br>I have a <%= select("meatcut", "name", @beefcuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of beef'}) %>
 			<br><br>
 				<%=  button_tag "How can I cook it?", id: "match_submit" %>
 			</h3>
@@ -21,7 +21,7 @@
 	<div class="content" id="panel2">
 		<%= form_tag('/match/automatch') do %>
 			<h3>
-				I have a <%= select("meatcut", "name", @porkcuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of pork'}) %>
+				<br>I have a <%= select("meatcut", "name", @porkcuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of pork'}) %>
 			<br><br>
 				<%=  button_tag "How can I cook it?", id: "match_submit" %>
 			</h3>
@@ -31,7 +31,7 @@
 	<div class="content" id="panel3">
 		<%= form_tag('/match/automatch') do %>
 			<h3>
-				I have a <%= select("meatcut", "name", @chickencuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of chicken'}) %>
+				<br>I have a <%= select("meatcut", "name", @chickencuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of chicken'}) %>
 			<br><br>
 				<%=  button_tag "How can I cook it?", id: "match_submit" %>
 			</h3>
