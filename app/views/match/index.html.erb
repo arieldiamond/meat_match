@@ -11,11 +11,12 @@
   <div class="content active" id="panel1">
 		<%= form_tag('/match/answer') do %>
 			<h3>
-				<br>I have a <%= select("meatcut", "name", @beefcuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of beef'}) %>
+				<br>I have a <%= select("meatcut", "name", @beefcuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of beef*'}) %>
 			<br>
-				and I want to <%= select("technique", "name", Technique.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cooking technique'}) %> <br>
+				and I want to <%= select("technique", "name", Technique.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cooking technique*'}) %> <br>
 				it!
 			<br><br>
+				<p>* or leave one blank for a random match!</p>
 				<%=  button_tag "Meat Match Me!", id: "match_submit" %>
 			</h3>
 		<% end %>
