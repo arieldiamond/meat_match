@@ -11,7 +11,7 @@
   <div class="content active" id="panel1">
 		<%= form_tag('/match/answer') do %>
 			<h3>
-				I have a <%= select("meatcut", "name", @beefcuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of beef'}) %>
+				<br>I have a <%= select("meatcut", "name", @beefcuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of beef'}) %>
 			<br>
 				and I want to <%= select("technique", "name", Technique.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cooking technique'}) %> <br>
 				it!
@@ -24,7 +24,7 @@
 	<div class="content" id="panel2">
 		<%= form_tag('/match/answer') do %>
 			<h3>
-				I have a <%= select("meatcut", "name", @porkcuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of pork'}) %>
+				<br>I have a <%= select("meatcut", "name", @porkcuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of pork'}) %>
 			<br>
 				and I want to <%= select("technique", "name", Technique.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cooking technique'}) %> <br>
 				it!
@@ -37,7 +37,7 @@
 	<div class="content" id="panel3">
 		<%= form_tag('/match/answer') do %>
 			<h3>
-				I have a <%= select("meatcut", "name", @chickencuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of chicken'}) %>
+				<br>I have a <%= select("meatcut", "name", @chickencuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of chicken'}) %>
 			<br>
 				and I want to <%= select("technique", "name", Technique.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cooking technique'}) %> <br>
 				it!
@@ -54,5 +54,7 @@
 	<br>
 	<h3>Want to see what all these meatcuts are?</h3>
 	<%= button_to "Show Me", meatcuts_path, :class => "button", :method => :get %>
+	<br>
+	<br>
 
 </div>
