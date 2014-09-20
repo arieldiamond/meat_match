@@ -9,6 +9,9 @@ Rails.application.routes.draw do
   post 'match/automatch'
   get 'match/automatch' => 'match#automatch'
 
+  post 'match/nothing'
+  get 'match/nothing' => 'match#nothing'
+
   resources :match
   
   resources :techniques
