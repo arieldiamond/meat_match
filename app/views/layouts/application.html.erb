@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#">
+      <meta property="og:image" content="../meat-match-prev.png" />
     <!-- PURE -->
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
     <!-- FONTS -->
@@ -28,6 +31,7 @@
   <a class="exit-off-canvas"></a>
     <%= yield %>
     <%= javascript_include_tag "application" %>
+    <br><br>
     <footer>&copy; 2014 <a href="http://www.arielkdiamond.com">Ariel K. Diamond</a>  |  <a href="mailto:meat.match.me@gmail.com">Contact Me</a></footer>
   </div>
   </body>
