@@ -7,8 +7,8 @@
 			<h2>I WOULDN'T DO THAT <br>IF I WERE YOU.</h2><br>
 			<p>Where there's a will, there's a way, but there may be a better way.</p>
 		</div>
-	<%= button_to 'I give up. Match me!', match_matchme_path(params[:meatcut]), :class => "button", :method => :get %>
-		<%= button_to "I've got life in me yet. Try again!", root_path, :class => "button", :method => :get %>
+	<%= button_to 'I give up. Auto-Match Me!', match_matchme_path(params[:meatcut]), :class => "button", :method => :get %>
+		<%= button_to "Try again!", root_path, :class => "button", :method => :get %>
 	<% elsif @match.good_idea == "yes" %>
 		<div id="match_yes">
 			<h2>YES YOU CAN!</h2>
