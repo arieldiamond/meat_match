@@ -16,8 +16,10 @@ bottom_round = Meatcut.create(name: "beef bottom round", animal: "cow", meat_nam
 eye_round = Meatcut.create(name: "beef eye of round", animal: "cow", meat_name: "beef", primal: "round (hindquarter)", description: "Eye of round is from the rear leg of the cow, and it is fairly tough and lean, best braised, slow roasted, or ground. Many preparations involve slicing it very thin, either before or after cooking.", alt_names: "")
 short_ribs = Meatcut.create(name: "beef short ribs", animal: "cow", meat_name: "beef", primal: "rib", description: "Short ribs are a flavorful and fatty cut from the side of the cow, where spareribs are on a pig. 'English cut' is parallel to the bone' and is usually 3-6 inches long, though it sometimes includes the full rib. These are usually braised until tender.  'Flanken style' is cut across the bones, including three or four bones per slice. If cut extremely thin, they can be grilled to make Korean short ribs or Kalbi.", alt_names: "Kalbi/Galbi, flanken style short ribs, english cut short ribs, Asian-style short ribs")
 skirt_steak = Meatcut.create(name: "beef skirt steak", animal: "cow", meat_name: "beef", primal: "loin", description: "Skirt steak is a popular and affordable steak from the plate, or lower rib, of the cow. It is coarsely textured and flavorful, and stands up well to strong seasoning. Skirt steak should be cooked to medium or below with a dry heat method and cut against the grain. It is also sometimes braised.", alt_names: "arrachera")
-hanger_steak = Meatcut.create(name: "hanger steak", animal: "cow", meat_name: "beef", primal: "plate", description: "Hanger steak is a popular and affordable steak from the plate, or lower rib, of the cow. It is coarsely textured and flavorful, slightly leaner than skirt steak, and stands up well to strong seasoning. Skirt steak should be cooked to medium or below with a dry heat method and cut against the grain.", alt_names: "butcher's steak")
-flank_steak = hanger_steak = Meatcut.create(name: "beef flank steak", animal: "cow", meat_name: "beef", primal: "loin", description: "Flank steak is a popular cut from the belly of the cow. It is coarsely textured and very lean, and stands up well to strong seasoning. Skirt steak should be cooked to medium or below with a dry heat method and cut against the grain. It is also sometimes braised.", alt_names: "butcher's steak")
+hanger_steak = Meatcut.create(name: "beef hanger steak", animal: "cow", meat_name: "beef", primal: "plate", description: "Hanger steak is a popular and affordable steak from the plate, or lower rib, of the cow. It is coarsely textured and flavorful, slightly leaner than skirt steak, and stands up well to strong seasoning. Skirt steak should be cooked to medium or below with a dry heat method and cut against the grain.", alt_names: "butcher's steak")
+flank_steak = Meatcut.create(name: "beef flank steak", animal: "cow", meat_name: "beef", primal: "loin", description: "Flank steak is a popular cut from the belly of the cow. It is coarsely textured and very lean, and stands up well to strong seasoning. Skirt steak should be cooked to medium or below with a dry heat method and cut against the grain. It is also sometimes braised.", alt_names: "butcher's steak")
+# bavette - section of top sirloin
+# tri-tip
 
 beefcuts = [flatiron, bi_chuck, chuck_steak, chuck_roll, stew_meat, ranch_steak, ribeye, back_rib, t_bone, ny_strip, tenderloin, eye_round, bottom_round, top_round, top_sirloin, hanger_steak, skirt_steak, flank_steak, short_ribs]
 
@@ -28,8 +30,8 @@ pork_tenderloin = Meatcut.create(name: "pork tenderloin", animal: "pig", meat_na
 hock = Meatcut.create(name: "pork shank", animal: "pig", meat_name: "pork", primal: "forequarter/hindquarter", description: "Fatty and flavorful, the hock is essentially the ankle of the pig. It is often smoked or braised, commonly found in soup.", alt_names: "shank (usually includes more of the lower leg)")
 ham = Meatcut.create(name: "ham", animal: "pig", meat_name: "pork", primal: "hindquarter", description: "The ham is the rear leg of the pig, usually brined and cured but also delicious fresh.")
 pork_sirloin = Meatcut.create(name: "pork sirloin", animal: "pig", meat_name: "pork", primal: "hindquarter", description: "The sirloin is found between the loin and the rear leg (ham) and is often included with a whole ham.")
-baby_back_ribs = Meatcut.create(name: "baby back ribs", animal: "pig", meat_name: "pork", primal: "loin", description: "Fatty and bony but incredibly flavorful, baby back ribs are from the upper back closest to the spine. They take strong seasoning well and respond best to long, slow cooking, though not as long as spare ribs.")
-spare_ribs = Meatcut.create(name: "spare ribs", animal: "pig", meat_name: "pork", primal: "loin", description: "Spare ribs are from the side of the pig and need longer, slower cooking than baby back ribs. They also often include the cartilaginous bones closer to the pig's belly.", alt_names: "st. louis ribs, rib tips")
+baby_back_ribs = Meatcut.create(name: "pork baby back ribs", animal: "pig", meat_name: "pork", primal: "loin", description: "Fatty and bony but incredibly flavorful, baby back ribs are from the upper back closest to the spine. They take strong seasoning well and respond best to long, slow cooking, though not as long as spare ribs.")
+spare_ribs = Meatcut.create(name: "pork spare ribs", animal: "pig", meat_name: "pork", primal: "loin", description: "Spare ribs are from the side of the pig and need longer, slower cooking than baby back ribs. They also often include the cartilaginous bones closer to the pig's belly.", alt_names: "st. louis ribs, rib tips")
 
 porkcuts = [pork_shoulder, pork_chop, pork_tenderloin, pork_sirloin, hock, ham, baby_back_ribs, spare_ribs]
 
@@ -67,6 +69,7 @@ chuck_steak.techniques << [slow_roast, smoke, braise, stew]
 chuck_roll.techniques << [slow_roast, smoke, braise, stew]
 stew_meat.techniques << [braise, stew]
 ranch_steak.techniques << [slow_roast, smoke, braise, stew, grill]	
+hanger_steak.techniques << [hot_roast, sear, grill, broil]
 ribeye.techniques << [hot_roast, sear, grill, broil]
 back_rib.techniques << [hot_roast, sear, grill, broil, smoke, braise, stew, slow_roast]
 t_bone.techniques << [hot_roast, sear, grill, broil]
@@ -76,10 +79,10 @@ eye_round.techniques << [slow_roast, smoke, braise, stew]
 bottom_round.techniques << [slow_roast, smoke, braise, stew]
 top_round.techniques << [slow_roast, smoke, braise, stew]
 top_sirloin.techniques << [hot_roast, sear, grill, broil, slow_roast, smoke, braise, stew]
-hanger_steak.techniques << [hot_roast, sear, grill, broil]
 skirt_steak.techniques << [hot_roast, sear, grill, broil, braise]
 flank_steak.techniques << [hot_roast, sear, grill, broil, braise]
 short_ribs.techniques << [slow_roast, smoke, braise, stew, grill, sear]
+
 #pork
 pork_shoulder.techniques << [slow_roast, braise, smoke, stew]
 pork_chop.techniques << [hot_roast, sear, grill, broil]
@@ -98,4 +101,5 @@ chicken_leg.techniques << [hot_roast, slow_roast, sear, grill, smoke, broil, bra
 drumstick.techniques << [hot_roast, slow_roast, sear, grill, smoke, broil, braise, stew]
 
 Match.all.each { |m| m.update_attributes(good_idea: "yes")}
+
 

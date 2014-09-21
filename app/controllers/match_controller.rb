@@ -9,35 +9,46 @@ class MatchController < ApplicationController
 	end
 
   def answer
-    if params[:meatcut][:name] != '' && params[:technique][:name] != ''
+    if params[:meatcut][:name] == '' && params[:technique][:name] == ''
+      respond_to do |format|
+        format.html { redirect_to '/match/nothing' }
+      end
+    elsif params[:meatcut][:name] != '' && params[:technique][:name] != ''
       @meatcut = Meatcut.find(params[:meatcut][:name])
       @technique = Technique.find(params[:technique][:name])
       @matches = @meatcut.matches
+      @matches.each do |m|
+      if m.technique_id == @technique.id
+        @match = m
+        return @match
+      end
+    end
     elsif params[:meatcut][:name] == '' && params[:technique][:name] != ''
       @technique = Technique.find(params[:technique][:name])
       meatcuts = []
       @technique.meatcuts.each { |m| meatcuts << m }
       @meatcut = meatcuts.sample
       @matches = @meatcut.matches
-    elsif params[:meatcut][:name] != '' && params[:technique][:name] == ''
-      @meatcut = Meatcut.find(params[:meatcut][:name])
-      techniques = []
-      @meatcut.techniques.each { |t| techniques << t }
-      @technique = techniques.sample
-      @matches = @meatcut.matches
-    else
-      respond_to do |format|
-        format.html { redirect_to 'match/nothing' }
-      end
-    end
-    
-
-    @matches.each do |m|
+      @matches.each do |m|
       if m.technique_id == @technique.id
         @match = m
         return @match
       end
     end
+    else
+      @meatcut = Meatcut.find(params[:meatcut][:name])
+      techniques = []
+      @meatcut.techniques.each { |t| techniques << t }
+      @technique = techniques.sample
+      @matches = @meatcut.matches     
+      @matches.each do |m|
+      if m.technique_id == @technique.id
+        @match = m
+        return @match
+        end
+      end 
+    end
+   
   end
 
 	def matchme
