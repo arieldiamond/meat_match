@@ -51,6 +51,10 @@ select {
 	text-align: center;
 }
 
+table {
+  width:98%;
+  margin:auto;
+}
 .pure-table {
 	margin: auto;
 	width:60%;
