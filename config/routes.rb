@@ -9,6 +9,9 @@ Rails.application.routes.draw do
   post 'match/automatch'
   get 'match/automatch' => 'match#automatch'
 
+  post 'match/automatch_tech'
+  get 'match/automatch_tech' => 'match#automatch_tech'
+
   post 'match/nothing'
   get 'match/nothing' => 'match#nothing'
 

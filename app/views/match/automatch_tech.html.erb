@@ -1,0 +1,92 @@
+<div id="automatch_tech" style="text-align:center; margin:auto;">
+	<h2>What can I cook by <%= @technique.name %>ing?</h2>
+
+	<dl class="tabs" data-tab>
+    <dd class="active"><a href="#panel1">Beef</a></dd>
+    <dd><a href="#panel2">Pork</a></dd>
+    <dd><a href="#panel3">Chicken</a></dd>
+  </dl>
+  <br><br>
+  <% @beefcuts.sort.each do |b| %>
+  	<%= p b.name %>
+  <% end %>
+	<!-- <div class="home_break"></div> -->
+	<div class="tabs-content">
+  <div class="content active" id="panel1">
+  	<br><br>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Primal</th>
+          <th>Description</th>
+          <th>Alternative names</th>
+        </tr>
+      </thead>
+
+      <tbody>
+      	<% meatcuts = [] %>
+        <% @beefcuts.each do |meatcut| %>
+        <% meatcuts << meatcut %>
+          <tr>
+            <td><%= link_to meatcut.name.capitalize, meatcut %></td>
+            <td><%= meatcut.primal %></td>
+            <td><%= meatcut.description %></td>
+            <td><%= meatcut.alt_names %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="content" id="panel2">
+  <br><br>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Primal</th>
+          <th>Description</th>
+          <th>Alternative names</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @porkcuts.each do |meatcut| %>
+          <tr>
+            <td><%= link_to meatcut.name.capitalize, meatcut %></td>
+            <td><%= meatcut.primal %></td>
+            <td><%= meatcut.description %></td>
+            <td><%= meatcut.alt_names %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="content" id="panel3">
+  <br><br>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Primal</th>
+          <th>Description</th>
+          <th>Alternative names</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @chickencuts.each do |meatcut| %>
+          <tr>
+            <td><%= link_to meatcut.name.capitalize, meatcut %></td>
+            <td><%= meatcut.primal %></td>
+            <td><%= meatcut.description %></td>
+            <td><%= meatcut.alt_names %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <br><br>
+</div>
