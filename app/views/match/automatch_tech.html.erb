@@ -7,9 +7,6 @@
     <dd><a href="#panel3">Chicken</a></dd>
   </dl>
   <br><br>
-  <% @beefcuts.sort.each do |b| %>
-  	<%= p b.name %>
-  <% end %>
 	<!-- <div class="home_break"></div> -->
 	<div class="tabs-content">
   <div class="content active" id="panel1">
@@ -25,9 +22,7 @@
       </thead>
 
       <tbody>
-      	<% meatcuts = [] %>
         <% @beefcuts.each do |meatcut| %>
-        <% meatcuts << meatcut %>
           <tr>
             <td><%= link_to meatcut.name.capitalize, meatcut %></td>
             <td><%= meatcut.primal %></td>

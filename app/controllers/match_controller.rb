@@ -66,9 +66,15 @@ class MatchController < ApplicationController
   def automatch_tech 
     @technique = Technique.find(params[:technique][:name])
     @meatcuts = @technique.meatcuts
+    # @beefcuts = []
     @beefcuts = @meatcuts.where(:animal => "cow")
+    # @beefcuts = @beefcuts.sort
+    # @porkcuts = []
     @porkcuts = @meatcuts.where(:animal => "pig")
+    # @porkcuts = @porkcuts.sort
+    # @chickencuts = []
     @chickencuts = @meatcuts.where(:animal => "chicken")
+    # @chickencuts = @chickencuts.sort
   end
 
 	def new
