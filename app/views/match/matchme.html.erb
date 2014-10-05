@@ -1,5 +1,6 @@
-<div id="homepage">
-	<h1> Meat Match</h1>
+<div id="matchme">
+	<h1> Auto Meat Match</h1>
+	<h3>Don't worry, we'll do the searching for you.</h3>
 
 	<dl class="tabs" data-tab>
     <dd class="active"><a href="#panel1">Beef</a></dd>
@@ -39,7 +40,7 @@
 		<% end %>
 	</div>
 
-  <div class="content active" id="panel4">
+  <div class="content" id="panel4">
 		<%= form_tag('/match/automatch_tech') do %>
 			<h3>
 				<br>I want to <br><br><%= select("technique", "name", @techniques.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a technique'}) %>
