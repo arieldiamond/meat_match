@@ -6,14 +6,6 @@
     <!-- Preview Image -->
     <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:fb="http://ogp.me/ns/fb#">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
-      <script>
-        $(function() {
-          $( "#tabs" ).tabs();
-        });
-      </script>
     <meta property="og:image" content="../meat-match-prev.png" />
     <!-- PURE -->
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
@@ -29,20 +21,22 @@
 
   <body>
     <div id="page">
-    <div class="pure-menu pure-menu-open pure-menu-horizontal">
-      <a href="<%= root_path %>" class="pure-menu-heading">Meat-Match.Me</a>
-      <ul>
-        <li>
-          <a href="<%= match_matchme_path %>">Auto-Meat-Match.Me</a>
-        </li>
-        <li>
-          <a href="<%= meatcuts_path %>">Meatcuts</a>
-        </li>
-        <li>
-          <a href="<%= techniques_path %>">Techniques</a>
-        </li>
-      </ul>
-    </div>
+    <header>
+      <div class="pure-menu pure-menu-open pure-menu-horizontal">
+        <a href="<%= root_path %>" class="pure-menu-heading">Meat-Match.Me</a>
+        <ul>
+          <li>
+            <a href="<%= match_matchme_path %>">Auto-Meat-Match.Me</a>
+          </li>
+          <li>
+            <a href="<%= meatcuts_path %>">Meatcuts</a>
+          </li>
+          <li>
+            <a href="<%= techniques_path %>">Techniques</a>
+          </li>
+        </ul>
+      </div>
+    </header>
   <!-- <a class="exit-off-canvas"></a> -->
     <%= yield %>
     <%#= javascript_include_tag "application" %>
