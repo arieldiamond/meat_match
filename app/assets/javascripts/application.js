@@ -14,3 +14,17 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+$(document).ready(function () {
+  $("ul.tabs li").click(function () {
+    $(this).siblings().removeClass("active");
+    $(this).addClass("active");
+    console.log('2');
+  var Clicked = $(this).find("a").attr("href");
+    $(".tab").hide();
+    $(Clicked).show();
+    console.log('3');
+  });
+  console.log('4');
+});

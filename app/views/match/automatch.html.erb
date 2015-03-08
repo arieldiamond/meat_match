@@ -1,0 +1,24 @@
+<div class="automatch">
+<br>
+<h2>How can you cook <strong><%= @meatcut.name %></strong>?</h2>
+<h3>Here are some options:</h3>
+<table>
+      <thead>
+        <tr>
+          <th><h3>Name</h3></th>
+          <th><h3>Description</th>
+          <th><h3>Equipment Needed:</th></h3>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @techniques.each do |technique| %>
+          <tr>
+            <td><strong><%= link_to technique.name.capitalize, technique %></strong></td>
+            <td><%= technique.description %></td>
+            <td><%= technique.equipment %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+</div>

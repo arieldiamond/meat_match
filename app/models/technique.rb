@@ -1,4 +1,4 @@
 class Technique < ActiveRecord::Base
-	has_many :meals
-	has_many :meatcuts, through: :meals
+	has_many :matches
+	has_many :meatcuts, through: :matches
 end
