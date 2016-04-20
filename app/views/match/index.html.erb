@@ -1,61 +1,54 @@
 <div id="homepage">
-	<h1> Meat Match</h1>
+	<a href=<%=	root_path %>><h1> Meat Match</h1></a>
 
-	<dl class="tabs" data-tab>
-    <dd class="active"><a href="#panel1">Beef</a></dd>
-    <dd><a href="#panel2">Pork</a></dd>
-    <dd><a href="#panel3">Chicken</a></dd>
-  </dl>
-	<!-- <div class="home_break"></div> -->
-	<div class="tabs-content">
-  <div class="content active" id="panel1">
+<div class="container">
+
+	<ul class="tabs">
+    <li class="tab-link active" data-tab="beef">Beef</li>
+    <li class="tab-link" data-tab="pork">Pork</li>
+    <li class="tab-link" data-tab="chicken">Chicken</li>
+  </ul>
+  <div id="beef" class="tab-content active">
 		<%= form_tag('/match/answer') do %>
 			<h3>
-				<br>I have a <br><br><%= select("meatcut", "name", @beefcuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of beef*'}) %>
-			<br><br>
-				and I want to <br><br><%= select("technique", "name", Technique.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cooking technique*'}) %> <br>
-				it!
-			<br><br>
+				<br>I have some <br><%= select("meatcut", "name", @beefcuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'BEEF *'}) %>
+					<br>
+					and I want to <br><%= select("technique", "name", Technique.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'GRILL? SEAR? BRAISE? *'}) %>
 				<p>* or leave one blank for a random match!</p>
 				<%=  button_tag "Meat Match Me!", id: "match_submit" %>
 			</h3>
 		<% end %>
 	</div>
 
-	<div class="content" id="panel2">
+	<div id="pork" class="tab-content">
 		<%= form_tag('/match/answer') do %>
 			<h3>
-				<br>I have a <%= select("meatcut", "name", @porkcuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of pork'}) %>
-			<br>
-				and I want to <%= select("technique", "name", Technique.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cooking technique'}) %> <br>
-				it!
-			<br><br>
+				<br>I have some <%= select("meatcut", "name", @porkcuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'PORK *'}) %><br>
+					and I want to <%= select("technique", "name", Technique.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'GRILL? SEAR? BRAISE? *'}) %> 
+				<p>* or leave one blank for a random match!</p>
 				<%=  button_tag "Meat Match Me!", id: "match_submit" %>
 			</h3>
 		<% end %>
 	</div>
 
-	<div class="content" id="panel3">
+	<div id="chicken" class="tab-content">
 		<%= form_tag('/match/answer') do %>
 			<h3>
-				<br>I have a <%= select("meatcut", "name", @chickencuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of chicken'}) %>
-			<br>
-				and I want to <%= select("technique", "name", Technique.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cooking technique'}) %> <br>
-				it!
-			<br><br>
+				<br>I have some <%= select("meatcut", "name", @chickencuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'CHICKEN *'}) %><br>
+				and I want to <%= select("technique", "name", Technique.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'GRILL? SEAR? BRAISE? *'}) %>
+				<p>* or leave one blank for a random match!</p>
 				<%=  button_tag "Meat Match Me!", id: "match_submit" %>
 			</h3>
 		<% end %>
-	</div>
-	</div>
+	</div> <!-- end chicken -->
 
-	<br><br>
-	<h3>Not sure what all these these techniques are?</h3>
-	<%= button_to "Show Me", techniques_path, :class => "button", :method => :get %>
-	<br>
-	<h3>Want to see what all these meatcuts are?</h3>
-	<%= button_to "Show Me", meatcuts_path, :class => "button", :method => :get %>
-	<br>
-	<br>
 
-</div>
+	<div class="buttons">
+		<h3>Not sure what all these these techniques are?</h3>
+		<%= button_to "Show Me", techniques_path, :class => "button", :method => :get %>
+		<br>
+		<h3>Want to see what all these meatcuts are?</h3>
+		<%= button_to "Show Me", meatcuts_path, :class => "button", :method => :get %>
+	</div>
+</div><!-- end tabs -->
+</div><!-- end homepage -->

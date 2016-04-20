@@ -1,0 +1,117 @@
+$active-yellow: yellow;
+$active-red: red;
+$active-green: green;
+
+$inactive-yellow: #FFFF99;
+$inactive-red: #B36666;
+$inactive-green: #5C9D5C;
+
+ul.tabs{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	border-bottom: 3px solid black;
+}
+ul.tabs li { 
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+	border: grey 3px solid;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom: none;
+	font-family: 'Trebuchet MS', serif;
+	color: #666;
+	padding-bottom: .2em;
+	font-weight: 900;
+}
+ul.tabs li.active {
+	color: black;
+	border: 3px solid black;
+	border-bottom: 2px solid #FAF9F0;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin-bottom: -8px !important;
+	text-decoration: none;
+	position: relative;
+	z-index: 1;
+	padding-bottom: 5px;
+}
+.tab-content{
+	display: none;
+	padding: 15px;
+	background-color: rgba(255,255,255,.5);
+}
+.tab-content.active{
+	display: inherit;
+}
+
+@media (min-width: 0px) {
+	.tabs li, .tabs li.active {
+		margin-left: 1em;
+	}
+}
+
+// Tabs 
+ul.tabs li.active:after{
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	content: "";
+	display: block;
+	position: absolute;
+	top: calc(100% - 1px);
+	left: -.7em;
+	right: -.7em;
+	bottom: -1em;
+}
+ul.tabs li:after, 
+ul.tabs li {
+	border:grey solid 3px;
+	border-bottom: none ;
+}
+ul.tabs li {
+	border:black solid 3px;
+	border-bottom: none;
+}
+ul.tabs li.active:after {
+	border-top: none !important;
+	border:black solid 3px; 
+}
+ul.tabs li:not(.active):hover {
+	color: black;
+	border: black solid 3px;
+	border-bottom: none;
+}
+
+/* BEEF */
+ul.tabs li:nth-of-type(1):after, 
+ul.tabs li:nth-of-type(1) {
+	background-color: $inactive-red;
+}
+ul.tabs li.active:nth-of-type(1),
+ul.tabs li.active:nth-of-type(1):after,
+ul.tabs li:not(.active):nth-of-type(1):hover {
+	background-color: $active-red;
+}
+
+/* PORK */
+ul.tabs li:nth-of-type(2):after, 
+ul.tabs li:nth-of-type(2) {
+	background-color: $inactive-yellow;
+}
+ul.tabs li.active:nth-of-type(2),
+ul.tabs li.active:nth-of-type(2):after,
+ul.tabs li:not(.active):nth-of-type(2):hover {
+	background-color: $active-yellow;
+}
+
+/* CHICKEN */
+ul.tabs li:nth-of-type(3):after, 
+ul.tabs li:nth-of-type(3) {
+	background-color: $inactive-green;
+}
+ul.tabs li.active:nth-of-type(3),
+ul.tabs li.active:nth-of-type(3):after,
+ul.tabs li:not(.active):nth-of-type(3):hover {
+	background-color: $active-green;
+}

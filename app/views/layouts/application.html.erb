@@ -7,33 +7,31 @@
     <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:fb="http://ogp.me/ns/fb#">
     <meta property="og:image" content="../meat-match-prev.png" />
-    <!-- PURE -->
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
     <!-- FONTS -->
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
     <title><%= content_for?(:title) ? yield(:title) : "Meat Match: Can I Cook This Like That?" %></title>
 
-    <%= stylesheet_link_tag    "application" %>
-    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= stylesheet_link_tag "application.css" %>
+    <%= javascript_include_tag "application.js" %>
     <%= csrf_meta_tags %>
   </head>
 
   <body>
     <div id="page">
-    <div class="pure-menu pure-menu-open pure-menu-horizontal">
-      <a href="<%= root_path %>" class="pure-menu-heading">Meat-Match.Me</a>
-      <ul>
-        <li><a href="<%= match_matchme_path %>">Auto-Meat-Match.Me</a></li>
+    <header>
+      <ul class="primary-nav">
+        <li><a href="<%= root_path %>">Home</a></li>
+        <li><a href="<%= match_matchme_path %>">Auto-Meat-Match</a></li>
         <li><a href="<%= meatcuts_path %>">Meatcuts</a></li>
         <li><a href="<%= techniques_path %>">Techniques</a></li>
       </ul>
-    </div>
-  <a class="exit-off-canvas"></a>
+    </header>
     <%= yield %>
-    <%= javascript_include_tag "application" %>
-    <br><br>
-    <footer>&copy; 2014 <a href="http://www.arielkdiamond.com">Ariel K. Diamond</a>  |  <a href="mailto:meat.match.me@gmail.com">Contact Me</a></footer>
+    <%#= javascript_include_tag "application" %>
+    <footer>&copy; 2015 
+      <a href="http://www.arielkdiamond.com">Ariel K. Diamond</a>  |  <a href="mailto:ariel.diamond@gmail.com">Contact Me</a>
+    </footer>
   </div>
   </body>
 </html>

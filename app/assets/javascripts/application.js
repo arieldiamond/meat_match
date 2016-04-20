@@ -12,21 +12,20 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require foundation
 //= require turbolinks
 //= require_tree .
 
-$(function(){ $(document).foundation(); });
 
-$(document).ready(function () {
-  $(".tab:first").show()
+$(document).ready(function(){
+	
+	$('ul.tabs li').click(function(){
+		var tab_id = $(this).attr('data-tab');
 
-  $(".tabs li").click(function () {
-    $(this).siblings().removeClass("active");
-    $(this).addClass("active");
+		$('ul.tabs li').removeClass('active');
+		$('.tab-content').removeClass('active');
 
-  var Clicked = $(this).find("a").attr("href");
-    $(".tab").hide();
-    $(Clicked).show();
-  });
-});
+		$(this).addClass('active');
+		$("#"+tab_id).addClass('active');
+	})
+
+})

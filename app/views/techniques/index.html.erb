@@ -1,12 +1,16 @@
 <div id="technique_index">
-  <dl class="tabs" data-tab>
-    <dd class="active"><a href="#panel1">Dry Techniques</a></dd>
-    <dd><a href="#panel2">Wet Techniques</a></dd>
-  </dl>
+  <a href=<%= root_path %>><h1> Meat Match</h1></a>
 
-  <div class="tabs-content">
-  <div class="content active" id="panel1">
-    <table>
+  <h2>Techniques</h2>
+  <div class="container">
+
+  <ul class="tabs">
+    <li class="tab-link active" data-tab="dry">Dry</li>
+    <li class="tab-link" data-tab="wet">Wet</li>
+  </ul>
+
+  <div id="dry" class="tab-content active">
+    <table class="pure-table">
       <thead>
         <tr>
           <th><h3>Name</h3></th>
@@ -27,8 +31,8 @@
     </table>
   </div>
 
-  <div class="content" id="panel2">
-    <table>
+  <div id="wet" class="tab-content">
+    <table class="pure-table">
       <thead>
         <tr>
           <th>Name</th>

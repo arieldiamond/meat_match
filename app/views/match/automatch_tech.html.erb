@@ -1,17 +1,15 @@
 <div id="automatch_tech" style="text-align:center; margin:auto;">
 	<h2>What can I cook by <%= @technique.name %>ing?</h2>
 
-	<dl class="tabs" data-tab>
-    <dd class="active"><a href="#panel1">Beef</a></dd>
-    <dd><a href="#panel2">Pork</a></dd>
-    <dd><a href="#panel3">Chicken</a></dd>
-  </dl>
-  <br><br>
-	<!-- <div class="home_break"></div> -->
-	<div class="tabs-content">
-  <div class="content active" id="panel1">
-  	<br><br>
-    <table>
+<div class="container">
+
+  <ul class="tabs">
+    <li class="tab-link active" data-tab="beef">Beef</li>
+    <li class="tab-link" data-tab="pork">Pork</li>
+    <li class="tab-link" data-tab="chicken">Chicken</li>
+  </ul>
+  <div id="beef" class="tab-content active">
+    <table class="pure-table">
       <thead>
         <tr>
           <th>Name</th>
@@ -36,7 +34,7 @@
 
   <div class="content" id="panel2">
   <br><br>
-    <table>
+    <table class="pure-table">
       <thead>
         <tr>
           <th>Name</th>
@@ -59,9 +57,8 @@
     </table>
   </div>
 
-  <div class="content" id="panel3">
-  <br><br>
-    <table>
+  <div class="content" id="panel3"><br>
+    <table class="pure-table">
       <thead>
         <tr>
           <th>Name</th>

@@ -2,53 +2,48 @@
 	<h1> Auto Meat Match</h1>
 	<h3>Don't worry, we'll do the searching for you.</h3>
 
-	<dl class="tabs" data-tab>
-    <dd class="active"><a href="#panel1">Beef</a></dd>
-    <dd><a href="#panel2">Pork</a></dd>
-    <dd><a href="#panel3">Chicken</a></dd>
-    <dd><a href="#panel4">Techniques</a></dd>
-  </dl>
-	<!-- <div class="home_break"></div> -->
-	<div class="tabs-content">
-  <div class="content active" id="panel1">
-		<%= form_tag('/match/automatch') do %>
-			<h3>
-				<br>I have a <br><br><%= select("meatcut", "name", @beefcuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of beef'}) %>
-			<br><br>
-				<%=  button_tag "How can I cook it?", id: "match_submit" %>
-			</h3>
-		<% end %>
-	</div>
+<div class="container">
+	<ul class="tabs">
+    <li class="tab-link active" data-tab="beef">Beef</li>
+    <li class="tab-link" data-tab="pork">Pork</li>
+    <li class="tab-link" data-tab="chicken">Chicken</li>
+    <li class="tab-link" data-tab="techniques">Techniques</li>
+  </ul>
+	
+		<div id="beef" class="tab-content active">
+			<%= form_tag('/match/automatch') do %>
+				<h3>
+					<br>I have some <br><%= select("meatcut", "name", @beefcuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'BEEF'}) %><br>
+					<%=  button_tag "How can I cook it?", id: "match_submit" %>
+				</h3>
+			<% end %>
+		</div>
 
-	<div class="content" id="panel2">
-		<%= form_tag('/match/automatch') do %>
-			<h3>
-				<br>I have a <br><br><%= select("meatcut", "name", @porkcuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of pork'}) %>
-			<br><br>
-				<%=  button_tag "How can I cook it?", id: "match_submit" %>
-			</h3>
-		<% end %>
-	</div>
+		<div id="pork" class="tab-content">
+			<%= form_tag('/match/automatch') do %>
+				<h3>
+					<br>I have some <br><%= select("meatcut", "name", @porkcuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'PORK'}) %><br>
+					<%=  button_tag "How can I cook it?", id: "match_submit" %>
+				</h3>
+			<% end %>
+		</div>
 
-	<div class="content" id="panel3">
-		<%= form_tag('/match/automatch') do %>
-			<h3>
-				<br>I have a <br><br><%= select("meatcut", "name", @chickencuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a cut of chicken'}) %>
-			<br><br>
-				<%=  button_tag "How can I cook it?", id: "match_submit" %>
-			</h3>
-		<% end %>
-	</div>
+		<div id="chicken" class="tab-content">
+			<%= form_tag('/match/automatch') do %>
+				<h3>
+					<br>I have some <br><%= select("meatcut", "name", @chickencuts.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'CHICKEN'}) %><br>
+					<%=  button_tag "How can I cook it?", id: "match_submit" %>
+				</h3>
+			<% end %>
+		</div>
 
-  <div class="content" id="panel4">
-		<%= form_tag('/match/automatch_tech') do %>
-			<h3>
-				<br>I want to <br><br><%= select("technique", "name", @techniques.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'Select a technique'}) %>
-			<br><br>
-				<%=  button_tag "What can I cook like this?", id: "match_submit" %>
-			</h3>
-		<% end %>
-	</div>
-
+	  <div id="techniques" class="tab-content">
+			<%= form_tag('/match/automatch_tech') do %>
+				<h3>
+					<br>I want to <br><%= select("technique", "name", @techniques.all.collect {|m| [ m.name.capitalize, m.id ] }.sort, {include_blank: 'GRILL? SEAR? BRAISE?'}) %><br>
+					<%=  button_tag "What can I cook like this?", id: "match_submit" %>
+				</h3>
+			<% end %>
+		</div>
 	</div>
 </div>
